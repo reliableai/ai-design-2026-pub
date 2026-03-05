@@ -45,23 +45,64 @@
         <h3>Learning objectives</h3>
         <p>By the end of this lesson, you will be able to:</p>
         <ol>
-            <li>Build a stateless agent that treats each turn independently</li>
-            <li>Build a stateful agent that maintains conversation history</li>
+            <li>Identify the four challenges of working with LLMs: single-call prompting, conversation context, long-term memory, and enterprise knowledge</li>
+            <li>Build stateless and stateful agents that manage conversation history</li>
             <li>Measure and predict how cost and latency grow with context length</li>
-            <li>Implement context windowing to bound resource usage</li>
-            <li>Design a memory system that summarizes older context</li>
+            <li>Implement context windowing and memory summarization to bound resource usage</li>
+            <li>Design a long-term memory system that persists user facts across sessions</li>
             <li>Understand the tradeoffs between Chat Completions and Responses APIs</li>
         </ol>
 
-        <h3>From calls to conversations</h3>
+        <h3>Four challenges of working with LLMs</h3>
 
-        <p>In Lesson 1, every API call was <strong>stateless</strong>—the model had no memory of what came before. Ask "What is 2+2?", get "4". Ask "Multiply that by 3", and the model has no idea what "that" refers to.</p>
+        <p>Building with LLMs involves four increasingly hard problems. Each builds on the one before:</p>
 
-        <p>Real applications need <strong>context</strong>. A coding assistant must remember what file you're working on. A customer service bot must remember your order number. A tutor must remember what you've already learned.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Challenge</th>
+                    <th>The question</th>
+                    <th>Where we cover it</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td><strong>Getting a single call right</strong></td>
+                    <td>How do I craft a prompt that reliably produces the output I need?</td>
+                    <td>Prompting guide (coming soon)</td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td><strong>Managing a conversation</strong></td>
+                    <td>How do I give the model the right context across multiple turns without blowing up cost?</td>
+                    <td>This lesson (sections 1–4)</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td><strong>Long-term memory</strong></td>
+                    <td>How do I remember a user across sessions—their facts, preferences, history?</td>
+                    <td>This lesson (section 5)</td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td><strong>Enterprise / community knowledge</strong></td>
+                    <td>How do I connect knowledge <em>across</em> users—shared docs, org context, community data—while respecting privacy?</td>
+                    <td>Later lessons (RAG, knowledge bases)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Challenge 1 is about the <strong>prompt</strong>: writing clear instructions, choosing the right format, providing examples. We'll cover this in a dedicated prompting guide.</p>
+
+        <p>Challenges 2 and 3 are about <strong>memory</strong>: what the model sees within a conversation (short-term) and what persists across conversations (long-term). This is the focus of today's lesson.</p>
+
+        <p>Challenge 4 is about <strong>shared knowledge</strong>: giving the model access to documents, databases, or other users' data—without leaking private information across boundaries. This is the domain of RAG (retrieval-augmented generation) and enterprise AI, which we'll explore in later lessons.</p>
 
         <div class="thesis-block">
             <div class="label">Key insight</div>
-            <p>LLMs are stateless functions. <strong>State is your responsibility.</strong> The model doesn't remember anything—you must send the relevant context with every request. This design choice has profound implications for cost, latency, and system architecture.</p>
+            <p>LLMs are stateless functions. <strong>State is your responsibility.</strong> The model doesn't remember anything—you must send the relevant context with every request. This design choice has profound implications for cost, latency, and system architecture. Every challenge above is really about <em>what context to send and when</em>.</p>
         </div>
 
         <h3>What is an "agent"?</h3>
