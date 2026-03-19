@@ -1,0 +1,16 @@
+{
+  "split_summary_path": "labs/03_review_and_judge/loop_runs/bitext_split_live_20260311_b100_r1/split_summary.json",
+  "tune_summary_path": "labs/03_review_and_judge/loop_runs/bitext_split_live_20260311_b100_r1/tune/loop_summary.json",
+  "selection_summary_path": "labs/03_review_and_judge/loop_runs/bitext_split_live_20260311_b100_r1/selection/selection_summary.json",
+  "test_summary_path": "labs/03_review_and_judge/loop_runs/bitext_split_live_20260311_b100_r1/test/test_summary.json",
+  "best_prompt_path": "labs/03_review_and_judge/loop_runs/bitext_split_live_20260311_b100_r1/best_prompt.txt",
+  "tune_best_prompt_name": "R00 v1 Baseline",
+  "tune_best_avg_rating": 1.0,
+  "selection_winner_prompt_name": "R00 v1 Baseline",
+  "selection_winner_prompt_key": "r01_current_R00_v1_Baseline",
+  "selection_winner_avg_rating": 1.0,
+  "selection_winner_accuracy": 0.0,
+  "test_avg_rating": 1.0,
+  "test_accuracy": 0.0,
+  "n_selection_candidates": 7
+}

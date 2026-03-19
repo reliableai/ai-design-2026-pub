@@ -1,0 +1,444 @@
+{
+  "eval_mode": "ground_truth_intent",
+  "extract_model": "gpt-4.1-mini",
+  "eval_model": "gpt-4.1-mini",
+  "improve_model": "gpt-4.1-mini",
+  "initial_prompt_version": "v1",
+  "max_rounds": 2,
+  "min_improvement": 0.05,
+  "extract_batch_size": 30,
+  "judge_batch_size": 30,
+  "variations_per_round": 5,
+  "include_forced_self_critique": true,
+  "rounds": [
+    {
+      "round_index": 1,
+      "current_prompt_key": "r01_current_R00_v1_Baseline",
+      "current_prompt_name": "R00 v1 Baseline",
+      "current_prompt_version": "v1",
+      "current_avg_rating": 2.8,
+      "current_prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/r01_current_R00_v1_Baseline/prompt.txt",
+      "current_extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/r01_current_R00_v1_Baseline/extractions.json",
+      "current_evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/r01_current_R00_v1_Baseline/evaluations.json",
+      "improvements_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/improvements.json",
+      "best_variation_version": "v3b",
+      "best_variation_name": "R01 v3b Chain-of-Thought Reasoning",
+      "best_variation_key": "R01_v3b_Chain-of-Thought_Reasoning",
+      "best_variation_avg_rating": 3.05,
+      "improvement": 0.25,
+      "accepted": true,
+      "model_variations_proposed": 5,
+      "forced_variations_proposed": 1,
+      "variations_proposed": 6,
+      "variations_evaluated": 6,
+      "variations": [
+        {
+          "variation_id": "v1_self_critique",
+          "approach_name": "Self-Critique Final JSON",
+          "prompt_name": "R01 v1_self_critique Self-Critique Final JSON",
+          "forced_candidate": true,
+          "avg_rating": 3.0,
+          "changes": [
+            "Add an explicit draft -> critique -> revise process before the final JSON output",
+            "Require the model to return only the final revised JSON after self-review"
+          ],
+          "rationale": "A self-critique pass can catch missing facts, vague intent labels, hallucinations, and schema mistakes before the final answer is emitted.",
+          "prompt_key": "R01_v1_self_critique_Self-Critique_Final_JSON",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v1_self_critique_Self-Critique_Final_JSON/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v1_self_critique_Self-Critique_Final_JSON/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v1_self_critique_Self-Critique_Final_JSON/evaluations.json"
+        },
+        {
+          "variation_id": "v3a",
+          "approach_name": "Few-Shot Canonical Intents",
+          "prompt_name": "R01 v3a Few-Shot Canonical Intents",
+          "forced_candidate": false,
+          "avg_rating": 3.0,
+          "changes": [
+            "Add 3 few-shot examples illustrating correct intent phrasing as short, lowercase verb phrases matching canonical forms.",
+            "Show symptoms as atomic facts grounded in quotes from the request.",
+            "Reinforce explicit output schema with exact JSON keys and types."
+          ],
+          "rationale": "Few-shot examples anchor the model to the desired canonical intent phrases and output format, reducing variability and mismatches. Grounding symptoms in quotes reduces hallucination and clarifies symptom extraction. Explicit schema reduces format errors. This addresses the main failure of inconsistent intent extraction and hallucinated symptoms.",
+          "prompt_key": "R01_v3a_Few-Shot_Canonical_Intents",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3a_Few-Shot_Canonical_Intents/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3a_Few-Shot_Canonical_Intents/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3a_Few-Shot_Canonical_Intents/evaluations.json"
+        },
+        {
+          "variation_id": "v3b",
+          "approach_name": "Chain-of-Thought Reasoning",
+          "prompt_name": "R01 v3b Chain-of-Thought Reasoning",
+          "forced_candidate": false,
+          "avg_rating": 3.05,
+          "changes": [
+            "Add an instruction to first reason briefly about the request to identify the most likely intent and symptoms before producing the JSON output.",
+            "Keep explicit output schema and ambiguity handling."
+          ],
+          "rationale": "Asking the model to think step-by-step before answering can improve accuracy in disambiguating similar intents and extracting relevant symptoms. This approach helps the model clarify its reasoning and reduces errors from hasty or shallow extraction, addressing the main failure of intent mismatches.",
+          "prompt_key": "R01_v3b_Chain-of-Thought_Reasoning",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3b_Chain-of-Thought_Reasoning/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3b_Chain-of-Thought_Reasoning/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3b_Chain-of-Thought_Reasoning/evaluations.json"
+        },
+        {
+          "variation_id": "v3c",
+          "approach_name": "Negative Instructions and Output Only",
+          "prompt_name": "R01 v3c Negative Instructions and Output Only",
+          "forced_candidate": false,
+          "avg_rating": 3.0,
+          "changes": [
+            "Add explicit negative instructions to not infer causes, not suggest solutions, and not add extra fields.",
+            "Instruct the model to respond with only the JSON output, no preamble or explanation.",
+            "Keep explicit output schema and ambiguity handling."
+          ],
+          "rationale": "Negative instructions reduce common errors such as hallucinating causes or solutions and adding irrelevant fields, which can confuse intent extraction. Output-only instructions simplify parsing and reduce token cost. This can improve precision and consistency of the extracted intent and symptoms.",
+          "prompt_key": "R01_v3c_Negative_Instructions_and_Output_Only",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3c_Negative_Instructions_and_Output_Only/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3c_Negative_Instructions_and_Output_Only/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3c_Negative_Instructions_and_Output_Only/evaluations.json"
+        },
+        {
+          "variation_id": "v3d",
+          "approach_name": "Self-Critique Then Final Answer",
+          "prompt_name": "R01 v3d Self-Critique Then Final Answer",
+          "forced_candidate": false,
+          "avg_rating": 2.8,
+          "changes": [
+            "Add instructions for the model to first draft an answer, then briefly critique it for missing facts, schema errors, or hallucinations, and finally produce a revised JSON output.",
+            "Keep explicit output schema and ambiguity handling."
+          ],
+          "rationale": "Self-critique encourages the model to check and improve its own output, which can reduce errors in intent selection and symptom extraction. This is especially useful for ambiguous or complex requests where initial extraction may be incomplete or inconsistent.",
+          "prompt_key": "R01_v3d_Self-Critique_Then_Final_Answer",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3d_Self-Critique_Then_Final_Answer/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3d_Self-Critique_Then_Final_Answer/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3d_Self-Critique_Then_Final_Answer/evaluations.json"
+        },
+        {
+          "variation_id": "v3e",
+          "approach_name": "Explicit Schema and Role Refinement",
+          "prompt_name": "R01 v3e Explicit Schema and Role Refinement",
+          "forced_candidate": false,
+          "avg_rating": 3.05,
+          "changes": [
+            "Enhance the role assignment with more detailed behavior expectations.",
+            "Make the output schema more explicit with key types and constraints.",
+            "Add instructions to keep each symptom atomic and grounded in the text.",
+            "Include ambiguity handling instructions."
+          ],
+          "rationale": "Refining the role and making the schema more explicit can help the model better understand the task and reduce hallucinations or inconsistent intent phrasing. Emphasizing atomic symptoms and grounding them helps improve symptom quality, even if not evaluated here. This approach strengthens the foundation without adding complexity like examples or reasoning.",
+          "prompt_key": "R01_v3e_Explicit_Schema_and_Role_Refinement",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3e_Explicit_Schema_and_Role_Refinement/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3e_Explicit_Schema_and_Role_Refinement/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3e_Explicit_Schema_and_Role_Refinement/evaluations.json"
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "current_prompt_key": "r02_current_R01_v3b_Chain-of-Thought_Reasoning",
+      "current_prompt_name": "R01 v3b Chain-of-Thought Reasoning",
+      "current_prompt_version": "v3b",
+      "current_avg_rating": 3.05,
+      "current_prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/r02_current_R01_v3b_Chain-of-Thought_Reasoning/prompt.txt",
+      "current_extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/r02_current_R01_v3b_Chain-of-Thought_Reasoning/extractions.json",
+      "current_evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/r02_current_R01_v3b_Chain-of-Thought_Reasoning/evaluations.json",
+      "improvements_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/improvements.json",
+      "best_variation_version": "v3b_self_critique",
+      "best_variation_name": "R02 v3b_self_critique Self-Critique Final JSON",
+      "best_variation_key": "R02_v3b_self_critique_Self-Critique_Final_JSON",
+      "best_variation_avg_rating": 3.05,
+      "improvement": 0.0,
+      "accepted": false,
+      "model_variations_proposed": 5,
+      "forced_variations_proposed": 1,
+      "variations_proposed": 6,
+      "variations_evaluated": 6,
+      "variations": [
+        {
+          "variation_id": "v3b_self_critique",
+          "approach_name": "Self-Critique Final JSON",
+          "prompt_name": "R02 v3b_self_critique Self-Critique Final JSON",
+          "forced_candidate": true,
+          "avg_rating": 3.05,
+          "changes": [
+            "Add an explicit draft -> critique -> revise process before the final JSON output",
+            "Require the model to return only the final revised JSON after self-review"
+          ],
+          "rationale": "A self-critique pass can catch missing facts, vague intent labels, hallucinations, and schema mistakes before the final answer is emitted.",
+          "prompt_key": "R02_v3b_self_critique_Self-Critique_Final_JSON",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_self_critique_Self-Critique_Final_JSON/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_self_critique_Self-Critique_Final_JSON/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_self_critique_Self-Critique_Final_JSON/evaluations.json"
+        },
+        {
+          "variation_id": "v3a",
+          "approach_name": "Few-Shot Canonical Intents",
+          "prompt_name": "R02 v3a Few-Shot Canonical Intents",
+          "forced_candidate": false,
+          "avg_rating": 3.05,
+          "changes": [
+            "Add 3 few-shot examples with canonical intent labels and symptom lists to anchor format and intent phrasing.",
+            "Explicitly define the output JSON schema with exact keys and types.",
+            "Reinforce verb-phrase intent instruction with examples.",
+            "Keep chain-of-thought reasoning before answer."
+          ],
+          "rationale": "Few-shot examples showing canonical intent phrases and symptom extraction will anchor the model to produce consistent, normalized intents and symptom lists, addressing the main failure of intent mismatch. Explicit schema reduces format errors. Maintaining chain-of-thought supports reasoning accuracy. This approach directly targets the core issue of inconsistent intent extraction.",
+          "prompt_key": "R02_v3a_Few-Shot_Canonical_Intents",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3a_Few-Shot_Canonical_Intents/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3a_Few-Shot_Canonical_Intents/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3a_Few-Shot_Canonical_Intents/evaluations.json"
+        },
+        {
+          "variation_id": "v3b",
+          "approach_name": "Self-Critique Then Final Answer",
+          "prompt_name": "R02 v3b Self-Critique Then Final Answer",
+          "forced_candidate": false,
+          "avg_rating": 2.85,
+          "changes": [
+            "Add a step after initial reasoning and JSON extraction where the model critiques its own output for missing facts, hallucinations, or schema errors.",
+            "Then instruct the model to produce a final revised JSON answer.",
+            "Keep existing chain-of-thought reasoning.",
+            "Maintain explicit output schema and ambiguity handling."
+          ],
+          "rationale": "Adding a self-critique step encourages the model to verify and improve its initial extraction, reducing hallucinations and improving accuracy and consistency of intent and symptoms. This is especially useful given the ambiguity and subtle differences in intent phrasing noted in the failures. It also helps catch schema errors before final output.",
+          "prompt_key": "R02_v3b_Self-Critique_Then_Final_Answer",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_Self-Critique_Then_Final_Answer/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_Self-Critique_Then_Final_Answer/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_Self-Critique_Then_Final_Answer/evaluations.json"
+        },
+        {
+          "variation_id": "v3c",
+          "approach_name": "Negative Instructions and Output-Only",
+          "prompt_name": "R02 v3c Negative Instructions and Output-Only",
+          "forced_candidate": false,
+          "avg_rating": 2.45,
+          "changes": [
+            "Add explicit negative instructions to not infer causes, not suggest solutions, and not merge symptoms.",
+            "Instruct the model to respond with only the JSON output, no preamble or explanation.",
+            "Keep chain-of-thought reasoning before answer.",
+            "Clarify one fact per symptom list entry."
+          ],
+          "rationale": "Explicit negative instructions reduce common failure modes such as hallucinating causes or merging multiple symptoms into one, which can degrade extraction quality. Output-only instructions simplify parsing and reduce token cost. This approach targets symptom extraction quality and format consistency, which indirectly supports better intent extraction by focusing the model.",
+          "prompt_key": "R02_v3c_Negative_Instructions_and_Output-Only",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3c_Negative_Instructions_and_Output-Only/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3c_Negative_Instructions_and_Output-Only/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3c_Negative_Instructions_and_Output-Only/evaluations.json"
+        },
+        {
+          "variation_id": "v3d",
+          "approach_name": "Ground Symptoms in Quotes",
+          "prompt_name": "R02 v3d Ground Symptoms in Quotes",
+          "forced_candidate": false,
+          "avg_rating": 3.05,
+          "changes": [
+            "Add instruction to ground each symptom in a direct quote or phrase from the original request.",
+            "Modify symptom list to be a list of objects with 'symptom' and 'quote' keys.",
+            "Keep chain-of-thought reasoning and ambiguity handling.",
+            "Explicit output schema updated accordingly."
+          ],
+          "rationale": "Grounding symptoms in quotes from the original text reduces hallucination and makes it easier to verify symptom extraction. This can improve symptom accuracy and indirectly help the model focus on relevant facts, potentially improving intent extraction consistency. Although symptoms are not evaluated here, this approach improves overall extraction reliability.",
+          "prompt_key": "R02_v3d_Ground_Symptoms_in_Quotes",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3d_Ground_Symptoms_in_Quotes/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3d_Ground_Symptoms_in_Quotes/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3d_Ground_Symptoms_in_Quotes/evaluations.json"
+        },
+        {
+          "variation_id": "v3e",
+          "approach_name": "Structured Prompt Layout",
+          "prompt_name": "R02 v3e Structured Prompt Layout",
+          "forced_candidate": false,
+          "avg_rating": 3.05,
+          "changes": [
+            "Restructure the prompt into clearly separated sections: Role, Task, Output Schema, Instructions, Examples, Input.",
+            "Add explicit instructions for canonical intent phrasing and symptom atomicity.",
+            "Add a short summary of what to avoid (negative instructions).",
+            "Keep chain-of-thought reasoning.",
+            "No few-shot examples to keep prompt shorter."
+          ],
+          "rationale": "A clearer, more structured prompt layout improves model understanding and adherence to instructions by reducing ambiguity and cognitive load. Explicitly separating instructions and schema clarifies expectations. This can improve both intent and symptom extraction consistency without increasing prompt length too much.",
+          "prompt_key": "R02_v3e_Structured_Prompt_Layout",
+          "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3e_Structured_Prompt_Layout/prompt.txt",
+          "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3e_Structured_Prompt_Layout/extractions.json",
+          "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3e_Structured_Prompt_Layout/evaluations.json"
+        }
+      ]
+    }
+  ],
+  "stopped_reason": "No candidate improved the current prompt by more than 0.05.",
+  "best_prompt_version": "v3b",
+  "best_prompt_name": "R01 v3b Chain-of-Thought Reasoning",
+  "best_prompt_key": "R01_v3b_Chain-of-Thought_Reasoning",
+  "best_avg_rating": 3.05,
+  "best_prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/best_prompt.txt",
+  "versions": [
+    {
+      "prompt_key": "r01_current_R00_v1_Baseline",
+      "prompt_name": "R00 v1 Baseline",
+      "prompt_version": "v1",
+      "avg_rating": 2.8,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/r01_current_R00_v1_Baseline/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/r01_current_R00_v1_Baseline/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/r01_current_R00_v1_Baseline/evaluations.json",
+      "source_round": 1,
+      "kind": "current",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R01_v1_self_critique_Self-Critique_Final_JSON",
+      "prompt_name": "R01 v1_self_critique Self-Critique Final JSON",
+      "prompt_version": "v1_self_critique",
+      "avg_rating": 3.0,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v1_self_critique_Self-Critique_Final_JSON/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v1_self_critique_Self-Critique_Final_JSON/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v1_self_critique_Self-Critique_Final_JSON/evaluations.json",
+      "source_round": 1,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R01_v3a_Few-Shot_Canonical_Intents",
+      "prompt_name": "R01 v3a Few-Shot Canonical Intents",
+      "prompt_version": "v3a",
+      "avg_rating": 3.0,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3a_Few-Shot_Canonical_Intents/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3a_Few-Shot_Canonical_Intents/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3a_Few-Shot_Canonical_Intents/evaluations.json",
+      "source_round": 1,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R01_v3b_Chain-of-Thought_Reasoning",
+      "prompt_name": "R01 v3b Chain-of-Thought Reasoning",
+      "prompt_version": "v3b",
+      "avg_rating": 3.05,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3b_Chain-of-Thought_Reasoning/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3b_Chain-of-Thought_Reasoning/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3b_Chain-of-Thought_Reasoning/evaluations.json",
+      "source_round": 1,
+      "kind": "variation",
+      "is_best": true
+    },
+    {
+      "prompt_key": "R01_v3c_Negative_Instructions_and_Output_Only",
+      "prompt_name": "R01 v3c Negative Instructions and Output Only",
+      "prompt_version": "v3c",
+      "avg_rating": 3.0,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3c_Negative_Instructions_and_Output_Only/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3c_Negative_Instructions_and_Output_Only/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3c_Negative_Instructions_and_Output_Only/evaluations.json",
+      "source_round": 1,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R01_v3d_Self-Critique_Then_Final_Answer",
+      "prompt_name": "R01 v3d Self-Critique Then Final Answer",
+      "prompt_version": "v3d",
+      "avg_rating": 2.8,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3d_Self-Critique_Then_Final_Answer/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3d_Self-Critique_Then_Final_Answer/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3d_Self-Critique_Then_Final_Answer/evaluations.json",
+      "source_round": 1,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R01_v3e_Explicit_Schema_and_Role_Refinement",
+      "prompt_name": "R01 v3e Explicit Schema and Role Refinement",
+      "prompt_version": "v3e",
+      "avg_rating": 3.05,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3e_Explicit_Schema_and_Role_Refinement/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3e_Explicit_Schema_and_Role_Refinement/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_01/R01_v3e_Explicit_Schema_and_Role_Refinement/evaluations.json",
+      "source_round": 1,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "r02_current_R01_v3b_Chain-of-Thought_Reasoning",
+      "prompt_name": "R01 v3b Chain-of-Thought Reasoning",
+      "prompt_version": "v3b",
+      "avg_rating": 3.05,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/r02_current_R01_v3b_Chain-of-Thought_Reasoning/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/r02_current_R01_v3b_Chain-of-Thought_Reasoning/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/r02_current_R01_v3b_Chain-of-Thought_Reasoning/evaluations.json",
+      "source_round": 2,
+      "kind": "current",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R02_v3b_self_critique_Self-Critique_Final_JSON",
+      "prompt_name": "R02 v3b_self_critique Self-Critique Final JSON",
+      "prompt_version": "v3b_self_critique",
+      "avg_rating": 3.05,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_self_critique_Self-Critique_Final_JSON/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_self_critique_Self-Critique_Final_JSON/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_self_critique_Self-Critique_Final_JSON/evaluations.json",
+      "source_round": 2,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R02_v3a_Few-Shot_Canonical_Intents",
+      "prompt_name": "R02 v3a Few-Shot Canonical Intents",
+      "prompt_version": "v3a",
+      "avg_rating": 3.05,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3a_Few-Shot_Canonical_Intents/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3a_Few-Shot_Canonical_Intents/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3a_Few-Shot_Canonical_Intents/evaluations.json",
+      "source_round": 2,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R02_v3b_Self-Critique_Then_Final_Answer",
+      "prompt_name": "R02 v3b Self-Critique Then Final Answer",
+      "prompt_version": "v3b",
+      "avg_rating": 2.85,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_Self-Critique_Then_Final_Answer/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_Self-Critique_Then_Final_Answer/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3b_Self-Critique_Then_Final_Answer/evaluations.json",
+      "source_round": 2,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R02_v3c_Negative_Instructions_and_Output-Only",
+      "prompt_name": "R02 v3c Negative Instructions and Output-Only",
+      "prompt_version": "v3c",
+      "avg_rating": 2.45,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3c_Negative_Instructions_and_Output-Only/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3c_Negative_Instructions_and_Output-Only/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3c_Negative_Instructions_and_Output-Only/evaluations.json",
+      "source_round": 2,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R02_v3d_Ground_Symptoms_in_Quotes",
+      "prompt_name": "R02 v3d Ground Symptoms in Quotes",
+      "prompt_version": "v3d",
+      "avg_rating": 3.05,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3d_Ground_Symptoms_in_Quotes/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3d_Ground_Symptoms_in_Quotes/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3d_Ground_Symptoms_in_Quotes/evaluations.json",
+      "source_round": 2,
+      "kind": "variation",
+      "is_best": false
+    },
+    {
+      "prompt_key": "R02_v3e_Structured_Prompt_Layout",
+      "prompt_name": "R02 v3e Structured Prompt Layout",
+      "prompt_version": "v3e",
+      "avg_rating": 3.05,
+      "prompt_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3e_Structured_Prompt_Layout/prompt.txt",
+      "extractions_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3e_Structured_Prompt_Layout/extractions.json",
+      "evaluations_path": "labs/03_review_and_judge/loop_runs/bitext_forced_self_critique_live_20260310/round_02/R02_v3e_Structured_Prompt_Layout/evaluations.json",
+      "source_round": 2,
+      "kind": "variation",
+      "is_best": false
+    }
+  ]
+}

@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "bitext_0214",
+    "source": "bitext",
+    "text": "I do not know how I can open another damn {{Account Type}} account",
+    "ground_truth_intent": "create_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI do not know how I can open another damn {{Account Type}} account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0210",
+    "source": "bitext",
+    "text": "can i open a {{Account Type}} account for mh dad",
+    "ground_truth_intent": "create_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ncan i open a {{Account Type}} account for mh dad",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0215",
+    "source": "bitext",
+    "text": "create new freemium account for daughter",
+    "ground_truth_intent": "create_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ncreate new freemium account for daughter",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0491",
+    "source": "bitext",
+    "text": "how do i know if there are any updates on my rebate",
+    "ground_truth_intent": "track_refund",
+    "category": "REFUND",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhow do i know if there are any updates on my rebate",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0498",
+    "source": "bitext",
+    "text": "where can i see if there are any news on the reimbursement",
+    "ground_truth_intent": "track_refund",
+    "category": "REFUND",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwhere can i see if there are any news on the reimbursement",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0273",
+    "source": "bitext",
+    "text": "modifying details on platinum account",
+    "ground_truth_intent": "edit_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nmodifying details on platinum account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0274",
+    "source": "bitext",
+    "text": "modify information on gold acfount",
+    "ground_truth_intent": "edit_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nmodify information on gold acfount",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0285",
+    "source": "bitext",
+    "text": "changing details on {{Account Category}} account",
+    "ground_truth_intent": "edit_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nchanging details on {{Account Category}} account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0298",
+    "source": "bitext",
+    "text": "help me to download the invoice #37777",
+    "ground_truth_intent": "get_invoice",
+    "category": "INVOICE",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp me to download the invoice #37777",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0300",
+    "source": "bitext",
+    "text": "can ya help me to  get the bill from {{Person Name}}",
+    "ground_truth_intent": "get_invoice",
+    "category": "INVOICE",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ncan ya help me to  get the bill from {{Person Name}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0295",
+    "source": "bitext",
+    "text": "I do not know how to get my bill #12588",
+    "ground_truth_intent": "get_invoice",
+    "category": "INVOICE",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI do not know how to get my bill #12588",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0244",
+    "source": "bitext",
+    "text": "do you deliver to {{Delivery City}} ?",
+    "ground_truth_intent": "delivery_options",
+    "category": "DELIVERY",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ndo you deliver to {{Delivery City}} ?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0252",
+    "source": "bitext",
+    "text": "need assistance to check the delivery methods",
+    "ground_truth_intent": "delivery_options",
+    "category": "DELIVERY",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nneed assistance to check the delivery methods",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0245",
+    "source": "bitext",
+    "text": "I need assistance to check what shipment options are there",
+    "ground_truth_intent": "delivery_options",
+    "category": "DELIVERY",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI need assistance to check what shipment options are there",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0382",
+    "source": "bitext",
+    "text": "I have a question about lost access keys",
+    "ground_truth_intent": "recover_password",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI have a question about lost access keys",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0393",
+    "source": "bitext",
+    "text": "I would like information about the key retrieval",
+    "ground_truth_intent": "recover_password",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI would like information about the key retrieval",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0384",
+    "source": "bitext",
+    "text": "i want assistance to restore the access key of my account",
+    "ground_truth_intent": "recover_password",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni want assistance to restore the access key of my account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0482",
+    "source": "bitext",
+    "text": "can ushow me order {{Order Number}} status",
+    "ground_truth_intent": "track_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ncan ushow me order {{Order Number}} status",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0487",
+    "source": "bitext",
+    "text": "tracking order {{Order Number}}",
+    "ground_truth_intent": "track_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ntracking order {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0481",
+    "source": "bitext",
+    "text": "can ya show me the eta of order {{Order Number}}",
+    "ground_truth_intent": "track_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ncan ya show me the eta of order {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0008",
+    "source": "bitext",
+    "text": "i want help canceling order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni want help canceling order {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0001",
+    "source": "bitext",
+    "text": "I need assistancde cancelling order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI need assistancde cancelling order {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0002",
+    "source": "bitext",
+    "text": "i do not know how to cancel order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni do not know how to cancel order {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0137",
+    "source": "bitext",
+    "text": "I want help to see in which situations can I ask for refunds",
+    "ground_truth_intent": "check_refund_policy",
+    "category": "REFUND",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI want help to see in which situations can I ask for refunds",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0129",
+    "source": "bitext",
+    "text": "I have got to see your money back policy, help me",
+    "ground_truth_intent": "check_refund_policy",
+    "category": "REFUND",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI have got to see your money back policy, help me",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0134",
+    "source": "bitext",
+    "text": "I have to see your money back guarantee, help me",
+    "ground_truth_intent": "check_refund_policy",
+    "category": "REFUND",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI have to see your money back guarantee, help me",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0227",
+    "source": "bitext",
+    "text": "I have got to delete a standard account",
+    "ground_truth_intent": "delete_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI have got to delete a standard account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0235",
+    "source": "bitext",
+    "text": "delete freemium account",
+    "ground_truth_intent": "delete_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ndelete freemium account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0236",
+    "source": "bitext",
+    "text": "problem with the cancellation of a {{Account Type}} account",
+    "ground_truth_intent": "delete_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nproblem with the cancellation of a {{Account Type}} account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0312",
+    "source": "bitext",
+    "text": "need help to request rebates of my money",
+    "ground_truth_intent": "get_refund",
+    "category": "REFUND",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nneed help to request rebates of my money",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0316",
+    "source": "bitext",
+    "text": "where do I demand a rebate ofb money?",
+    "ground_truth_intent": "get_refund",
+    "category": "REFUND",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwhere do I demand a rebate ofb money?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0307",
+    "source": "bitext",
+    "text": "i need assistance to get rebates",
+    "ground_truth_intent": "get_refund",
+    "category": "REFUND",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni need assistance to get rebates",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0437",
+    "source": "bitext",
+    "text": "there are problems setting up a new delivery address",
+    "ground_truth_intent": "set_up_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nthere are problems setting up a new delivery address",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0450",
+    "source": "bitext",
+    "text": "there are issues setting up the shipping address",
+    "ground_truth_intent": "set_up_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nthere are issues setting up the shipping address",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0443",
+    "source": "bitext",
+    "text": "I don't know what I have to do to set up my shipping address",
+    "ground_truth_intent": "set_up_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI don't know what I have to do to set up my shipping address",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0440",
+    "source": "bitext",
+    "text": "i have to enter the secondary shipping dadress i need help",
+    "ground_truth_intent": "set_up_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni have to enter the secondary shipping dadress i need help",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0090",
+    "source": "bitext",
+    "text": "I want help to check my damn invoice from {{Person Name}}",
+    "ground_truth_intent": "check_invoice",
+    "category": "INVOICE",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI want help to check my damn invoice from {{Person Name}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0103",
+    "source": "bitext",
+    "text": "I have got to give a quick look at bill #37777",
+    "ground_truth_intent": "check_invoice",
+    "category": "INVOICE",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI have got to give a quick look at bill #37777",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0091",
+    "source": "bitext",
+    "text": "I need to see the invoices from {{Person Name}}, can you help me?",
+    "ground_truth_intent": "check_invoice",
+    "category": "INVOICE",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI need to see the invoices from {{Person Name}}, can you help me?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0111",
+    "source": "bitext",
+    "text": "I want help checking your payment options",
+    "ground_truth_intent": "check_payment_methods",
+    "category": "PAYMENT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI want help checking your payment options",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0121",
+    "source": "bitext",
+    "text": "I need assistance seeing the available payment options",
+    "ground_truth_intent": "check_payment_methods",
+    "category": "PAYMENT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI need assistance seeing the available payment options",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0115",
+    "source": "bitext",
+    "text": "how to list ur accepted payment methodd",
+    "ground_truth_intent": "check_payment_methods",
+    "category": "PAYMENT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhow to list ur accepted payment methodd",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0113",
+    "source": "bitext",
+    "text": "I have to list the payment modalities, help me",
+    "ground_truth_intent": "check_payment_methods",
+    "category": "PAYMENT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI have to list the payment modalities, help me",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0429",
+    "source": "bitext",
+    "text": "i wabt assistance to send my feedback for a service",
+    "ground_truth_intent": "review",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni wabt assistance to send my feedback for a service",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0422",
+    "source": "bitext",
+    "text": "i dont knowwhat to do to submit some feedback for a product",
+    "ground_truth_intent": "review",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni dont knowwhat to do to submit some feedback for a product",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0432",
+    "source": "bitext",
+    "text": "i need assistance to send my feedback aboutur company",
+    "ground_truth_intent": "review",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni need assistance to send my feedback aboutur company",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0425",
+    "source": "bitext",
+    "text": "want help to leave some feedback about your company",
+    "ground_truth_intent": "review",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwant help to leave some feedback about your company",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0209",
+    "source": "bitext",
+    "text": "I don't understand you, I want help contacting a human agent",
+    "ground_truth_intent": "contact_human_agent",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI don't understand you, I want help contacting a human agent",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0201",
+    "source": "bitext",
+    "text": "chatting with humnan agent",
+    "ground_truth_intent": "contact_human_agent",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nchatting with humnan agent",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0205",
+    "source": "bitext",
+    "text": "how can I chat with a live agent?",
+    "ground_truth_intent": "contact_human_agent",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhow can I chat with a live agent?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0194",
+    "source": "bitext",
+    "text": "I can't understand you, I need to speak with a live agent",
+    "ground_truth_intent": "contact_human_agent",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI can't understand you, I need to speak with a live agent",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0265",
+    "source": "bitext",
+    "text": "I want to know more about shipping periods",
+    "ground_truth_intent": "delivery_period",
+    "category": "DELIVERY",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI want to know more about shipping periods",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0254",
+    "source": "bitext",
+    "text": "I try to see when my delivery is going to arrive",
+    "ground_truth_intent": "delivery_period",
+    "category": "DELIVERY",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI try to see when my delivery is going to arrive",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0268",
+    "source": "bitext",
+    "text": "will you show me how soon can I expect my shipment?",
+    "ground_truth_intent": "delivery_period",
+    "category": "DELIVERY",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwill you show me how soon can I expect my shipment?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0263",
+    "source": "bitext",
+    "text": "I call to see when my parcel is going to arrive",
+    "ground_truth_intent": "delivery_period",
+    "category": "DELIVERY",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI call to see when my parcel is going to arrive",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0358",
+    "source": "bitext",
+    "text": "report problems with online payments",
+    "ground_truth_intent": "payment_issue",
+    "category": "PAYMENT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nreport problems with online payments",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0353",
+    "source": "bitext",
+    "text": "help to notify of payment issues",
+    "ground_truth_intent": "payment_issue",
+    "category": "PAYMENT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp to notify of payment issues",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0346",
+    "source": "bitext",
+    "text": "wantr help to solve issues with payment",
+    "ground_truth_intent": "payment_issue",
+    "category": "PAYMENT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwantr help to solve issues with payment",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0356",
+    "source": "bitext",
+    "text": "I can't pay, can you help me notifying of payment errors?",
+    "ground_truth_intent": "payment_issue",
+    "category": "PAYMENT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI can't pay, can you help me notifying of payment errors?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0409",
+    "source": "bitext",
+    "text": "I am trying to inform of errors with registrations",
+    "ground_truth_intent": "registration_problems",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI am trying to inform of errors with registrations",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0413",
+    "source": "bitext",
+    "text": "I do not know how to report signup issues",
+    "ground_truth_intent": "registration_problems",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI do not know how to report signup issues",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0398",
+    "source": "bitext",
+    "text": "want assistance notifying of issues with a registration",
+    "ground_truth_intent": "registration_problems",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwant assistance notifying of issues with a registration",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0397",
+    "source": "bitext",
+    "text": "I need support weith my sign-up",
+    "ground_truth_intent": "registration_problems",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI need support weith my sign-up",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0378",
+    "source": "bitext",
+    "text": "help me to purchase some of your article",
+    "ground_truth_intent": "place_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp me to purchase some of your article",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0362",
+    "source": "bitext",
+    "text": "wanna shop a few of ur article",
+    "ground_truth_intent": "place_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwanna shop a few of ur article",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0366",
+    "source": "bitext",
+    "text": "I do not know what I have to do to buy an article",
+    "ground_truth_intent": "place_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI do not know what I have to do to buy an article",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0377",
+    "source": "bitext",
+    "text": "I need assistance ordering some of your article",
+    "ground_truth_intent": "place_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI need assistance ordering some of your article",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0472",
+    "source": "bitext",
+    "text": "help me to change to the goddamn {{Account Category}} account",
+    "ground_truth_intent": "switch_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp me to change to the goddamn {{Account Category}} account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0467",
+    "source": "bitext",
+    "text": "want assistance t switch to the {{Account Category}} account",
+    "ground_truth_intent": "switch_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwant assistance t switch to the {{Account Category}} account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0470",
+    "source": "bitext",
+    "text": "can I change to the {{Account Type}} account?",
+    "ground_truth_intent": "switch_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ncan I change to the {{Account Type}} account?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0452",
+    "source": "bitext",
+    "text": "I want help to use the {{Account Category}} account",
+    "ground_truth_intent": "switch_account",
+    "category": "ACCOUNT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI want help to use the {{Account Category}} account",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0034",
+    "source": "bitext",
+    "text": "remove item from order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nremove item from order {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0018",
+    "source": "bitext",
+    "text": "help adding some items to purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp adding some items to purchase {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0036",
+    "source": "bitext",
+    "text": "updateorder {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nupdateorder {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0020",
+    "source": "bitext",
+    "text": "how to add an article to order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhow to add an article to order {{Order Number}}",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0327",
+    "source": "bitext",
+    "text": "help me canceling the newsletter subscription",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp me canceling the newsletter subscription",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0330",
+    "source": "bitext",
+    "text": "could I receive your fucking corporate newsletter?",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ncould I receive your fucking corporate newsletter?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0320",
+    "source": "bitext",
+    "text": "help to see the status of my subscription to your newsletter",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp to see the status of my subscription to your newsletter",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0338",
+    "source": "bitext",
+    "text": "assistance to unsubscribe from your company newsletter",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nassistance to unsubscribe from your company newsletter",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0326",
+    "source": "bitext",
+    "text": "information about receiving ur company newsletter",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ninformation about receiving ur company newsletter",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0044",
+    "source": "bitext",
+    "text": "I want assistance to modify the shipping address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI want assistance to modify the shipping address",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0048",
+    "source": "bitext",
+    "text": "i want  information about changing the address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni want  information about changing the address",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0049",
+    "source": "bitext",
+    "text": "i do not know what to do to edit the delivery address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni do not know what to do to edit the delivery address",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0043",
+    "source": "bitext",
+    "text": "i want help trying to edit my delivery address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni want help trying to edit my delivery address",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0059",
+    "source": "bitext",
+    "text": "where to edit my delivery address?",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwhere to edit my delivery address?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0064",
+    "source": "bitext",
+    "text": "wannasee the cancellation penalties can uhelp me",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nwannasee the cancellation penalties can uhelp me",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0085",
+    "source": "bitext",
+    "text": "I can't find the early termination fee",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI can't find the early termination fee",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0083",
+    "source": "bitext",
+    "text": "I do not know what I need to do to see the early exit charge",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI do not know what I need to do to see the early exit charge",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0079",
+    "source": "bitext",
+    "text": "I do not know how to check the withdrawal charges",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI do not know how to check the withdrawal charges",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0067",
+    "source": "bitext",
+    "text": "see the early exit penalties",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nsee the early exit penalties",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0150",
+    "source": "bitext",
+    "text": "I want to lodge a consumer reclamation against your business",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI want to lodge a consumer reclamation against your business",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0163",
+    "source": "bitext",
+    "text": "help me making a complaint against  your company",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp me making a complaint against  your company",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0146",
+    "source": "bitext",
+    "text": "help lodging a consumer claim",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nhelp lodging a consumer claim",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0141",
+    "source": "bitext",
+    "text": "my experience with you was awful, file a reclamation",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nmy experience with you was awful, file a reclamation",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0152",
+    "source": "bitext",
+    "text": "I have got to file a reclamation",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI have got to file a reclamation",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0187",
+    "source": "bitext",
+    "text": "I want to contact customer support, can I get some help?",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI want to contact customer support, can I get some help?",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0169",
+    "source": "bitext",
+    "text": "need help to check what horus I can contact customer service",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nneed help to check what horus I can contact customer service",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0177",
+    "source": "bitext",
+    "text": "tell me at what time i can reach customer support",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ntell me at what time i can reach customer support",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0178",
+    "source": "bitext",
+    "text": "i have to check at what time custmer support available is",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\ni have to check at what time custmer support available is",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  },
+  {
+    "id": "bitext_0179",
+    "source": "bitext",
+    "text": "I try to check what hours I can call customer support",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT",
+    "prompt_version": "R01_v2a_Few-Shot_Examples_With_Explicit_Schema",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\nI try to check what hours I can call customer support",
+    "llm_response": "{\n  \"error\": \"Batch extraction error: Expecting property name enclosed in double quotes: line 615 column 59 (char 15935)\"\n}"
+  }
+]

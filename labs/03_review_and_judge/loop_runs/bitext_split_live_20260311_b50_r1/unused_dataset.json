@@ -1,0 +1,702 @@
+[
+  {
+    "id": "bitext_0213",
+    "source": "bitext",
+    "text": "I need help to open a standard account",
+    "ground_truth_intent": "create_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0211",
+    "source": "bitext",
+    "text": "help me create a new fucking {{Account Category}} account",
+    "ground_truth_intent": "create_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0497",
+    "source": "bitext",
+    "text": "I am waiting for a compensation of {{Refund Amount}} dollars",
+    "ground_truth_intent": "track_refund",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0490",
+    "source": "bitext",
+    "text": "help me checking if there are any news on my refund",
+    "ground_truth_intent": "track_refund",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0275",
+    "source": "bitext",
+    "text": "correct info on standard account",
+    "ground_truth_intent": "edit_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0280",
+    "source": "bitext",
+    "text": "updating informtaion on standard account",
+    "ground_truth_intent": "edit_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0281",
+    "source": "bitext",
+    "text": "edit info on {{Account Category}} accunt",
+    "ground_truth_intent": "edit_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0290",
+    "source": "bitext",
+    "text": "how to get bill #12588",
+    "ground_truth_intent": "get_invoice",
+    "category": "INVOICE"
+  },
+  {
+    "id": "bitext_0299",
+    "source": "bitext",
+    "text": "what do i need to do to download my bill #12588",
+    "ground_truth_intent": "get_invoice",
+    "category": "INVOICE"
+  },
+  {
+    "id": "bitext_0288",
+    "source": "bitext",
+    "text": "how to get bill #37777",
+    "ground_truth_intent": "get_invoice",
+    "category": "INVOICE"
+  },
+  {
+    "id": "bitext_0240",
+    "source": "bitext",
+    "text": "find information about the methods for shipment",
+    "ground_truth_intent": "delivery_options",
+    "category": "DELIVERY"
+  },
+  {
+    "id": "bitext_0246",
+    "source": "bitext",
+    "text": "I have got to see what delivery options are there",
+    "ground_truth_intent": "delivery_options",
+    "category": "DELIVERY"
+  },
+  {
+    "id": "bitext_0241",
+    "source": "bitext",
+    "text": "do you ship to {{Delivery Country}}?",
+    "ground_truth_intent": "delivery_options",
+    "category": "DELIVERY"
+  },
+  {
+    "id": "bitext_0390",
+    "source": "bitext",
+    "text": "i habe a problem with my pin retrieval",
+    "ground_truth_intent": "recover_password",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0395",
+    "source": "bitext",
+    "text": "I forgot my account password, how t reset it?",
+    "ground_truth_intent": "recover_password",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0392",
+    "source": "bitext",
+    "text": "how can I reset my user profile password?",
+    "ground_truth_intent": "recover_password",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0477",
+    "source": "bitext",
+    "text": "how could I see order {{Order Number}} status?",
+    "ground_truth_intent": "track_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0478",
+    "source": "bitext",
+    "text": "order {{Order Number}} current status",
+    "ground_truth_intent": "track_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0479",
+    "source": "bitext",
+    "text": "can uhelp me locating order {{Order Number}}",
+    "ground_truth_intent": "track_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0011",
+    "source": "bitext",
+    "text": "help me cancelling purchase {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0000",
+    "source": "bitext",
+    "text": "need help with canceling order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0003",
+    "source": "bitext",
+    "text": "help with cancelling purchase {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0123",
+    "source": "bitext",
+    "text": "I have to see how long reimbursements take, I need help",
+    "ground_truth_intent": "check_refund_policy",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0135",
+    "source": "bitext",
+    "text": "check in which situations can I ask for refunds",
+    "ground_truth_intent": "check_refund_policy",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0125",
+    "source": "bitext",
+    "text": "help checking in which cases can I request a fucking refund",
+    "ground_truth_intent": "check_refund_policy",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0233",
+    "source": "bitext",
+    "text": "I don't know what I have to do to delete my platinum account",
+    "ground_truth_intent": "delete_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0223",
+    "source": "bitext",
+    "text": "where can i get information about a {{Account Type}} account removal",
+    "ground_truth_intent": "delete_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0222",
+    "source": "bitext",
+    "text": "question about my {{Account Type}} account removal",
+    "ground_truth_intent": "delete_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0317",
+    "source": "bitext",
+    "text": "I paid {{Currency Symbol}}{{Refund Amount}} for an item, I need a compensation",
+    "ground_truth_intent": "get_refund",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0315",
+    "source": "bitext",
+    "text": "assistance to receive a compensation",
+    "ground_truth_intent": "get_refund",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0309",
+    "source": "bitext",
+    "text": "can you help me demanding a compensation of money?",
+    "ground_truth_intent": "get_refund",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0313",
+    "source": "bitext",
+    "text": "i need help to receive fucking compensations",
+    "ground_truth_intent": "get_refund",
+    "category": "REFUND"
+  },
+  {
+    "id": "bitext_0445",
+    "source": "bitext",
+    "text": "where can I submit a shipping address?",
+    "ground_truth_intent": "set_up_shipping_address",
+    "category": "SHIPPING"
+  },
+  {
+    "id": "bitext_0441",
+    "source": "bitext",
+    "text": "I want to set my secondary delivery address up",
+    "ground_truth_intent": "set_up_shipping_address",
+    "category": "SHIPPING"
+  },
+  {
+    "id": "bitext_0446",
+    "source": "bitext",
+    "text": "I have got to enter a new shipping address, how do I do it ?",
+    "ground_truth_intent": "set_up_shipping_address",
+    "category": "SHIPPING"
+  },
+  {
+    "id": "bitext_0100",
+    "source": "bitext",
+    "text": "want help chceking invoice #85632",
+    "ground_truth_intent": "check_invoice",
+    "category": "INVOICE"
+  },
+  {
+    "id": "bitext_0094",
+    "source": "bitext",
+    "text": "i cannot find invoiced #00108",
+    "ground_truth_intent": "check_invoice",
+    "category": "INVOICE"
+  },
+  {
+    "id": "bitext_0088",
+    "source": "bitext",
+    "text": "i dont know how to give a quick look at bill #12588",
+    "ground_truth_intent": "check_invoice",
+    "category": "INVOICE"
+  },
+  {
+    "id": "bitext_0097",
+    "source": "bitext",
+    "text": "give a quick look at the invoice #12588",
+    "ground_truth_intent": "check_invoice",
+    "category": "INVOICE"
+  },
+  {
+    "id": "bitext_0109",
+    "source": "bitext",
+    "text": "I want to check your payment methods, I need assistance",
+    "ground_truth_intent": "check_payment_methods",
+    "category": "PAYMENT"
+  },
+  {
+    "id": "bitext_0119",
+    "source": "bitext",
+    "text": "I have to see your allowed payment methods",
+    "ground_truth_intent": "check_payment_methods",
+    "category": "PAYMENT"
+  },
+  {
+    "id": "bitext_0117",
+    "source": "bitext",
+    "text": "where can I see what payment methods are accepted?",
+    "ground_truth_intent": "check_payment_methods",
+    "category": "PAYMENT"
+  },
+  {
+    "id": "bitext_0418",
+    "source": "bitext",
+    "text": "is there a section to submit an opinion for ur products",
+    "ground_truth_intent": "review",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0417",
+    "source": "bitext",
+    "text": "I don't know how I can leave feedback for your company",
+    "ground_truth_intent": "review",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0430",
+    "source": "bitext",
+    "text": "uhave an adress to submit feedback about ur products",
+    "ground_truth_intent": "review",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0434",
+    "source": "bitext",
+    "text": "want help submitting my feedback about your services",
+    "ground_truth_intent": "review",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0199",
+    "source": "bitext",
+    "text": "I do not kinow how to contact a person",
+    "ground_truth_intent": "contact_human_agent",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0196",
+    "source": "bitext",
+    "text": "I don't know what I have to do to talk to an assistant",
+    "ground_truth_intent": "contact_human_agent",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0206",
+    "source": "bitext",
+    "text": "I cannot chat with somebody",
+    "ground_truth_intent": "contact_human_agent",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0195",
+    "source": "bitext",
+    "text": "contacting live agent",
+    "ground_truth_intent": "contact_human_agent",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0270",
+    "source": "bitext",
+    "text": "I call to check how soon can I expect my item",
+    "ground_truth_intent": "delivery_period",
+    "category": "DELIVERY"
+  },
+  {
+    "id": "bitext_0272",
+    "source": "bitext",
+    "text": "i need assistance to see how soon can i expect the article",
+    "ground_truth_intent": "delivery_period",
+    "category": "DELIVERY"
+  },
+  {
+    "id": "bitext_0264",
+    "source": "bitext",
+    "text": "is it possible to check how long the shipping takes?",
+    "ground_truth_intent": "delivery_period",
+    "category": "DELIVERY"
+  },
+  {
+    "id": "bitext_0266",
+    "source": "bitext",
+    "text": "could you show me how soon can I expect my delivery?",
+    "ground_truth_intent": "delivery_period",
+    "category": "DELIVERY"
+  },
+  {
+    "id": "bitext_0357",
+    "source": "bitext",
+    "text": "I want to notify of an error with payments",
+    "ground_truth_intent": "payment_issue",
+    "category": "PAYMENT"
+  },
+  {
+    "id": "bitext_0354",
+    "source": "bitext",
+    "text": "help notifying of a fucking error with online payments",
+    "ground_truth_intent": "payment_issue",
+    "category": "PAYMENT"
+  },
+  {
+    "id": "bitext_0343",
+    "source": "bitext",
+    "text": "is it possible to report troubles with payments?",
+    "ground_truth_intent": "payment_issue",
+    "category": "PAYMENT"
+  },
+  {
+    "id": "bitext_0360",
+    "source": "bitext",
+    "text": "assistance informing of errors with payment",
+    "ground_truth_intent": "payment_issue",
+    "category": "PAYMENT"
+  },
+  {
+    "id": "bitext_0415",
+    "source": "bitext",
+    "text": "i need assistance to inform of signup issues",
+    "ground_truth_intent": "registration_problems",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0407",
+    "source": "bitext",
+    "text": "what do I need to do to notify of an issue with a signup?",
+    "ground_truth_intent": "registration_problems",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0403",
+    "source": "bitext",
+    "text": "i do not know how i can report an issue with sign-up",
+    "ground_truth_intent": "registration_problems",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0416",
+    "source": "bitext",
+    "text": "need help to notify of problems with signup",
+    "ground_truth_intent": "registration_problems",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0364",
+    "source": "bitext",
+    "text": "can you help me purchasing some articles?",
+    "ground_truth_intent": "place_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0379",
+    "source": "bitext",
+    "text": "I need help buying several of your article",
+    "ground_truth_intent": "place_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0375",
+    "source": "bitext",
+    "text": "need assistance to earn an article",
+    "ground_truth_intent": "place_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0361",
+    "source": "bitext",
+    "text": "I need assistance to shop a product",
+    "ground_truth_intent": "place_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0460",
+    "source": "bitext",
+    "text": "is it possible to switch to the {{Account Category}} account",
+    "ground_truth_intent": "switch_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0459",
+    "source": "bitext",
+    "text": "i dont know what to do to change to the {{Account Type}} account",
+    "ground_truth_intent": "switch_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0465",
+    "source": "bitext",
+    "text": "I need to use the platinum profile, can you help me?",
+    "ground_truth_intent": "switch_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0462",
+    "source": "bitext",
+    "text": "i have to use the {{Account Type}} account will ya help me",
+    "ground_truth_intent": "switch_account",
+    "category": "ACCOUNT"
+  },
+  {
+    "id": "bitext_0033",
+    "source": "bitext",
+    "text": "I need help to swap a product of order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0016",
+    "source": "bitext",
+    "text": "help me changing a fucking product of purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0035",
+    "source": "bitext",
+    "text": "how do I change some products of order {{Order Number}}?",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0032",
+    "source": "bitext",
+    "text": "help me to delete an artile from purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0023",
+    "source": "bitext",
+    "text": "cqn i swap several items of purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER"
+  },
+  {
+    "id": "bitext_0336",
+    "source": "bitext",
+    "text": "I cannot receive the corporate newsletter",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION"
+  },
+  {
+    "id": "bitext_0339",
+    "source": "bitext",
+    "text": "I want to know more about the subscription to the newsletter",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION"
+  },
+  {
+    "id": "bitext_0319",
+    "source": "bitext",
+    "text": "how to unsubsribe to the corporate newsletter",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION"
+  },
+  {
+    "id": "bitext_0328",
+    "source": "bitext",
+    "text": "I can't receive the company newsletter",
+    "ground_truth_intent": "newsletter_subscription",
+    "category": "SUBSCRIPTION"
+  },
+  {
+    "id": "bitext_0047",
+    "source": "bitext",
+    "text": "i have a question about a goddamn shipping address change",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING"
+  },
+  {
+    "id": "bitext_0058",
+    "source": "bitext",
+    "text": "have a problem with a shpiping address modification",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING"
+  },
+  {
+    "id": "bitext_0061",
+    "source": "bitext",
+    "text": "tell me more about a delivery address change",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING"
+  },
+  {
+    "id": "bitext_0050",
+    "source": "bitext",
+    "text": "find information abou changing the address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING"
+  },
+  {
+    "id": "bitext_0042",
+    "source": "bitext",
+    "text": "how can I update my bloody address?",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING"
+  },
+  {
+    "id": "bitext_0074",
+    "source": "bitext",
+    "text": "how can I check the withdrawal penalty?",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL"
+  },
+  {
+    "id": "bitext_0077",
+    "source": "bitext",
+    "text": "want help seeing the withdrawal charge",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL"
+  },
+  {
+    "id": "bitext_0071",
+    "source": "bitext",
+    "text": "assistance to check the cancellation fees",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL"
+  },
+  {
+    "id": "bitext_0075",
+    "source": "bitext",
+    "text": "withrdawal penalty",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL"
+  },
+  {
+    "id": "bitext_0066",
+    "source": "bitext",
+    "text": "I try to see the termination fee",
+    "ground_truth_intent": "check_cancellation_fee",
+    "category": "CANCEL"
+  },
+  {
+    "id": "bitext_0162",
+    "source": "bitext",
+    "text": "could you help me to file a damn consumer complaint?",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0142",
+    "source": "bitext",
+    "text": "can uhelp me lodge a claim against ur business",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0160",
+    "source": "bitext",
+    "text": "could you help me lodge a claim against your business?",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0139",
+    "source": "bitext",
+    "text": "could i file a revlamation against ur organization",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0156",
+    "source": "bitext",
+    "text": "I do not know what I have to do to make a reclamation",
+    "ground_truth_intent": "complaint",
+    "category": "FEEDBACK"
+  },
+  {
+    "id": "bitext_0184",
+    "source": "bitext",
+    "text": "I do not know how I can speak to customer service",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0165",
+    "source": "bitext",
+    "text": "I want to see at what time I can call customer assistance",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0181",
+    "source": "bitext",
+    "text": "assistance to speak with bloody customer support",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0182",
+    "source": "bitext",
+    "text": "I want assistance calling customer support",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0170",
+    "source": "bitext",
+    "text": "I have to see what hours I can call customer service",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT"
+  },
+  {
+    "id": "bitext_0189",
+    "source": "bitext",
+    "text": "wannaspeak with customer service can ya help me",
+    "ground_truth_intent": "contact_customer_service",
+    "category": "CONTACT"
+  }
+]
