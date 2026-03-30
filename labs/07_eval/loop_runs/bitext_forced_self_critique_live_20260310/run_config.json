@@ -1,0 +1,22 @@
+{
+  "dataset_path": "labs/05_eval_fundamentals/datasets/bitext_customer_support/sample.json",
+  "prompt_template_path": "labs/05_eval_fundamentals/prompt_v1.txt",
+  "best_practices_path": "labs/05_eval_fundamentals/best_practices.yaml",
+  "output_dir": "labs/05_eval_fundamentals/loop_runs/bitext_forced_self_critique_live_20260310",
+  "eval_mode": "ground_truth_intent",
+  "initial_version": "v1",
+  "extract_model": "gpt-4.1-mini",
+  "eval_model": "gpt-4.1-mini",
+  "improve_model": "gpt-4.1-mini",
+  "max_items": 60,
+  "max_rounds": 2,
+  "min_improvement": 0.05,
+  "extract_batch_size": 30,
+  "judge_batch_size": 30,
+  "variations_per_round": 5,
+  "include_forced_self_critique": true,
+  "max_rationales": 100,
+  "sampling_seed": 42,
+  "llm_call_budget": 30,
+  "estimated_llm_calls": 28
+}

@@ -1,0 +1,63 @@
+{
+  "source_prompt_version": "v1",
+  "avg_rating": 2.8,
+  "n_items": 60,
+  "n_rationales_sampled": 60,
+  "analysis": "The main failure pattern is frequent mismatches between the extracted intent and the ground-truth intent, especially for nuanced or similar intents like 'change_order' versus 'edit order' or 'update address' versus 'change_shipping_address'. This suggests the model struggles with consistent, canonical intent phrasing and disambiguation. Symptoms are not evaluated in the dataset, so no direct feedback on that. The prompt currently lacks examples, negative instructions, or grounding symptoms in quotes, which could help reduce hallucination and improve precision. Also, the prompt does not encourage reasoning or self-critique, which might help resolve ambiguous or subtle intent distinctions. Overall, the prompt needs stronger guidance on canonical intent phrasing, disambiguation, and output consistency.",
+  "variations": [
+    {
+      "variation_id": "v3a",
+      "approach_name": "Few-Shot Canonical Intents",
+      "changes": [
+        "Add 3 few-shot examples illustrating correct intent phrasing as short, lowercase verb phrases matching canonical forms.",
+        "Show symptoms as atomic facts grounded in quotes from the request.",
+        "Reinforce explicit output schema with exact JSON keys and types."
+      ],
+      "rationale": "Few-shot examples anchor the model to the desired canonical intent phrases and output format, reducing variability and mismatches. Grounding symptoms in quotes reduces hallucination and clarifies symptom extraction. Explicit schema reduces format errors. This addresses the main failure of inconsistent intent extraction and hallucinated symptoms.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase exactly matching canonical intent forms.\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement, grounded in a direct quote from the request, with no interpretation or solution.\n\nRespond in JSON with exactly two keys: \"intent\" (string) and \"symptoms\" (list of strings). If the request is ambiguous, pick the most likely intent and note ambiguity in a third key \"ambiguity\" (string).\n\nExamples:\n\nRequest: \"I want to cancel my order immediately.\"\n{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\"'cancel my order immediately'\"]\n}\n\nRequest: \"Please change the shipping address to 123 Main St.\"\n{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\"'change the shipping address to 123 Main St'\"]\n}\n\nRequest: \"My package arrived damaged and late.\"\n{\n  \"intent\": \"report issue\",\n  \"symptoms\": [\"'package arrived damaged'\", \"'package arrived late'\"]\n}\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v3b",
+      "approach_name": "Chain-of-Thought Reasoning",
+      "changes": [
+        "Add an instruction to first reason briefly about the request to identify the most likely intent and symptoms before producing the JSON output.",
+        "Keep explicit output schema and ambiguity handling."
+      ],
+      "rationale": "Asking the model to think step-by-step before answering can improve accuracy in disambiguating similar intents and extracting relevant symptoms. This approach helps the model clarify its reasoning and reduces errors from hasty or shallow extraction, addressing the main failure of intent mismatches.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, first reason briefly about the customer's primary goal and observable problems, then extract the following fields:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase.\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond in JSON with exactly two keys: \"intent\" (string) and \"symptoms\" (list of strings). If the request is ambiguous, pick the most likely intent and note ambiguity in a third key \"ambiguity\" (string).\n\nCustomer support request:\n{{request}}\n\nReasoning:\n"
+    },
+    {
+      "variation_id": "v3c",
+      "approach_name": "Negative Instructions and Output Only",
+      "changes": [
+        "Add explicit negative instructions to not infer causes, not suggest solutions, and not add extra fields.",
+        "Instruct the model to respond with only the JSON output, no preamble or explanation.",
+        "Keep explicit output schema and ambiguity handling."
+      ],
+      "rationale": "Negative instructions reduce common errors such as hallucinating causes or solutions and adding irrelevant fields, which can confuse intent extraction. Output-only instructions simplify parsing and reduce token cost. This can improve precision and consistency of the extracted intent and symptoms.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase.\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nDo NOT infer causes, suggest solutions, or add any fields other than \"intent\", \"symptoms\", and optionally \"ambiguity\".\n\nRespond with ONLY the JSON object, no explanations or preamble.\n\nIf the request is ambiguous, pick the most likely intent and note ambiguity in a third key \"ambiguity\" (string).\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v3d",
+      "approach_name": "Self-Critique Then Final Answer",
+      "changes": [
+        "Add instructions for the model to first draft an answer, then briefly critique it for missing facts, schema errors, or hallucinations, and finally produce a revised JSON output.",
+        "Keep explicit output schema and ambiguity handling."
+      ],
+      "rationale": "Self-critique encourages the model to check and improve its own output, which can reduce errors in intent selection and symptom extraction. This is especially useful for ambiguous or complex requests where initial extraction may be incomplete or inconsistent.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase.\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nIf the request is ambiguous, pick the most likely intent and note ambiguity in a third key \"ambiguity\" (string).\n\nFirst, draft a JSON answer. Then, briefly critique it for missing facts, schema errors, or hallucinations. Finally, produce a revised JSON answer.\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v3e",
+      "approach_name": "Explicit Schema and Role Refinement",
+      "changes": [
+        "Enhance the role assignment with more detailed behavior expectations.",
+        "Make the output schema more explicit with key types and constraints.",
+        "Add instructions to keep each symptom atomic and grounded in the text.",
+        "Include ambiguity handling instructions."
+      ],
+      "rationale": "Refining the role and making the schema more explicit can help the model better understand the task and reduce hallucinations or inconsistent intent phrasing. Emphasizing atomic symptoms and grounding them helps improve symptom quality, even if not evaluated here. This approach strengthens the foundation without adding complexity like examples or reasoning.",
+      "prompt_template": "You are a support-ticket triage assistant specialized in extracting structured information from customer requests. Your goal is to identify the customer's primary intent and the concrete symptoms they report.\n\nExtract the following fields with these constraints:\n- intent: string, a short, lowercase verb phrase representing the customer's primary goal or desired outcome. Use canonical phrasing.\n- symptoms: list of strings, each an atomic, concrete, observable problem described by the customer. Each symptom must be a brief factual statement grounded in the request text, with no interpretation or solution.\n\nRespond with a JSON object containing exactly these keys: \"intent\" (string) and \"symptoms\" (list of strings). If the request is ambiguous, pick the most likely intent and include a third key \"ambiguity\" (string) explaining the uncertainty.\n\nCustomer support request:\n{{request}}"
+    }
+  ]
+}

@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "bitext_0219",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'open account' does not match the ground-truth intent 'create_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "open account",
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0216",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'open account' does not match the ground-truth intent 'create_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "open account",
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0212",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'open account' does not match the ground-truth intent 'create_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "open account",
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0218",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'open account' does not match the ground-truth intent 'create_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "open account",
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0217",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'open account' does not match the ground-truth intent 'create_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "open account",
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0493",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check rebate status' does not match the ground-truth intent 'track_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check rebate status",
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0496",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check rebate status' does not match the ground-truth intent 'track_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check rebate status",
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0495",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check refund status' does not match the ground-truth intent 'track_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check refund status",
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0494",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check rebate status' does not match the ground-truth intent 'track_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check rebate status",
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0499",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check refund status' does not match the ground-truth intent 'track_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check refund status",
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0283",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'modify account' does not match the ground-truth intent 'edit_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "modify account",
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0282",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'modify account' does not match the ground-truth intent 'edit_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "modify account",
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0286",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'modify account' does not match the ground-truth intent 'edit_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "modify account",
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0278",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'modify account' does not match the ground-truth intent 'edit_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "modify account",
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0276",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'modify account' does not match the ground-truth intent 'edit_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "modify account",
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0297",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get bill' does not match the ground-truth intent 'get_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get bill",
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0291",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'download invoice' does not match the ground-truth intent 'get_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "download invoice",
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0292",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'download bill' does not match the ground-truth intent 'get_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "download bill",
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0296",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get invoices' does not match the ground-truth intent 'get_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get invoices",
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0287",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'get invoice' matches the ground-truth intent 'get_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get invoice",
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0242",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check shipment options' does not match the ground-truth intent 'delivery_options'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check shipment options",
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0250",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check shipping' does not match the ground-truth intent 'delivery_options'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check shipping",
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0238",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check delivery methods' does not match the ground-truth intent 'delivery_options'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check delivery methods",
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0239",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check shipping methods' does not match the ground-truth intent 'delivery_options'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check shipping methods",
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0243",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check delivery methods' does not match the ground-truth intent 'delivery_options'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check delivery methods",
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0251",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'find delivery methods' does not match the ground-truth intent 'delivery_options'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "find delivery methods",
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0387",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'restore password' does not match the ground-truth intent 'recover_password'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "restore password",
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0394",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'reset pin' does not match the ground-truth intent 'recover_password'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "reset pin",
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0385",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'recover password' matches the ground-truth intent 'recover_password'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "recover password",
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0391",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'retrieve pin' does not match the ground-truth intent 'recover_password'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "retrieve pin",
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0389",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'restore password' does not match the ground-truth intent 'recover_password'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "restore password",
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0388",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'recover password' matches the ground-truth intent 'recover_password'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "recover password",
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0480",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'track order' matches the ground-truth intent 'track_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "track order",
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0484",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check order eta' does not match the ground-truth intent 'track_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check order eta",
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0476",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check order eta' does not match the ground-truth intent 'track_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check order eta",
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0473",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check order status' does not match the ground-truth intent 'track_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check order status",
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0475",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check order eta' does not match the ground-truth intent 'track_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check order eta",
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0483",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check order eta' does not match the ground-truth intent 'track_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check order eta",
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0007",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'cancel order' matches the ground-truth intent 'cancel_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel order",
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0009",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel purchase' does not match the ground-truth intent 'cancel_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel purchase",
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0005",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'cancel order' matches the ground-truth intent 'cancel_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel order",
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0006",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel purchase' does not match the ground-truth intent 'cancel_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel purchase",
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0014",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel purchase' does not match the ground-truth intent 'cancel_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel purchase",
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0010",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel purchase' does not match the ground-truth intent 'cancel_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel purchase",
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0012",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel purchase' does not match the ground-truth intent 'cancel_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel purchase",
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0136",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check reimbursement cases' does not match the ground-truth intent 'check_refund_policy'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check reimbursement cases",
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0130",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check refund situations' does not match the ground-truth intent 'check_refund_policy'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check refund situations",
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0132",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check refund situations' does not match the ground-truth intent 'check_refund_policy'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check refund situations",
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0128",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check refund cases' does not match the ground-truth intent 'check_refund_policy'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check refund cases",
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0127",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check refund situations' does not match the ground-truth intent 'check_refund_policy'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check refund situations",
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0131",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check refund eligibility' does not match the ground-truth intent 'check_refund_policy'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check refund eligibility",
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0126",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check refund eligibility' does not match the ground-truth intent 'check_refund_policy'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check refund eligibility",
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0228",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel pro account' does not match the ground-truth intent 'delete_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel pro account",
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0229",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get cancellation information' does not match the ground-truth intent 'delete_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get cancellation information",
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0234",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'close account' does not match the ground-truth intent 'delete_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "close account",
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0224",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel gold account' does not match the ground-truth intent 'delete_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel gold account",
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0231",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'remove account' does not match the ground-truth intent 'delete_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "remove account",
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0226",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'delete account' matches the ground-truth intent 'delete_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "delete account",
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0230",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'remove account' does not match the ground-truth intent 'delete_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "remove account",
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0304",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get rebates' does not match the ground-truth intent 'get_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get rebates",
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0311",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'ask for rebates' does not match the ground-truth intent 'get_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "ask for rebates",
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0301",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check rebate timing' does not match the ground-truth intent 'get_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check rebate timing",
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0306",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'obtain compensations' does not match the ground-truth intent 'get_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "obtain compensations",
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0303",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'demand reimbursement' does not match the ground-truth intent 'get_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "demand reimbursement",
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0310",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'receive refunds' does not match the ground-truth intent 'get_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "receive refunds",
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0302",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'get refund' matches the ground-truth intent 'get_refund'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get refund",
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0439",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'set delivery address' does not match the ground-truth intent 'set_up_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "set delivery address",
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0442",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'enter secondary shipping address' does not match the ground-truth intent 'set_up_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "enter secondary shipping address",
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0435",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'fix shipping address error' does not match the ground-truth intent 'set_up_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "fix shipping address error",
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0448",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'set shipping address' does not match the ground-truth intent 'set_up_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "set shipping address",
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0447",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'set shipping address' does not match the ground-truth intent 'set_up_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "set shipping address",
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0444",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'set shipping address' does not match the ground-truth intent 'set_up_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "set shipping address",
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0451",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'enter delivery address' does not match the ground-truth intent 'set_up_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "enter delivery address",
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0101",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check bill' does not match the ground-truth intent 'check_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check bill",
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0102",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'check invoice' matches the ground-truth intent 'check_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check invoice",
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0104",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'show bill' does not match the ground-truth intent 'check_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "show bill",
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0095",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check bill' does not match the ground-truth intent 'check_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check bill",
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0089",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'look for invoice' does not match the ground-truth intent 'check_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "look for invoice",
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0098",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'check invoice' matches the ground-truth intent 'check_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check invoice",
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0096",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check bill' does not match the ground-truth intent 'check_invoice'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check bill",
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0112",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check payment options' does not match the ground-truth intent 'check_payment_methods'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check payment options",
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0110",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check payment options' does not match the ground-truth intent 'check_payment_methods'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check payment options",
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0105",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see payment options' does not match the ground-truth intent 'check_payment_methods'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see payment options",
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0106",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'list payment options' does not match the ground-truth intent 'check_payment_methods'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "list payment options",
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0118",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check accepted payment options' does not match the ground-truth intent 'check_payment_methods'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check accepted payment options",
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0122",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see payment modalities' does not match the ground-truth intent 'check_payment_methods'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see payment modalities",
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0114",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'list payment modalities' does not match the ground-truth intent 'check_payment_methods'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "list payment modalities",
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0423",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'submit feedback' does not match the ground-truth intent 'review'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "submit feedback",
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0421",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'send feedback' does not match the ground-truth intent 'review'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "send feedback",
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0427",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'leave opinion' does not match the ground-truth intent 'review'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "leave opinion",
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0424",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'write opinion' does not match the ground-truth intent 'review'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "write opinion",
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0426",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'leave feedback' does not match the ground-truth intent 'review'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "leave feedback",
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0433",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'send feedback' does not match the ground-truth intent 'review'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "send feedback",
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0420",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'leave review' does not match the ground-truth intent 'review'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "leave review",
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0191",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'talk with person' does not match the ground-truth intent 'contact_human_agent'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "talk with person",
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0192",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'speak with somebody' does not match the ground-truth intent 'contact_human_agent'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "speak with somebody",
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0198",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'talk to person' does not match the ground-truth intent 'contact_human_agent'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "talk to person",
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0202",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'speak with assistant' does not match the ground-truth intent 'contact_human_agent'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "speak with assistant",
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0193",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'chat with operator' does not match the ground-truth intent 'contact_human_agent'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "chat with operator",
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0207",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'talk to live agent' does not match the ground-truth intent 'contact_human_agent'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "talk to live agent",
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0203",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'speak with operator' does not match the ground-truth intent 'contact_human_agent'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "speak with operator",
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0256",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get information about shipping period' does not match the ground-truth intent 'delivery_period'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get information about shipping period",
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0260",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get help to check delivery time' does not match the ground-truth intent 'delivery_period'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get help to check delivery time",
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0257",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check delivery time' does not match the ground-truth intent 'delivery_period'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check delivery time",
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0262",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check delivery time' does not match the ground-truth intent 'delivery_period'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check delivery time",
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0261",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get information about delivery period' does not match the ground-truth intent 'delivery_period'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get information about delivery period",
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0255",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check delivery time' does not match the ground-truth intent 'delivery_period'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check delivery time",
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0258",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check delivery time' does not match the ground-truth intent 'delivery_period'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check delivery time",
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0259",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check delivery time' does not match the ground-truth intent 'delivery_period'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check delivery time",
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0349",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about payment problem' does not match the ground-truth intent 'payment_issue'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about payment problem",
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0341",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about payment problem' does not match the ground-truth intent 'payment_issue'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about payment problem",
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0348",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about payment problem' does not match the ground-truth intent 'payment_issue'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about payment problem",
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0350",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'solve payment errors' does not match the ground-truth intent 'payment_issue'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "solve payment errors",
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0359",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about payment problem' does not match the ground-truth intent 'payment_issue'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about payment problem",
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0352",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about payment problem' does not match the ground-truth intent 'payment_issue'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about payment problem",
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0342",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about payment problem' does not match the ground-truth intent 'payment_issue'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about payment problem",
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0347",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about payment problem' does not match the ground-truth intent 'payment_issue'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about payment problem",
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0400",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'report registration problem' does not match the ground-truth intent 'registration_problems'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "report registration problem",
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0411",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'report signup issue' does not match the ground-truth intent 'registration_problems'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "report signup issue",
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0406",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about signup issue' does not match the ground-truth intent 'registration_problems'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about signup issue",
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0402",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about signup issue' does not match the ground-truth intent 'registration_problems'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about signup issue",
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0414",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'report signup issue' does not match the ground-truth intent 'registration_problems'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "report signup issue",
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0399",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about registration errors' does not match the ground-truth intent 'registration_problems'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about registration errors",
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0410",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'report signup issue' does not match the ground-truth intent 'registration_problems'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "report signup issue",
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0408",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'inform about signup issue' does not match the ground-truth intent 'registration_problems'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "inform about signup issue",
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0376",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get information about purchasing' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get information about purchasing",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0381",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get assistance ordering' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get assistance ordering",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0380",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get help purchasing' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get help purchasing",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0373",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get help shopping' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get help shopping",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0368",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'buy items' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "buy items",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0370",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get help making order' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get help making order",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0371",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get information about buying' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get information about buying",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0374",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get information about buying' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get information about buying",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0372",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get assistance buying' does not match the ground-truth intent 'place_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get assistance buying",
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0456",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'change account' does not match the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "change account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0461",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'change account' does not match the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "change account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0466",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'switch account' matches the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "switch account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0464",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'switch account' matches the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "switch account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0469",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'change account' does not match the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "change account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0453",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'switch account' matches the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "switch account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0454",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'change account' does not match the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "change account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0468",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'change account' does not match the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "change account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0463",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'switch account' matches the ground-truth intent 'switch_account'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "switch account",
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0030",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'delete products from order' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "delete products from order",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0024",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'edit order' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "edit order",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0019",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'edit order' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "edit order",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0027",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'remove articles from order' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "remove articles from order",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0026",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'switch something in order' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "switch something in order",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0037",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'switch something in order' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "switch something in order",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0017",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'switch article in order' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "switch article in order",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0028",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'add item to order' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "add item to order",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0021",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'edit purchase' does not match the ground-truth intent 'change_order'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "edit purchase",
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0324",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel subscription' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel subscription",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0337",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'unsubscribe newsletter' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "unsubscribe newsletter",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0329",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'receive newsletter' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "receive newsletter",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0331",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'unsubscribe newsletter' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "unsubscribe newsletter",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0322",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'subscribe newsletter' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "subscribe newsletter",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0332",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get subscription information' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get subscription information",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0325",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'cancel subscription' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "cancel subscription",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0321",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'unsubscribe newsletter' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "unsubscribe newsletter",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0340",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'subscribe newsletter' does not match the ground-truth intent 'newsletter_subscription'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "subscribe newsletter",
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0054",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'update address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "update address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0052",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'correct address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "correct address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0045",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'change address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "change address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0041",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'update address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "update address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0046",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'update address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "update address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0060",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'modify shipping address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "modify shipping address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0039",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'update address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "update address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0056",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'change delivery address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "change delivery address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0055",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'update delivery address' does not match the ground-truth intent 'change_shipping_address'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "update delivery address",
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0078",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check early exit fee' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check early exit fee",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0063",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check early termination penalties' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check early termination penalties",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0076",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'find early exit charge' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "find early exit charge",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0084",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see early termination charge' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see early termination charge",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0081",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see early exit fees' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see early exit fees",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0070",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'check withdrawal charges' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "check withdrawal charges",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0072",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see early exit penalty' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see early exit penalty",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0086",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see termination penalties' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see termination penalties",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0065",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see cancellation charge' does not match the ground-truth intent 'check_cancellation_fee'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see cancellation charge",
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0157",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'lodge complaint' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "lodge complaint",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0159",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'make consumer claim' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "make consumer claim",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0151",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'file customer claim' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "file customer claim",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0154",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'make customer claim' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "make customer claim",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0155",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'lodge claim' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "lodge claim",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0144",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'file customer reclamation' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "file customer reclamation",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0145",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'lodge customer complaint' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "lodge customer complaint",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0140",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'lodge claim' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "lodge claim",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0153",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'file claim' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "file claim",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0158",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'make consumer complaint' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "make consumer complaint",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0143",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'file customer reclamation' does not match the ground-truth intent 'complaint'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "file customer reclamation",
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0172",
+    "prompt_version": "v2e",
+    "rating": 5,
+    "motivation": "The extracted intent 'contact customer service' matches the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "contact customer service",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0183",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see customer support hours' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see customer support hours",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0167",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get customer assistance number' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get customer assistance number",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0171",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see customer service hours' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see customer service hours",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0173",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see customer support hours' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see customer support hours",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0190",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'contact customer support' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "contact customer support",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0174",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'get customer assistance email' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "get customer assistance email",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0166",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see customer assistance hours' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see customer assistance hours",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0185",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'contact customer assistance' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "contact customer assistance",
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0188",
+    "prompt_version": "v2e",
+    "rating": 2,
+    "motivation": "The extracted intent 'see customer service hours' does not match the ground-truth intent 'contact_customer_service'. Symptoms were not evaluated because this dataset does not include gold symptom labels.",
+    "predicted_intent": "see customer service hours",
+    "ground_truth_intent": "contact_customer_service"
+  }
+]

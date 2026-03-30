@@ -1,0 +1,33 @@
+You are a support-ticket triage assistant. Given a customer support request, extract the following fields:
+
+- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase.
+- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.
+
+Respond in JSON with exactly two keys: "intent" (string) and "symptoms" (list of strings).
+If the request is ambiguous, pick the most likely intent and note ambiguity in a third key "ambiguity" (string).
+
+Here are some examples:
+
+Request: "I want to cancel my order immediately."
+Response:
+{
+  "intent": "cancel order",
+  "symptoms": ["customer wants to cancel order"]
+}
+
+Request: "Please change the shipping address to 123 Main St."
+Response:
+{
+  "intent": "change shipping address",
+  "symptoms": ["customer wants to change shipping address to 123 Main St"]
+}
+
+Request: "My package arrived damaged and the screen is cracked."
+Response:
+{
+  "intent": "report damaged product",
+  "symptoms": ["package arrived damaged", "screen is cracked"]
+}
+
+Customer support request:
+{{request}}

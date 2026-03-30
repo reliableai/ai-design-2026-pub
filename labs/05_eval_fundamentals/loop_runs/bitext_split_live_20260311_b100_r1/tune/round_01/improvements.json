@@ -1,0 +1,70 @@
+{
+  "source_prompt_version": "v1",
+  "avg_rating": 1.0,
+  "n_items": 200,
+  "n_rationales_sampled": 100,
+  "analysis": "The primary failure pattern is that the model frequently produces outputs missing a valid 'intent' field, rendering the JSON unusable for evaluation. This suggests the prompt does not sufficiently constrain or clarify the expected format and content of the 'intent' field, leading to hallucinations, omissions, or format errors. Additionally, the prompt lacks concrete examples to anchor the model's output style and format, which is critical for consistent extraction. There is also no explicit instruction to avoid hallucinating extra fields or to respond with output-only JSON, which may cause the model to add extraneous text or deviate from the schema. Finally, the prompt does not encourage any reasoning or self-checking steps that could improve accuracy and adherence to the schema, especially given the ambiguity handling requirement.",
+  "variations": [
+    {
+      "variation_id": "v2a",
+      "approach_name": "Few-Shot Examples With Explicit Schema",
+      "changes": [
+        "Add 2 few-shot examples demonstrating correct JSON output with valid 'intent' and 'symptoms' fields.",
+        "Expand explicit output schema instructions to specify exact JSON keys, types, and constraints.",
+        "Reinforce 'intent' as a short, lowercase verb phrase with examples.",
+        "Add negative instructions to not add extra fields or explanations.",
+        "Instruct output-only JSON response with no preamble."
+      ],
+      "rationale": "The judge rationales indicate frequent missing or invalid 'intent' fields, likely due to insufficient clarity and anchoring. Adding few-shot examples will concretely demonstrate the expected output format and style, reducing hallucinations and omissions. Explicit schema instructions and negative instructions will further constrain the model to produce valid, minimal JSON. Output-only instructions will prevent extraneous text that could invalidate the JSON. This combined approach directly addresses the core failure patterns.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields in JSON:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase (e.g., \"request refund\").\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation and no solution.\n\nRespond with only a JSON object with exactly these keys:\n- \"intent\": string\n- \"symptoms\": list of strings\n- \"ambiguity\": string (optional, only if the request is ambiguous)\n\nDo NOT add any other fields or explanations.\n\nExamples:\n\nCustomer support request:\n\"My internet is down and I can't access any websites.\"\n\n{\n  \"intent\": \"report outage\",\n  \"symptoms\": [\"internet is down\", \"cannot access websites\"]\n}\n\nCustomer support request:\n\"I want to change my billing address but I'm not sure if it's possible.\"\n\n{\n  \"intent\": \"request address change\",\n  \"symptoms\": [\"wants to change billing address\"],\n  \"ambiguity\": \"uncertain if address change is possible\"\n}\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v2b",
+      "approach_name": "Chain-of-Thought Reasoning",
+      "changes": [
+        "Add an instruction to first reason briefly about the customer's intent and symptoms before producing the JSON.",
+        "Keep explicit output schema and ambiguity handling instructions.",
+        "Add negative instructions to avoid hallucinating or adding extra fields.",
+        "Instruct output-only JSON after reasoning."
+      ],
+      "rationale": "The missing or invalid 'intent' field suggests the model struggles to identify and format the intent correctly. Encouraging a brief chain-of-thought reasoning step before output can help the model clarify its understanding and reduce hallucinations or omissions. This approach can improve accuracy on ambiguous or complex inputs by making the model explicitly consider the extraction before answering.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, first reason briefly about the customer's primary intent and symptoms, then respond with a JSON object.\n\nExtract these fields:\n- intent: The customer's primary goal or desired outcome as a short, lowercase verb phrase.\n- symptoms: A list of concrete, observable problems described by the customer.\n\nIf the request is ambiguous, pick the most likely intent and include an \"ambiguity\" key with a brief note.\n\nDo NOT add any other fields or explanations.\n\nCustomer support request:\n{{request}}\n\nReasoning:\n"
+    },
+    {
+      "variation_id": "v2c",
+      "approach_name": "Self-Critique Then Final Answer",
+      "changes": [
+        "Add instructions to first produce a draft JSON extraction, then critique it for missing or invalid fields, then produce a final corrected JSON.",
+        "Keep explicit output schema and ambiguity handling.",
+        "Add negative instructions to avoid extra fields or explanations.",
+        "Instruct output-only final JSON response."
+      ],
+      "rationale": "The consistent missing or invalid 'intent' field indicates the model may produce incomplete or malformed JSON initially. A self-critique step encourages the model to check and correct its output, improving reliability and adherence to the schema. This is especially useful for ambiguous or noisy inputs where the model might otherwise omit required fields.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract these fields:\n- intent: The customer's primary goal or desired outcome as a short, lowercase verb phrase.\n- symptoms: A list of concrete, observable problems described by the customer.\n\nIf ambiguous, pick the most likely intent and include an \"ambiguity\" key.\n\nStep 1: Produce a draft JSON extraction with keys \"intent\", \"symptoms\", and optionally \"ambiguity\".\n\nStep 2: Critique the draft for missing or invalid fields, hallucinations, or format errors.\n\nStep 3: Produce a final corrected JSON extraction.\n\nDo NOT add any other text or fields.\n\nCustomer support request:\n{{request}}\n\nDraft JSON:\n"
+    },
+    {
+      "variation_id": "v2d",
+      "approach_name": "Ground Symptoms In Quotes",
+      "changes": [
+        "Add instruction to ground each symptom in a direct quote or phrase from the original request.",
+        "Keep explicit output schema and ambiguity handling.",
+        "Add negative instructions to avoid interpretation or solutions.",
+        "Instruct output-only JSON response."
+      ],
+      "rationale": "Hallucination or vague symptom descriptions can cause invalid or unusable JSON. Grounding each symptom in a direct quote from the request reduces hallucination and clarifies the symptom content. This can improve the quality and validity of the 'symptoms' list and indirectly help the model better identify the intent by focusing on concrete facts.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract these fields:\n- intent: The customer's primary goal or desired outcome as a short, lowercase verb phrase.\n- symptoms: A list of concrete, observable problems described by the customer. Each symptom must be a brief factual statement directly grounded in a quoted phrase from the request.\n\nIf ambiguous, pick the most likely intent and include an \"ambiguity\" key.\n\nDo NOT add any other fields or explanations.\n\nRespond with only a JSON object with keys \"intent\", \"symptoms\", and optionally \"ambiguity\".\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v2e",
+      "approach_name": "Strict Output-Only JSON With Negative Instructions",
+      "changes": [
+        "Add explicit instruction to respond with only the JSON object and no preamble, explanation, or extra text.",
+        "Add negative instructions to not infer causes, not suggest solutions, and not add extra fields.",
+        "Reinforce explicit output schema with exact keys and types.",
+        "Keep ambiguity handling instructions."
+      ],
+      "rationale": "The main failure is invalid or missing 'intent' field, possibly due to the model adding extra text or hallucinating fields. Strictly enforcing output-only JSON and negative instructions reduces format errors and hallucinations. This minimalistic approach may improve parseability and adherence to the schema, though it lacks examples or reasoning steps that might further improve accuracy.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract exactly these fields in a JSON object:\n- \"intent\": string, the customer's primary goal as a short, lowercase verb phrase.\n- \"symptoms\": list of strings, each a concrete, observable problem described by the customer.\n- \"ambiguity\": string (optional), only if the request is ambiguous.\n\nDo NOT infer causes, suggest solutions, add extra fields, or include any explanation.\n\nRespond with only the JSON object, no preamble or trailing text.\n\nCustomer support request:\n{{request}}"
+    }
+  ]
+}

@@ -12,7 +12,7 @@ from types import SimpleNamespace
 
 
 def _load_lab03_module(filename: str, module_name: str):
-    root = Path(__file__).resolve().parents[1] / "03_review_and_judge"
+    root = Path(__file__).resolve().parents[1] / "05_eval_fundamentals"
     if str(root) not in sys.path:
         sys.path.insert(0, str(root))
 

@@ -1,0 +1,32 @@
+[
+  {
+    "prompt_version": "v1",
+    "avg_rating": 2.8,
+    "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/prompt.txt",
+    "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/extractions.json",
+    "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/evaluations.json",
+    "source_round": 1,
+    "kind": "current",
+    "is_best": false
+  },
+  {
+    "prompt_version": "v4a",
+    "avg_rating": 5.0,
+    "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/prompt.txt",
+    "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/extractions.json",
+    "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/evaluations.json",
+    "source_round": 1,
+    "kind": "variation",
+    "is_best": true
+  },
+  {
+    "prompt_version": "v4b",
+    "avg_rating": 3.05,
+    "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/prompt.txt",
+    "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/extractions.json",
+    "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/evaluations.json",
+    "source_round": 1,
+    "kind": "variation",
+    "is_best": false
+  }
+]
