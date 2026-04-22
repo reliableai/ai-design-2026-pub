@@ -1,0 +1,602 @@
+[
+  {
+    "id": "bitext_0000",
+    "source": "bitext",
+    "text": "need help with canceling order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nneed help with canceling order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"need help with canceling order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0001",
+    "source": "bitext",
+    "text": "I need assistancde cancelling order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI need assistancde cancelling order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"need assistance cancelling order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0002",
+    "source": "bitext",
+    "text": "i do not know how to cancel order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni do not know how to cancel order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"do not know how to cancel order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0003",
+    "source": "bitext",
+    "text": "help with cancelling purchase {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp with cancelling purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"help with cancelling purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0004",
+    "source": "bitext",
+    "text": "I need assistance cancelling order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI need assistance cancelling order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"need assistance cancelling order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0005",
+    "source": "bitext",
+    "text": "I am trying to cancel order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI am trying to cancel order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"trying to cancel order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0006",
+    "source": "bitext",
+    "text": "i need help cancelling purchase {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni need help cancelling purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"need help cancelling purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0007",
+    "source": "bitext",
+    "text": "canmcel order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ncanmcel order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"canmcel order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0008",
+    "source": "bitext",
+    "text": "i want help canceling order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni want help canceling order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"want help canceling order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0009",
+    "source": "bitext",
+    "text": "I need help canceling purchase {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI need help canceling purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"need help canceling purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0010",
+    "source": "bitext",
+    "text": "is it possible to cancel purchase {{Order Number}}?",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nis it possible to cancel purchase {{Order Number}}?",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"is it possible to cancel purchase {{Order Number}}?\"\n  ],\n  \"ambiguity\": \"Unclear if customer wants to cancel or just inquiring about possibility\"\n}"
+  },
+  {
+    "id": "bitext_0011",
+    "source": "bitext",
+    "text": "help me cancelling purchase {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp me cancelling purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"help me cancelling purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0012",
+    "source": "bitext",
+    "text": "how to cancel the purchase i made",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhow to cancel the purchase i made",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"how to cancel the purchase i made\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0013",
+    "source": "bitext",
+    "text": "i need assistance to cancel order {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni need assistance to cancel order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"need assistance to cancel order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0014",
+    "source": "bitext",
+    "text": "would it be possible to cancel purchase {{Order Number}}?",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nwould it be possible to cancel purchase {{Order Number}}?",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"would it be possible to cancel purchase {{Order Number}}?\"\n  ],\n  \"ambiguity\": \"Unclear if customer wants to cancel or just inquiring about possibility\"\n}"
+  },
+  {
+    "id": "bitext_0015",
+    "source": "bitext",
+    "text": "I have problems with cancelling purchase {{Order Number}}",
+    "ground_truth_intent": "cancel_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI have problems with cancelling purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"have problems with cancelling purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0016",
+    "source": "bitext",
+    "text": "help me changing a fucking product of purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp me changing a fucking product of purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"change product\",\n  \"symptoms\": [\n    \"help me changing a product of purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0017",
+    "source": "bitext",
+    "text": "I want to switch an article of purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI want to switch an article of purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"change product\",\n  \"symptoms\": [\n    \"want to switch an article of purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0018",
+    "source": "bitext",
+    "text": "help adding some items to purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp adding some items to purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"add item\",\n  \"symptoms\": [\n    \"help adding some items to purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0019",
+    "source": "bitext",
+    "text": "need to edit order113542617735902 how to do it",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nneed to edit order113542617735902 how to do it",
+    "llm_response": "{\n  \"intent\": \"edit order\",\n  \"symptoms\": [\n    \"need to edit order113542617735902\",\n    \"how to do it\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0020",
+    "source": "bitext",
+    "text": "how to add an article to order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhow to add an article to order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"add item\",\n  \"symptoms\": [\n    \"how to add an article to order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0021",
+    "source": "bitext",
+    "text": "I want assistance editing purchase  {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI want assistance editing purchase  {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"edit order\",\n  \"symptoms\": [\n    \"want assistance editing purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0022",
+    "source": "bitext",
+    "text": "update purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nupdate purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"edit order\",\n  \"symptoms\": [\n    \"update purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0023",
+    "source": "bitext",
+    "text": "cqn i swap several items of purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ncqn i swap several items of purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"change product\",\n  \"symptoms\": [\n    \"can i swap several items of purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0024",
+    "source": "bitext",
+    "text": "how do I edit order {{Order Number}}?",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhow do I edit order {{Order Number}}?",
+    "llm_response": "{\n  \"intent\": \"edit order\",\n  \"symptoms\": [\n    \"how do I edit order {{Order Number}}?\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0025",
+    "source": "bitext",
+    "text": "modify order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nmodify order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"edit order\",\n  \"symptoms\": [\n    \"modify order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0026",
+    "source": "bitext",
+    "text": "help switching something of purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp switching something of purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"change product\",\n  \"symptoms\": [\n    \"help switching something of purchase {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0027",
+    "source": "bitext",
+    "text": "I want to remove some articles  from order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI want to remove some articles  from order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"remove item\",\n  \"symptoms\": [\n    \"want to remove some articles from order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0028",
+    "source": "bitext",
+    "text": "add item to order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nadd item to order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"add item\",\n  \"symptoms\": [\n    \"add item to order {{Order Number}}\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0029",
+    "source": "bitext",
+    "text": "I have to correct purchase {{Order Number}}, I need assistance",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI have to correct purchase {{Order Number}}, I need assistance",
+    "llm_response": "{\n  \"intent\": \"edit order\",\n  \"symptoms\": [\n    \"have to correct purchase {{Order Number}}\",\n    \"need assistance\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0030",
+    "source": "bitext",
+    "text": "help me to delete some products from purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp me to delete some products from purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"request to delete some products from purchase\"\n  ],\n  \"ambiguity\": \"Unclear if 'delete some products' means removing items from order or canceling part of the order\"\n}"
+  },
+  {
+    "id": "bitext_0031",
+    "source": "bitext",
+    "text": "I am trying to edit orde {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI am trying to edit orde {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"trying to edit order\"\n  ],\n  \"ambiguity\": \"Unclear what aspect of the order is to be edited\"\n}"
+  },
+  {
+    "id": "bitext_0032",
+    "source": "bitext",
+    "text": "help me to delete an artile from purchase {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp me to delete an artile from purchase {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"request to delete an article from purchase\"\n  ],\n  \"ambiguity\": \"Unclear if 'delete an article' means removing an item from order or canceling part of the order\"\n}"
+  },
+  {
+    "id": "bitext_0033",
+    "source": "bitext",
+    "text": "I need help to swap a product of order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI need help to swap a product of order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"exchange product\",\n  \"symptoms\": [\n    \"need help to swap a product of order\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0034",
+    "source": "bitext",
+    "text": "remove item from order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nremove item from order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\n    \"remove item from order\"\n  ],\n  \"ambiguity\": \"Unclear if removing item means canceling part of order or something else\"\n}"
+  },
+  {
+    "id": "bitext_0035",
+    "source": "bitext",
+    "text": "how do I change some products of order {{Order Number}}?",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhow do I change some products of order {{Order Number}}?",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"how do I change some products of order\"\n  ],\n  \"ambiguity\": \"Unclear if 'change some products' means changing items or changing shipping address\"\n}"
+  },
+  {
+    "id": "bitext_0036",
+    "source": "bitext",
+    "text": "updateorder {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nupdateorder {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"request to update order\"\n  ],\n  \"ambiguity\": \"Unclear what aspect of the order is to be updated\"\n}"
+  },
+  {
+    "id": "bitext_0037",
+    "source": "bitext",
+    "text": "i need help switching something of order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni need help switching something of order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"exchange product\",\n  \"symptoms\": [\n    \"need help switching something of order\"\n  ],\n  \"ambiguity\": \"Unclear what 'switching something' refers to exactly\"\n}"
+  },
+  {
+    "id": "bitext_0038",
+    "source": "bitext",
+    "text": "help switching several items of order {{Order Number}}",
+    "ground_truth_intent": "change_order",
+    "category": "ORDER",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp switching several items of order {{Order Number}}",
+    "llm_response": "{\n  \"intent\": \"exchange product\",\n  \"symptoms\": [\n    \"help switching several items of order\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0039",
+    "source": "bitext",
+    "text": "I entered a wrong address, update it",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI entered a wrong address, update it",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"entered a wrong address\",\n    \"request to update it\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0040",
+    "source": "bitext",
+    "text": "help trying to update the delivery address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp trying to update the delivery address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"help trying to update the delivery address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0041",
+    "source": "bitext",
+    "text": "their is a problem trying to update my delivery address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ntheir is a problem trying to update my delivery address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"problem trying to update delivery address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0042",
+    "source": "bitext",
+    "text": "how can I update my bloody address?",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhow can I update my bloody address?",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"asking how to update address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0043",
+    "source": "bitext",
+    "text": "i want help trying to edit my delivery address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni want help trying to edit my delivery address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"want help trying to edit delivery address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0044",
+    "source": "bitext",
+    "text": "I want assistance to modify the shipping address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI want assistance to modify the shipping address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"want assistance to modify shipping address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0045",
+    "source": "bitext",
+    "text": "help me change the address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp me change the address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"help me change the address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0046",
+    "source": "bitext",
+    "text": "problems with a delivery address update",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nproblems with a delivery address update",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"problems with delivery address update\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0047",
+    "source": "bitext",
+    "text": "i have a question about a goddamn shipping address change",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni have a question about a goddamn shipping address change",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"question about shipping address change\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0048",
+    "source": "bitext",
+    "text": "i want  information about changing the address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni want  information about changing the address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"want information about changing the address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0049",
+    "source": "bitext",
+    "text": "i do not know what to do to edit the delivery address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni do not know what to do to edit the delivery address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"do not know what to do to edit delivery address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0050",
+    "source": "bitext",
+    "text": "find information abou changing the address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nfind information abou changing the address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"find information about changing the address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0051",
+    "source": "bitext",
+    "text": "I try to change the delivery address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI try to change the delivery address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"try to change delivery address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0052",
+    "source": "bitext",
+    "text": "i have got to correct the address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni have got to correct the address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"have got to correct the address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0053",
+    "source": "bitext",
+    "text": "how can I update the delivery address?",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhow can I update the delivery address?",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"asking how to update delivery address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0054",
+    "source": "bitext",
+    "text": "i have a trouble trying to update my address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\ni have a trouble trying to update my address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"have trouble trying to update address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0055",
+    "source": "bitext",
+    "text": "want support updating the delivery dadress",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nwant support updating the delivery dadress",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"want support updating delivery address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0056",
+    "source": "bitext",
+    "text": "I need assistance to change the delivery address",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nI need assistance to change the delivery address",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"need assistance to change delivery address\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0057",
+    "source": "bitext",
+    "text": "help with a fucking address change",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhelp with a fucking address change",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"help with address change\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0058",
+    "source": "bitext",
+    "text": "have a problem with a shpiping address modification",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nhave a problem with a shpiping address modification",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"problem with shipping address modification\"\n  ]\n}"
+  },
+  {
+    "id": "bitext_0059",
+    "source": "bitext",
+    "text": "where to edit my delivery address?",
+    "ground_truth_intent": "change_shipping_address",
+    "category": "SHIPPING",
+    "prompt_version": "v4b",
+    "rendered_prompt": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\nwhere to edit my delivery address?",
+    "llm_response": "{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\n    \"where to edit delivery address\"\n  ]\n}"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "winner_prompt_key": "r01_current_R00_v1_Baseline",
+  "winner_prompt_name": "R00 v1 Baseline",
+  "winner_prompt_version": "v1",
+  "test_avg_rating": 1.0,
+  "test_accuracy": 0.0,
+  "test_n_items": 100,
+  "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_split_live_20260311_b100_r1/test/winner/prompt.txt",
+  "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_split_live_20260311_b100_r1/test/winner/extractions.json",
+  "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_split_live_20260311_b100_r1/test/winner/evaluations.json"
+}

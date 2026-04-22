@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+  Content by Fabio Casati
+  https://www.linkedin.com/in/sphoebs/
+  https://x.com/sphoebs
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designing Large Scale AI Systems - Spring 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header loaded dynamically -->
+
+  <main>
+    <div class="hero">
+      <h1>Designing Large Scale AI Systems</h1>
+      <p class="subtitle">CS Master Course | Spring 2026 | 12 weeks</p>
+    </div>
+
+    <section>
+      <h2>About This Course</h2>
+      <p>
+        This course provides a comprehensive introduction to designing, building, and evaluating
+        large-scale AI systems. Students will gain hands-on experience building AI-powered applications
+        and learn rigorous evaluation methodologies essential for deploying AI systems in production.
+      </p>
+      <p>
+        Basic software engineering experience is preferred — but not a must.
+        The main prerequisite is the passion to build great systems.
+      </p>
+    </section>
+
+    <section>
+      <details open>
+        <summary><h2 style="display:inline; margin:0; padding-bottom:0; margin-left:0.5rem;">Learning Objectives</h2></summary>
+        <div class="details-content">
+          <p>By the end of this course, you will:</p>
+
+          <h3>1. Build Effective, Reliable AI Systems at Scale</h3>
+          <p>Solve complex problems by decomposing them in a principled way. Ship a reliable AI feature into an existing product.</p>
+
+          <h3>2. Use AI to Build AI</h3>
+          <p>Leverage AI for development, evaluation, and system management. Understand what this unlocks and where the limits are.</p>
+
+          <h3>3. Iterate Towards Success</h3>
+          <p>Master the science of monitoring, analysis, and estimation. Stand up an evaluation harness you can run in CI.</p>
+
+          <h3>4. Identify and Master the Key Abstractions</h3>
+          <p>Build observability, cost controls, and incident-ready guardrails. Take lessons from software engineering past, but do so critically.</p>
+
+          <h3>5. Think in Systems</h3>
+          <p>Understand which engineering principles carry forward and which new abstractions are essential.</p>
+        </div>
+      </details>
+    </section>
+
+    <section>
+      <h2>Sessions</h2>
+
+      <h3><span class="phase phase-1">Phase 1</span> Building AI Agents</h3>
+      <div class="modules-grid">
+        <a href="labs/01_hello_world/hello_world_3.0.html" class="module-card">
+          <div class="number">L1 · Week 1</div>
+          <div class="title">Hello World</div>
+          <p class="description">Connecting to AI via API: chat, streaming, voice, and image</p>
+        </a>
+        <a href="labs/02_standalone_agents/mastering_individual_calls.html" class="module-card">
+          <div class="number">L2 · Week 1</div>
+          <div class="title">Mastering Individual AI Calls</div>
+          <p class="description">Prompt engineering, structured outputs, best practices for reliable single calls</p>
+        </a>
+        <a href="labs/03_context/stateless_stateful_agents.html" class="module-card">
+          <div class="number">L3 · Week 2</div>
+          <div class="title">Managing Context</div>
+          <p class="description">Stateless &amp; stateful agents, conversation history, cost &amp; latency tradeoffs, memory strategies</p>
+        </a>
+        <a href="labs/04_tool_calling/tool_calling.html" class="module-card">
+          <div class="number">L4 · Week 2</div>
+          <div class="title">Tools & Agentic Loops</div>
+          <p class="description">Tool calling, function schemas, orchestration loops, when to call another tool vs. stop</p>
+        </a>
+      </div>
+
+      <h3><span class="phase phase-2">Phase 2</span> "Eval" in Software 3.0: Iterating Towards Success</h3>
+      <div class="modules-grid">
+        <a href="labs/05_eval_fundamentals/datasets.html" class="module-card">
+          <div class="number">L5 · Week 3</div>
+          <div class="title">"Eval" in Software 1.0 and 2.0</div>
+        </a>
+        <a href="labs/06_mastering_uncertainty/optimizing-in-the-dark/index.html" class="module-card">
+          <div class="number">L6 · Week 3</div>
+          <div class="title">Iterating in the Dark: Organizational Blindness in AI Evaluations</div>
+        </a>
+        <a href="labs/07_eval/eval_sw3.html" class="module-card">
+          <div class="number">L7 · Week 4</div>
+          <div class="title">"Eval" in Software 3.0 (AI Agents)</div>
+        </a>
+        <a href="labs/08_automating_improvement/design_of_experiments.html" class="module-card">
+          <div class="number">L8 · Week 4</div>
+          <div class="title">Designing Experiments and Mastering Uncertainty &mdash; Part I</div>
+        </a>
+        <a href="labs/08_automating_improvement/design_of_experiments_2.html" class="module-card">
+          <div class="number">L9 · Week 5</div>
+          <div class="title">Designing Experiments and Mastering Uncertainty &mdash; Part II</div>
+        </a>
+        <a href="labs/09_monitoring/monitoring.html" class="module-card">
+          <div class="number">L10 · Week 5</div>
+          <div class="title">Monitoring, Observability and Reporting</div>
+        </a>
+      </div>
+
+      <h3><span class="phase phase-3">Phase 3</span> Building and Managing Complex Systems</h3>
+      <div class="modules-grid">
+        <a href="labs/10_complex_systems/1_councils/councils.html" class="module-card">
+          <div class="number">L11 · Week 6</div>
+          <div class="title">Complex Systems I</div>
+          <p class="description">Council of Agents and Other Agentic Patterns</p>
+        </a>
+        <a href="labs/10_complex_systems/2_abstractions/key_abstractions.html" class="module-card">
+          <div class="number">L12 · Week 6</div>
+          <div class="title">Complex Systems II</div>
+          <p class="description">Foundational Programming Abstractions</p>
+        </a>
+        <a href="labs/10_complex_systems/3_architectures/complex_systems.html" class="module-card">
+          <div class="number">L13 · Week 7</div>
+          <div class="title">Complex Systems III</div>
+          <p class="description">Reliable System Architectures</p>
+        </a>
+        <a href="labs/12_structuring_projects/structuring_projects.html" class="module-card">
+          <div class="number">L14 · Week 7</div>
+          <div class="title">Structuring Complex Projects</div>
+          <p class="description">Shipping into existing products, maintaining large AI systems, multi-version considerations</p>
+        </a>
+        <a href="labs/13_programming_in_english/programming_in_english.html" class="module-card">
+          <div class="number">L15 · Week 8</div>
+          <div class="title">Programming in English</div>
+          <p class="description">Without Losing Control (and Mental Health)</p>
+        </a>
+        <a href="labs/14_frameworks/frameworks.html" class="module-card">
+          <div class="number">L16 · Week 8</div>
+          <div class="title">Using AI Frameworks</div>
+          <p class="description">When and why to use frameworks; LangChain as a case study</p>
+        </a>
+      </div>
+
+      <h3><span class="phase phase-4">Phase 4</span> Capstone Project</h3>
+      <p>Lessons in this phase are project meetings, running in parallel with the Lectures on Complex Systems.</p>
+    </section>
+
+    <section>
+      <h2>Assessment</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Weight</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Part I: Midterm Exam</strong></td>
+            <td>30%</td>
+            <td>Individual, written</td>
+          </tr>
+          <tr>
+            <td><strong>Part II: Course Project</strong></td>
+            <td>70%</td>
+            <td>In-class, assisted, attendance required (Track A) or individual, unassisted (Track B); four sprints plus presentation prep</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <a href="assessments.html">Assessment details &amp; midterm scope &rarr;</a>
+        &nbsp;·&nbsp;
+        <a href="projects.html">Projects page &rarr;</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Office Hours</h2>
+      <p>
+        Office hours are held right after each class. Additional appointments can be
+        scheduled via email.
+      </p>
+      <p><a href="about.html" class="btn-secondary btn">Contact Information</a></p>
+    </section>
+
+    <section id="feedback" class="quick-feedback">
+      <h3>Have 20 seconds?</h3>
+      <p>
+        What's the <em>one thing</em> you'd want to learn about
+        <strong>building AI systems at scale</strong>?
+      </p>
+      <form action="https://formsubmit.co/adaa0c88245095dc975bd57f5b3d0f43" method="POST">
+        <input type="hidden" name="_subject" value="AI Design Course Feedback">
+        <input type="hidden" name="_captcha" value="false">
+        <textarea
+          name="feedback"
+          rows="4"
+          placeholder="One sentence is perfect."
+          required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designing Large Scale AI Systems &middot; Spring 2026</p>
+    <p class="text-small">Content by Fabio Casati · <a href="https://www.linkedin.com/in/sphoebs/">LinkedIn</a> · <a href="https://x.com/sphoebs">X</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

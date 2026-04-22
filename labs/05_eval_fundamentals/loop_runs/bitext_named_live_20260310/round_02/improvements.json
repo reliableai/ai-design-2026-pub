@@ -1,0 +1,64 @@
+{
+  "source_prompt_version": "v2b",
+  "avg_rating": 3.85,
+  "n_items": 60,
+  "n_rationales_sampled": 60,
+  "analysis": "The main failure pattern is frequent incorrect intent extraction, especially confusing similar intents such as 'change product' vs. 'change order' or 'add item' vs. 'change order'. This suggests the model struggles to select the exact known intent from a fixed set, often inventing or approximating intents rather than matching canonical ones. Symptoms are not evaluated in the current dataset, but instructions to keep symptoms atomic and not merge facts are present and likely helpful. The prompt already uses role assignment, explicit schema, verb-phrase intent, and negative instructions, but lacks grounding symptoms in quotes, few-shot examples, or chain-of-thought reasoning. Judges note that the model sometimes invents intents or paraphrases rather than selecting from known intents, indicating a need for stronger grounding and disambiguation. Ambiguity handling is mentioned but not strongly emphasized, and no examples are provided to anchor the format or intent vocabulary. Overall, the prompt would benefit most from few-shot examples illustrating correct intent selection, stronger emphasis on choosing from known intents, and possibly chain-of-thought or self-critique to reduce hallucination and improve precision.",
+  "variations": [
+    {
+      "variation_id": "v4a",
+      "approach_name": "Few-Shot Canonical Intents",
+      "changes": [
+        "Add 2-3 few-shot examples with customer requests and exact JSON outputs showing correct intent selection from known intents and atomic symptoms.",
+        "Reinforce instructions to choose intent exactly from known intents without paraphrasing or inventing.",
+        "Keep existing role assignment, explicit schema, and negative instructions."
+      ],
+      "rationale": "Few-shot examples provide concrete anchors for the model to understand the exact intent vocabulary and output format, reducing hallucination and paraphrasing. This directly addresses the main failure pattern of incorrect or invented intents by showing clear mappings from request to canonical intent. Examples also demonstrate atomic symptom extraction, reinforcing that instruction. This approach is likely the most effective given the observed confusion about intent labels.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nRespond with ONLY the JSON object, no explanation.\n\nExamples:\n\nCustomer support request:\n\"I want to cancel my order because it arrived late.\"\n\n{\n  \"intent\": \"cancel order\",\n  \"symptoms\": [\"order arrived late\"]\n}\n\nCustomer support request:\n\"Please change the shipping address to 123 Main St.\"\n\n{\n  \"intent\": \"change shipping address\",\n  \"symptoms\": [\"request to change shipping address to 123 Main St\"]\n}\n\nCustomer support request:\n\"The product I received is damaged and missing parts.\"\n\n{\n  \"intent\": \"report damaged product\",\n  \"symptoms\": [\"product is damaged\", \"product is missing parts\"]\n}\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v4b",
+      "approach_name": "Chain-of-Thought Reasoning",
+      "changes": [
+        "Add instruction to briefly reason about the request before producing the JSON output.",
+        "Keep existing explicit schema, role assignment, and negative instructions.",
+        "Emphasize selecting intent exactly from known intents."
+      ],
+      "rationale": "Asking the model to reason step-by-step before answering can improve accuracy by encouraging careful consideration of the request and the known intents. This can reduce hallucination and incorrect intent selection by making the model internally verify its choice. It also helps with ambiguous requests by making the model explicitly consider uncertainty, potentially improving ambiguity handling.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nFirst, briefly reason about the customer's request and identify the most likely intent from the known intents. Then, produce ONLY the JSON object with the extracted fields.\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v4c",
+      "approach_name": "Self-Critique and Revision",
+      "changes": [
+        "Add instructions for the model to first draft a JSON extraction, then critique it for missing or incorrect fields, and finally produce a revised JSON.",
+        "Maintain explicit schema and negative instructions.",
+        "Emphasize exact intent matching and atomic symptoms."
+      ],
+      "rationale": "Self-critique encourages the model to check its own output for errors or hallucinations, which can reduce incorrect intent extraction and improve adherence to the schema. This is especially useful for ambiguous or complex requests where the model might initially guess incorrectly. The revision step can correct common mistakes such as inventing intents or merging symptoms.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nStep 1: Draft a JSON extraction from the request.\nStep 2: Critique the draft for any missing facts, incorrect intent, or schema errors.\nStep 3: Produce a final revised JSON object that fixes any issues.\n\nRespond with ONLY the final JSON object, no explanation.\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v4d",
+      "approach_name": "Ground Symptoms in Quotes",
+      "changes": [
+        "Add instruction to ground each symptom in a direct quote or phrase from the original customer request.",
+        "Keep existing explicit schema, role assignment, and negative instructions.",
+        "Emphasize atomic symptoms and exact intent matching."
+      ],
+      "rationale": "Grounding symptoms in quotes from the original text reduces hallucination and makes symptoms more precise and verifiable. This can improve symptom extraction quality and indirectly help intent selection by focusing on exact customer language. It also aids human reviewers in validating the extraction. Although symptoms are not evaluated here, this practice can improve overall extraction reliability.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer, quoted directly or closely paraphrased from the request. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nRespond with ONLY the JSON object, no explanation.\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v4e",
+      "approach_name": "Explicit Ambiguity Handling",
+      "changes": [
+        "Add stronger instructions on how to handle ambiguous requests: pick the most likely intent but include an 'ambiguity' field describing the uncertainty.",
+        "Keep existing explicit schema, role assignment, and negative instructions.",
+        "Emphasize exact intent matching and atomic symptoms."
+      ],
+      "rationale": "The current prompt mentions ambiguity handling but does not strongly emphasize it. Explicitly instructing the model to flag uncertainty in a dedicated field can improve handling of ambiguous or unclear requests, reducing incorrect intent assignments. This can also improve trustworthiness and downstream triage decisions.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified.\n\nOutput JSON schema:\n- intent: string, a short, lowercase verb phrase exactly matching one of the known intents (e.g., \"cancel order\", \"change shipping address\", \"report damaged product\"). Do NOT invent new intents or synonyms.\n- symptoms: list of strings, each a single concrete, observable problem described by the customer. Do NOT merge multiple facts into one symptom.\n- ambiguity (optional): string, present only if the request is ambiguous, describing the uncertainty. If the request is ambiguous, select the most likely intent but include this field to describe the ambiguity.\n\nDo NOT suggest solutions or causes. Do NOT paraphrase or invent intents.\n\nRespond with ONLY the JSON object, no explanation.\n\nCustomer support request:\n{{request}}"
+    }
+  ]
+}

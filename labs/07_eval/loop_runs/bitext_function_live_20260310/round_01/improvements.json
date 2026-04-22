@@ -1,0 +1,60 @@
+{
+  "source_prompt_version": "v1",
+  "avg_rating": 2.8,
+  "n_items": 60,
+  "n_rationales_sampled": 60,
+  "analysis": "The main failure pattern is consistent misalignment between the extracted intent and the ground-truth intent, especially for nuanced intents like 'change_order' or 'change_shipping_address'. The model often produces semantically similar but not exact verb phrases (e.g., 'change product' vs. 'change_order'), indicating a lack of strict normalization or canonical intent mapping. Symptoms are not evaluated in the dataset, so no direct feedback on that, but the instructions do not explicitly prevent hallucination or merging of symptoms. The prompt lacks examples, which could help anchor the expected output format and intent phrasing. Also, there is no explicit negative instruction to avoid vague or imprecise intent phrases, nor is there a chain-of-thought or grounding in quotes to improve accuracy. Finally, the output is not explicitly instructed to be output-only, which might cause format noise.",
+  "variations": [
+    {
+      "variation_id": "v4a",
+      "changes": [
+        "added few-shot examples demonstrating exact intent phrases and symptom extraction",
+        "added explicit output-only instruction to produce only JSON",
+        "added negative instructions to avoid vague or imprecise intent phrases",
+        "expanded explicit output schema with example values"
+      ],
+      "rationale": "Including few-shot examples will anchor the model to produce the exact canonical intent phrases and symptom format, addressing the main failure of intent mismatch. Negative instructions will reduce vague or approximate intent wording. Output-only instructions reduce noise and parsing errors. Explicit schema with example values clarifies expectations and reduces hallucination.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, extract the following fields exactly as specified:\n\n- intent: The customer's primary goal or desired outcome. Use a short, lowercase verb phrase exactly matching one of the canonical intents (e.g., \"cancel_order\", \"change_order\", \"change_shipping_address\"). Do not use vague or approximate phrases.\n- symptoms: A list of concrete, observable problems the customer describes. Each symptom should be a brief factual statement with no interpretation or solution. List one fact per entry.\n\nRespond with only a JSON object with exactly these keys:\n{\n  \"intent\": string,\n  \"symptoms\": [string],\n  \"ambiguity\": string (optional, only if the intent is ambiguous)\n}\n\nExamples:\n\nCustomer support request:\n\"I want to cancel my order because it arrived late.\"\n\n{\n  \"intent\": \"cancel_order\",\n  \"symptoms\": [\"order arrived late\"]\n}\n\nCustomer support request:\n\"Please change the shipping address for my recent purchase.\"\n\n{\n  \"intent\": \"change_shipping_address\",\n  \"symptoms\": [\"request to change shipping address\"]\n}\n\nCustomer support request:\n{{request}}\n\nRespond with only the JSON."
+    },
+    {
+      "variation_id": "v4b",
+      "changes": [
+        "added chain-of-thought reasoning before final JSON output",
+        "added explicit output-only instruction",
+        "added negative instructions to avoid inferring causes or solutions"
+      ],
+      "rationale": "As the main failure is intent mismatch, adding a brief reasoning step before output can help the model better analyze the request and select the correct canonical intent. Negative instructions reduce hallucination and drift. Output-only instruction ensures clean JSON output.",
+      "prompt_template": "You are a support-ticket triage assistant. Given a customer support request, first reason briefly about the customer's primary goal and observable symptoms, then respond with a JSON object.\n\nInstructions:\n- intent: Provide the customer's primary goal as a short, lowercase verb phrase.\n- symptoms: List concrete, observable problems described by the customer, one fact per entry, no interpretation or solutions.\n- If ambiguous, pick the most likely intent and add an \"ambiguity\" key explaining the uncertainty.\n- Do not infer causes or suggest solutions.\n- Respond with only the JSON object, no explanations.\n\nCustomer support request:\n{{request}}\n\nReasoning:\n"
+    },
+    {
+      "variation_id": "v4c",
+      "changes": [
+        "added explicit output schema with key types and constraints",
+        "added grounding symptoms in quotes from the original text",
+        "added negative instructions to avoid merging symptoms or adding interpretation"
+      ],
+      "rationale": "Grounding symptoms in quotes reduces hallucination and improves symptom extraction quality, which although not evaluated here, may indirectly improve intent extraction by better understanding the request. Explicit schema and negative instructions reduce format errors and hallucination.",
+      "prompt_template": "You are a support-ticket triage assistant. Extract the following fields from the customer support request:\n\n- intent: The customer's primary goal as a short, lowercase verb phrase.\n- symptoms: A list of concrete, observable problems, each as a brief factual statement directly grounded in a quoted phrase from the request. Do not merge multiple facts or interpret.\n\nRespond with a JSON object with exactly these keys:\n{\n  \"intent\": string (lowercase verb phrase),\n  \"symptoms\": [string],\n  \"ambiguity\": string (optional, if intent is ambiguous)\n}\n\nDo not add any other fields or explanations.\n\nCustomer support request:\n{{request}}\n\nExample output:\n{\n  \"intent\": \"cancel_order\",\n  \"symptoms\": [\"'order arrived late'\"],\n  \"ambiguity\": \"\"\n}"
+    },
+    {
+      "variation_id": "v4d",
+      "changes": [
+        "added role assignment with more detailed role description",
+        "added explicit output-only instruction",
+        "added negative instructions to avoid vague intent and hallucinated symptoms"
+      ],
+      "rationale": "Reinforcing the role with a more detailed description may help the model focus on the task. Negative instructions reduce common failure modes. Output-only instruction ensures clean output. This is a moderate change focusing on role and instructions rather than examples or reasoning.",
+      "prompt_template": "You are an expert support-ticket triage assistant specialized in extracting structured information from customer requests.\n\nYour task is to extract:\n- intent: the customer's primary goal as a short, lowercase verb phrase (e.g., \"cancel_order\", \"change_order\"). Avoid vague or approximate phrases.\n- symptoms: a list of concrete, observable problems described by the customer. Each symptom must be a single factual statement with no interpretation or solution.\n\nIf the request is ambiguous, select the most likely intent and add an \"ambiguity\" key explaining the uncertainty.\n\nDo not infer causes, do not suggest solutions, and do not add any fields beyond intent, symptoms, and optional ambiguity.\n\nRespond with only the JSON object.\n\nCustomer support request:\n{{request}}"
+    },
+    {
+      "variation_id": "v4e",
+      "changes": [
+        "restructured prompt layout to separate instructions, schema, and example",
+        "added few-shot example with ambiguity handling",
+        "added explicit output-only instruction"
+      ],
+      "rationale": "A clearer layout with separated sections and an example demonstrating ambiguity handling can help the model better understand the task and output format. Few-shot example anchors the model's output style and content. Output-only instruction reduces noise.",
+      "prompt_template": "You are a support-ticket triage assistant.\n\nTask:\nExtract the following fields from the customer support request:\n- intent: short, lowercase verb phrase representing the customer's primary goal.\n- symptoms: list of concrete, observable problems described by the customer, one fact per entry.\n- ambiguity (optional): string explaining uncertainty if the intent is ambiguous.\n\nOutput schema:\n{\n  \"intent\": string,\n  \"symptoms\": [string],\n  \"ambiguity\": string (optional)\n}\n\nExample:\nRequest: \"I might want to change my order but not sure if it's possible.\"\nOutput:\n{\n  \"intent\": \"change_order\",\n  \"symptoms\": [\"uncertainty about changing order\"],\n  \"ambiguity\": \"Customer is unsure if changing order is possible\"\n}\n\nRespond with only the JSON object.\n\nCustomer support request:\n{{request}}"
+    }
+  ]
+}

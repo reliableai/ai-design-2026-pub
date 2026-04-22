@@ -1,0 +1,135 @@
+{
+  "eval_mode": "ground_truth_intent",
+  "extract_model": "gpt-4.1-mini",
+  "eval_model": "gpt-4.1-mini",
+  "improve_model": "gpt-4.1-mini",
+  "initial_prompt_version": "v1",
+  "max_rounds": 2,
+  "min_improvement": 0.05,
+  "extract_batch_size": 30,
+  "judge_batch_size": 30,
+  "variations_per_round": 2,
+  "rounds": [
+    {
+      "round_index": 1,
+      "current_prompt_version": "v1",
+      "current_avg_rating": 2.8,
+      "current_prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/prompt.txt",
+      "current_extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/extractions.json",
+      "current_evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/evaluations.json",
+      "improvements_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/improvements.json",
+      "best_variation_version": "v4a",
+      "best_variation_avg_rating": 5.0,
+      "improvement": 2.2,
+      "accepted": true,
+      "variations_proposed": 5,
+      "variations_evaluated": 2,
+      "variations": [
+        {
+          "variation_id": "v4a",
+          "avg_rating": 5.0,
+          "changes": [
+            "added few-shot examples demonstrating exact intent phrases and symptom extraction",
+            "added explicit output-only instruction to produce only JSON",
+            "added negative instructions to avoid vague or imprecise intent phrases",
+            "expanded explicit output schema with example values"
+          ],
+          "rationale": "Including few-shot examples will anchor the model to produce the exact canonical intent phrases and symptom format, addressing the main failure of intent mismatch. Negative instructions will reduce vague or approximate intent wording. Output-only instructions reduce noise and parsing errors. Explicit schema with example values clarifies expectations and reduces hallucination.",
+          "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/prompt.txt",
+          "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/extractions.json",
+          "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/evaluations.json"
+        },
+        {
+          "variation_id": "v4b",
+          "avg_rating": 3.05,
+          "changes": [
+            "added chain-of-thought reasoning before final JSON output",
+            "added explicit output-only instruction",
+            "added negative instructions to avoid inferring causes or solutions"
+          ],
+          "rationale": "As the main failure is intent mismatch, adding a brief reasoning step before output can help the model better analyze the request and select the correct canonical intent. Negative instructions reduce hallucination and drift. Output-only instruction ensures clean JSON output.",
+          "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/prompt.txt",
+          "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/extractions.json",
+          "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/evaluations.json"
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "current_prompt_version": "v4a",
+      "current_avg_rating": 5.0,
+      "current_prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/current_v4a/prompt.txt",
+      "current_extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/current_v4a/extractions.json",
+      "current_evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/current_v4a/evaluations.json",
+      "improvements_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/improvements.json",
+      "best_variation_version": "v4a",
+      "best_variation_avg_rating": 5.0,
+      "improvement": 0.0,
+      "accepted": false,
+      "variations_proposed": 5,
+      "variations_evaluated": 2,
+      "variations": [
+        {
+          "variation_id": "v4a",
+          "avg_rating": 5.0,
+          "changes": [
+            "Add 'ground in quotes' best practice by instructing the model to quote or paraphrase exact phrases from the customer request for each symptom",
+            "Modify symptoms instruction to require each symptom to be directly tied to a phrase from the original text"
+          ],
+          "rationale": "Although the current prompt performs perfectly on intent extraction, symptoms were not evaluated and hallucination or vague symptom descriptions could be a risk. Grounding symptoms in quotes or close paraphrases from the original request can reduce hallucination and improve interpretability and reviewability of symptoms. This change leverages a best practice that complements the existing strong schema without disrupting intent extraction.",
+          "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/v4a/prompt.txt",
+          "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/v4a/extractions.json",
+          "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/v4a/evaluations.json"
+        },
+        {
+          "variation_id": "v4b",
+          "avg_rating": 5.0,
+          "changes": [
+            "Add 'chain of thought before answer' best practice by asking the model to briefly reason about the intent and symptoms before outputting the JSON",
+            "Keep the output-only JSON response but allow a short reasoning step before it"
+          ],
+          "rationale": "Adding a brief chain-of-thought reasoning step can improve accuracy by encouraging the model to internally verify the intent and symptoms before outputting. This is especially useful if the prompt is extended to more complex or ambiguous requests. Although the current prompt is strong, this variation explores whether explicit reasoning can further reduce errors or ambiguity in intent and symptom extraction.",
+          "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/v4b/prompt.txt",
+          "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/v4b/extractions.json",
+          "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_02/v4b/evaluations.json"
+        }
+      ]
+    }
+  ],
+  "stopped_reason": "No candidate improved the current prompt by more than 0.05.",
+  "best_prompt_version": "v4a",
+  "best_avg_rating": 5.0,
+  "best_prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/best_prompt.txt",
+  "versions": [
+    {
+      "prompt_version": "v1",
+      "avg_rating": 2.8,
+      "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/prompt.txt",
+      "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/extractions.json",
+      "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/current_v1/evaluations.json",
+      "source_round": 1,
+      "kind": "current",
+      "is_best": false
+    },
+    {
+      "prompt_version": "v4a",
+      "avg_rating": 5.0,
+      "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/prompt.txt",
+      "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/extractions.json",
+      "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4a/evaluations.json",
+      "source_round": 1,
+      "kind": "variation",
+      "is_best": true
+    },
+    {
+      "prompt_version": "v4b",
+      "avg_rating": 3.05,
+      "prompt_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/prompt.txt",
+      "extractions_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/extractions.json",
+      "evaluations_path": "labs/05_eval_fundamentals/loop_runs/bitext_function_live_20260310/round_01/v4b/evaluations.json",
+      "source_round": 1,
+      "kind": "variation",
+      "is_best": false
+    }
+  ]
+}

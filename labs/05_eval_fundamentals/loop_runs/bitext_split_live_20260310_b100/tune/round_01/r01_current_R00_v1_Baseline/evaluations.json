@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "bitext_0219",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0216",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0212",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0218",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0217",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "create_account"
+  },
+  {
+    "id": "bitext_0493",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0496",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0495",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0494",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0499",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_refund"
+  },
+  {
+    "id": "bitext_0283",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0282",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0286",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0278",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0276",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "edit_account"
+  },
+  {
+    "id": "bitext_0297",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0291",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0292",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0296",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0287",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_invoice"
+  },
+  {
+    "id": "bitext_0242",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0250",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0238",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0239",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0243",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0251",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_options"
+  },
+  {
+    "id": "bitext_0387",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0394",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0385",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0391",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0389",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0388",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "recover_password"
+  },
+  {
+    "id": "bitext_0480",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0484",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0476",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0473",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0475",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0483",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "track_order"
+  },
+  {
+    "id": "bitext_0007",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0009",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0005",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0006",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0014",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0010",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0012",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "cancel_order"
+  },
+  {
+    "id": "bitext_0136",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0130",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0132",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0128",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0127",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0131",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0126",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_refund_policy"
+  },
+  {
+    "id": "bitext_0228",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0229",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0234",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0224",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0231",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0226",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0230",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delete_account"
+  },
+  {
+    "id": "bitext_0304",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0311",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0301",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0306",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0303",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0310",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0302",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "get_refund"
+  },
+  {
+    "id": "bitext_0439",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0442",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0435",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0448",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0447",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0444",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0451",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "set_up_shipping_address"
+  },
+  {
+    "id": "bitext_0101",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0102",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0104",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0095",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0089",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0098",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0096",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_invoice"
+  },
+  {
+    "id": "bitext_0112",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0110",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0105",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0106",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0118",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0122",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0114",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_payment_methods"
+  },
+  {
+    "id": "bitext_0423",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0421",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0427",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0424",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0426",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0433",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0420",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "review"
+  },
+  {
+    "id": "bitext_0191",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0192",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0198",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0202",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0193",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0207",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0203",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_human_agent"
+  },
+  {
+    "id": "bitext_0256",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0260",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0257",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0262",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0261",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0255",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0258",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0259",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "delivery_period"
+  },
+  {
+    "id": "bitext_0349",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0341",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0348",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0350",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0359",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0352",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0342",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0347",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "payment_issue"
+  },
+  {
+    "id": "bitext_0400",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0411",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0406",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0402",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0414",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0399",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0410",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0408",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "registration_problems"
+  },
+  {
+    "id": "bitext_0376",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0381",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0380",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0373",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0368",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0370",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0371",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0374",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0372",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "place_order"
+  },
+  {
+    "id": "bitext_0456",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0461",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0466",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0464",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0469",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0453",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0454",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0468",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0463",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "switch_account"
+  },
+  {
+    "id": "bitext_0030",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0024",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0019",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0027",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0026",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0037",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0017",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0028",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0021",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_order"
+  },
+  {
+    "id": "bitext_0324",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0337",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0329",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0331",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0322",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0332",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0325",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0321",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0340",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "newsletter_subscription"
+  },
+  {
+    "id": "bitext_0054",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0052",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0045",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0041",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0046",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0060",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0039",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0056",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0055",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "change_shipping_address"
+  },
+  {
+    "id": "bitext_0078",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0063",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0076",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0084",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0081",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0070",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0072",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0086",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0065",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "check_cancellation_fee"
+  },
+  {
+    "id": "bitext_0157",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0159",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0151",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0154",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0155",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0144",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0145",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0140",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0153",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0158",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0143",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "complaint"
+  },
+  {
+    "id": "bitext_0172",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0183",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0167",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0171",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0173",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0190",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0174",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0166",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0185",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  },
+  {
+    "id": "bitext_0188",
+    "prompt_version": "v1",
+    "rating": 1,
+    "motivation": "The output could not be evaluated because the extracted JSON was not usable: missing or invalid 'intent' field. This evaluator only checks the intent label because the dataset has no gold symptom labels.",
+    "predicted_intent": null,
+    "ground_truth_intent": "contact_customer_service"
+  }
+]

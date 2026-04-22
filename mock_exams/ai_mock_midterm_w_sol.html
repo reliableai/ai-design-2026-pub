@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Mock Midterm — Solutions | AI Systems Design</title>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #faf6ef;
+      --color-surface: #f3ece0;
+      --color-surface-elevated: #ede5d6;
+      --color-text: #3a2e22;
+      --color-text-muted: #7a6b5a;
+      --color-primary: #8b5e3c;
+      --color-primary-dark: #6d4829;
+      --color-accent: #a0714f;
+      --color-border: #ddd0bc;
+      --color-code-bg: #f0e8da;
+      --color-solution-bg: #f7f2e8;
+      --font-serif: "Crimson Pro", "Georgia", serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: "SF Mono", "Fira Code", "Consolas", monospace;
+      --max-width: 820px;
+      --spacing: 1.5rem;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--color-text);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Layout */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--spacing);
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(180deg, #f0e6d4 0%, var(--color-bg) 100%);
+      border-bottom: 1px solid var(--color-border);
+      padding: 1.25rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .site-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .site-title:hover { color: var(--color-primary-dark); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.75rem;
+    }
+
+    nav a {
+      font-family: var(--font-sans);
+      color: var(--color-text-muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.4rem 0;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+
+    /* Main */
+    main {
+      padding: 2.5rem var(--spacing) 4rem;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      line-height: 1.3;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+    h2 { font-size: 1.4rem; color: var(--color-primary); margin: 2rem 0 1rem; }
+    h3 { font-size: 1.15rem; margin: 1.5rem 0 0.75rem; }
+
+    p { margin: 0.75rem 0; }
+
+    a { color: var(--color-primary); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--color-primary-dark); }
+
+    strong { font-weight: 600; }
+
+    ul, ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+    li { margin: 0.4rem 0; }
+
+    /* Session header */
+    .session-header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--color-border);
+    }
+
+    .session-header .number {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .session-header h1 {
+      margin: 0.25rem 0 0.5rem;
+    }
+
+    .session-header .meta {
+      font-family: var(--font-sans);
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    /* Exam rules */
+    .exam-rules {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-primary);
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .exam-rules h3 { color: var(--color-primary); margin-top: 0; font-size: 1rem; }
+    .exam-rules ul { margin-bottom: 0; }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 2px 8px rgba(90, 70, 50, 0.06);
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(90, 70, 50, 0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--color-primary-dark);
+      font-size: 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--color-border);
+      margin-bottom: 1rem;
+    }
+
+    /* Formula blocks */
+    .formula {
+      background: var(--color-code-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0;
+      text-align: center;
+      overflow-x: auto;
+    }
+
+    /* Details / solutions */
+    details {
+      margin: 0.75rem 0;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.6rem 1rem;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      color: var(--color-primary);
+      transition: all 0.2s;
+      letter-spacing: 0.02em;
+    }
+
+    details summary:hover {
+      background: var(--color-surface-elevated);
+    }
+
+    details[open] summary {
+      border-radius: 6px 6px 0 0;
+      border-bottom-color: transparent;
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    .solution-content {
+      background: var(--color-solution-bg);
+      border: 1px solid var(--color-border);
+      border-top: none;
+      border-radius: 0 0 6px 6px;
+      padding: 1rem 1.5rem 1.25rem;
+    }
+
+    /* Tables */
+    table {
+      border-collapse: collapse;
+      margin: 1rem auto;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 0.6rem 1.25rem;
+      border: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    th {
+      background: var(--color-surface);
+      font-weight: 600;
+      color: var(--color-primary-dark);
+    }
+
+    /* Canvas plots */
+    canvas {
+      border: 1px solid var(--color-border) !important;
+      border-radius: 8px !important;
+      background: #fff;
+    }
+
+    /* Points badge */
+    .points { color: var(--color-accent); font-weight: 600; float: right; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding: 1.75rem;
+      margin-top: 3rem;
+      color: var(--color-text-muted);
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      :root { --spacing: 1rem; }
+      header .container { flex-direction: column; align-items: flex-start; }
+      nav ul { gap: 1rem; }
+      h1 { font-size: 1.5rem; }
+      .card { padding: 1.25rem; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 0.4rem 0.75rem; }
+    }
+
+    /* Print */
+    @media print {
+      header, footer, details summary { display: none; }
+      .solution-content { display: block; border: 1px solid #ccc; }
+      .card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" class="site-title">AI Systems Design</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../syllabus.html">Syllabus</a></li>
+          <li><a href="../assessments.html" class="active">Assessment</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../playground/index.html">Playground</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="session-header">
+      <div class="number">Midterm</div>
+      <h1>Mock Midterm Exam — Solutions</h1>
+      <p class="meta">Closed book · 1 hour · 30 points</p>
+    </div>
+
+    <div class="exam-rules">
+      <h3>Rules</h3>
+      <ul>
+        <li>Closed book, no notes, no electronic devices.</li>
+        <li>Show all work. Partial credit is awarded for correct reasoning.</li>
+        <li>You may leave answers in combinatorial or factorial form (e.g. \(\binom{10}{3}\) or \(5!\)) unless otherwise stated.</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Exercise 1 -->
+    <!-- ============================================================ -->
+    <div class="card">
+      <h3>Exercise 1: Course Enrollment</h3>
+
+      <p>Among students at the university:</p>
+      <ul>
+        <li>35% attend the Knowledge Management (KM) course</li>
+        <li>28% of KM students also attend the AI Design (AID) course</li>
+        <li>40% of all students attend the AID course</li>
+      </ul>
+
+      <p><strong>(a)</strong> What is \(P(\text{KM} \cap \text{AID})\)?</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p>We know \(P(\text{AID} \mid \text{KM}) = 0.28\) and \(P(\text{KM}) = 0.35\).</p>
+          <p>By the definition of conditional probability:</p>
+          <p class="formula">\[P(\text{KM} \cap \text{AID}) = P(\text{AID} \mid \text{KM}) \cdot P(\text{KM}) = 0.28 \times 0.35 = 0.098\]</p>
+        </div>
+      </details>
+
+      <br>
+
+      <p><strong>(b)</strong> What is \(P(\text{KM} \mid \text{AID})\)?</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p>Using Bayes' theorem:</p>
+          <p class="formula">\[P(\text{KM} \mid \text{AID}) = \frac{P(\text{AID} \mid \text{KM}) \cdot P(\text{KM})}{P(\text{AID})} = \frac{0.28 \times 0.35}{0.40} = \frac{0.098}{0.40} = 0.245\]</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Exercise 2 -->
+    <!-- ============================================================ -->
+    <div class="card">
+      <h3>Exercise 2: AI Model Effectiveness</h3>
+
+      <p>A data scientist deploys an AI model for customer churn prediction in online game sales. The model's quality for Customer A is 85 correct predictions out of 100. In a pilot test on a new customer, Customer B, in the same domain of online game sales, the model correctly predicts 6 outcomes and incorrectly predicts 4.</p>
+
+      <p><strong>(a)</strong> How would you report your accuracy estimate for Customer B?</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p>Since Customer B is in the same domain as Customer A, we can use the Customer A results as an informative prior. The 85/100 performance on Customer A translates to a prior:</p>
+          <p class="formula">\[\theta \sim \text{Beta}(85, 15)\]</p>
+
+          <p>Now we update with Customer B's data (6 successes, 4 failures):</p>
+          <p class="formula">\[\theta \mid \text{data}_B \sim \text{Beta}(85 + 6,\; 15 + 4) = \text{Beta}(91, 19)\]</p>
+
+          <p>The posterior mean is:</p>
+          <p class="formula">\[\mathbb{E}[\theta] = \frac{91}{91 + 19} = \frac{91}{110} \approx 0.827\]</p>
+
+          <p>So rather than reporting the naive 6/10 = 60% from Customer B's small test alone, we report a posterior estimate of about 82.7%. The strong prior from the same domain pulls the estimate up, reflecting that 10 data points are too few to override what we already know about the model's performance in online game sales.</p>
+
+          <p>We should also report uncertainty. A <strong>95% credible interval</strong> is the interval \([L, U]\) such that 95% of the posterior probability lies between \(L\) and \(U\). For a \(\text{Beta}(\alpha, \beta)\) posterior, this is computed as the interval between the 0.025 and 0.975 quantiles of that distribution — meaning we believe with 95% posterior probability that the true parameter falls within this range.</p>
+
+          <p>The 95% credible interval for \(\text{Beta}(91, 19)\) is approximately [0.75, 0.89].</p>
+        </div>
+      </details>
+
+      <br>
+
+      <p><strong>(b)</strong> What if Customer B was in the online music sales domain rather than games?</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p>If Customer B is in a different domain (music vs games), we should <strong>not</strong> use the Customer A results as a strong prior, since the model's accuracy in game sales may not transfer to music sales.</p>
+
+          <p>Instead, we should use a weakly informative or uninformative prior, for example \(\text{Beta}(1, 1)\) (uniform):</p>
+          <p class="formula">\[\theta \sim \text{Beta}(1, 1)\]</p>
+
+          <p>Updating with Customer B's data:</p>
+          <p class="formula">\[\theta \mid \text{data}_B \sim \text{Beta}(1 + 6,\; 1 + 4) = \text{Beta}(7, 5)\]</p>
+
+          <p>The posterior mean is:</p>
+          <p class="formula">\[\mathbb{E}[\theta] = \frac{7}{12} \approx 0.583\]</p>
+
+          <p>Now the estimate (≈ 58.3%) is much lower and much more uncertain. The 95% credible interval for \(\text{Beta}(7, 5)\) is approximately [0.31, 0.83] — very wide, reflecting that we have only 10 observations and no relevant prior information.</p>
+
+          <p><strong>Key insight:</strong> The choice of prior matters. Using domain knowledge appropriately (same domain → informative prior, different domain → weak prior) is a critical modeling decision that directly affects the accuracy estimate and its uncertainty.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Exercise 3 -->
+    <!-- ============================================================ -->
+    <div class="card">
+      <h3>Exercise 3: Comparing Classifiers</h3>
+
+      <p>Two teams each build a customer support request (CSR) classifier that decides whether a request is urgent (binary classifier).</p>
+
+      <ul>
+        <li><strong>Team A</strong> has a dataset of 8000 CSRs and reserves 200 for testing.</li>
+        <li><strong>Team B</strong> has a dataset of 1000 CSRs and reserves 180 for testing.</li>
+      </ul>
+
+      <p><strong>(a)</strong> Which team has more reliable estimates from their test runs, and why? (We are <em>not</em> asking which team is more likely to have the best classifier.)</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p>Both teams have <strong>roughly equally reliable</strong> test estimates — Team A's are slightly more reliable (200 test examples vs 180).</p>
+
+          <p>The reliability of an accuracy estimate depends on the <strong>absolute size of the test set</strong>, not the total dataset size. The standard error of an estimated proportion \(\hat{p}\) is:</p>
+          <p class="formula">\[\text{SE} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n_{\text{test}}}}\]</p>
+
+          <p>Only \(n_{\text{test}}\) appears in this formula — nothing about the training set or the total dataset. Team A tests on 200 examples and Team B on 180, so their standard errors are very similar.</p>
+        </div>
+      </details>
+
+      <br>
+
+      <p><strong>(b)</strong> Now suppose Team A's classifier gets 120 out of 200 correct, and Team B's classifier gets 175 out of 180 correct. Assume a uniform prior \(\text{Beta}(1,1)\) on each classifier's true accuracy \(\theta\). Which team's posterior has the widest 95% credible interval, and why?</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p>With a \(\text{Beta}(1,1)\) prior (uniform) and Binomial data, the posterior is:</p>
+          <p class="formula">\[\theta \mid \text{data} \sim \text{Beta}(1 + k,\; 1 + n - k)\]</p>
+
+          <p><strong>Team A</strong> (120 correct out of 200):</p>
+          <p class="formula">\[\theta_A \sim \text{Beta}(121, 81)\]</p>
+
+          <p><strong>Team B</strong> (175 correct out of 180):</p>
+          <p class="formula">\[\theta_B \sim \text{Beta}(176, 6)\]</p>
+
+          <p>The variance of a \(\text{Beta}(\alpha, \beta)\) distribution is:</p>
+          <p class="formula">\[\text{Var} = \frac{\alpha \beta}{(\alpha+\beta)^2(\alpha+\beta+1)}\]</p>
+
+          <p><strong>Team A:</strong></p>
+          <p class="formula">\[\text{Var}_A = \frac{121 \times 81}{202^2 \times 203} = \frac{9801}{8{,}284{,}812} \approx 0.001183\]</p>
+
+          <p><strong>Team B:</strong></p>
+          <p class="formula">\[\text{Var}_B = \frac{176 \times 6}{182^2 \times 183} = \frac{1056}{6{,}064{,}668} \approx 0.000174\]</p>
+
+          <p><strong>Team A's posterior has the wider 95% credible interval.</strong></p>
+
+          <p>The Beta distribution's variance depends on how far the posterior mean is from 0.5. Team A's posterior mean is \(\frac{121}{202} \approx 0.60\), close to the high-uncertainty zone. Team B's posterior mean is \(\frac{176}{182} \approx 0.967\), far toward 1, where the distribution is tightly concentrated. So even though both teams have similar test set sizes, Team A's estimate of accuracy is considerably less precise.</p>
+
+          <canvas id="betaPlot7b_A" width="560" height="250" style="max-width:100%; margin:1rem auto 0.5rem; display:block; border:1px solid #ddd; border-radius:6px;"></canvas>
+          <canvas id="betaPlot7b_B" width="560" height="250" style="max-width:100%; margin:0.5rem auto 1rem; display:block; border:1px solid #ddd; border-radius:6px;"></canvas>
+          <script>
+          (function(){
+            function lnGamma(z){
+              const g=7, c=[0.99999999999980993,676.5203681218851,-1259.1392167224028,
+                771.32342877765313,-176.61502916214059,12.507343278686905,
+                -0.13857109526572012,9.9843695780195716e-6,1.5056327351493116e-7];
+              if(z<0.5) return Math.log(Math.PI/Math.sin(Math.PI*z))-lnGamma(1-z);
+              z-=1; let x=c[0];
+              for(let i=1;i<g+2;i++) x+=c[i]/(z+i);
+              const t=z+g+0.5;
+              return 0.5*Math.log(2*Math.PI)+(z+0.5)*Math.log(t)-t+Math.log(x);
+            }
+            function betaPDF(x,a,b){
+              if(x<=0||x>=1) return 0;
+              return Math.exp((a-1)*Math.log(x)+(b-1)*Math.log(1-x)-(lnGamma(a)+lnGamma(b)-lnGamma(a+b)));
+            }
+            function betaCDF(x,a,b,steps=800){
+              if(x<=0) return 0; if(x>=1) return 1;
+              let sum=0; const dx=x/steps;
+              for(let i=0;i<steps;i++) sum+=betaPDF(i*dx+dx/2,a,b)*dx;
+              return sum;
+            }
+            function betaQuantile(p,a,b){
+              let lo=0,hi=1;
+              for(let i=0;i<60;i++){const mid=(lo+hi)/2; if(betaCDF(mid,a,b)>p) hi=mid; else lo=mid;}
+              return (lo+hi)/2;
+            }
+            function drawBetaPlot(canvasId, alpha, beta, label, color, xMinForce, xMaxForce){
+              const canvas=document.getElementById(canvasId);
+              const ctx=canvas.getContext('2d');
+              const W=canvas.width, H=canvas.height;
+              const pad={l:50,r:20,t:30,b:40};
+              const pw=W-pad.l-pad.r, ph=H-pad.t-pad.b;
+              const mean=alpha/(alpha+beta);
+              const xMin=xMinForce, xMax=xMaxForce;
+              const N=500; const xs=[], ys=[]; let yMax=0;
+              for(let i=0;i<=N;i++){
+                const x=xMin+(xMax-xMin)*i/N;
+                const y=betaPDF(x,alpha,beta);
+                xs.push(x); ys.push(y);
+                if(y>yMax) yMax=y;
+              }
+              yMax*=1.15;
+              const toX=x=>pad.l+(x-xMin)/(xMax-xMin)*pw;
+              const toY=y=>pad.t+ph-y/yMax*ph;
+              const lo=betaQuantile(0.025,alpha,beta);
+              const hi=betaQuantile(0.975,alpha,beta);
+              ctx.clearRect(0,0,W,H);
+              ctx.beginPath(); let started=false;
+              for(let i=0;i<=N;i++){
+                if(xs[i]>=lo && xs[i]<=hi){
+                  if(!started){ctx.moveTo(toX(xs[i]),toY(0));started=true;}
+                  ctx.lineTo(toX(xs[i]),toY(ys[i]));
+                }
+              }
+              for(let i=N;i>=0;i--){
+                if(xs[i]>=lo && xs[i]<=hi) ctx.lineTo(toX(xs[i]),toY(0));
+              }
+              ctx.closePath(); ctx.fillStyle=color+'30'; ctx.fill();
+              ctx.beginPath(); ctx.moveTo(toX(xs[0]),toY(ys[0]));
+              for(let i=1;i<=N;i++) ctx.lineTo(toX(xs[i]),toY(ys[i]));
+              ctx.strokeStyle=color; ctx.lineWidth=2.5; ctx.stroke();
+              ctx.beginPath(); ctx.setLineDash([5,4]);
+              ctx.moveTo(toX(mean),toY(0)); ctx.lineTo(toX(mean),toY(betaPDF(mean,alpha,beta)));
+              ctx.strokeStyle='#c0392b'; ctx.lineWidth=1.5; ctx.stroke(); ctx.setLineDash([]);
+              ctx.beginPath(); ctx.strokeStyle='#888'; ctx.lineWidth=1; ctx.setLineDash([3,3]);
+              ctx.moveTo(toX(lo),toY(0)); ctx.lineTo(toX(lo),toY(betaPDF(lo,alpha,beta)));
+              ctx.moveTo(toX(hi),toY(0)); ctx.lineTo(toX(hi),toY(betaPDF(hi,alpha,beta)));
+              ctx.stroke(); ctx.setLineDash([]);
+              ctx.beginPath();
+              ctx.moveTo(pad.l,pad.t); ctx.lineTo(pad.l,pad.t+ph); ctx.lineTo(pad.l+pw,pad.t+ph);
+              ctx.strokeStyle='#333'; ctx.lineWidth=1; ctx.stroke();
+              ctx.fillStyle='#333'; ctx.font='11px sans-serif'; ctx.textAlign='center';
+              for(let v=0.4;v<=1.01;v+=0.1){
+                const px=toX(v);
+                ctx.beginPath();ctx.moveTo(px,pad.t+ph);ctx.lineTo(px,pad.t+ph+4);ctx.stroke();
+                ctx.fillText(v.toFixed(1),px,pad.t+ph+16);
+              }
+              ctx.fillText('θ',pad.l+pw/2,H-2);
+              ctx.font='bold 12px sans-serif'; ctx.textAlign='left'; ctx.fillStyle=color;
+              ctx.fillText(label, pad.l+8, pad.t+14);
+              ctx.font='11px sans-serif'; ctx.fillStyle='#555'; ctx.textAlign='center';
+              ctx.fillText('95% CI: ['+lo.toFixed(2)+', '+hi.toFixed(2)+']    mean = '+mean.toFixed(3), pad.l+pw/2, pad.t+28);
+            }
+            drawBetaPlot('betaPlot7b_A', 121, 81, 'Team A — Beta(121, 81)', '#2a6ddb', 0.4, 1.0);
+            drawBetaPlot('betaPlot7b_B', 176, 6,  'Team B — Beta(176, 6)',  '#27ae60', 0.4, 1.0);
+          })();
+          </script>
+        </div>
+      </details>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Exercise 4 -->
+    <!-- ============================================================ -->
+    <div class="card">
+      <h3>Exercise 4: Cumulative Value of AI Runs</h3>
+
+      <p>An AI model is run 50 times on independent problems. Each run is scored for quality (1–5) and produces a value \(V\) that depends on the quality of the output. The runs are IID with the following distribution:</p>
+
+      <table style="margin: 1rem auto; border-collapse: collapse; font-size: 0.95rem;">
+        <tr>
+          <th style="padding: 8px 18px; border: 1px solid var(--color-border); background: var(--color-surface); font-weight: 600;">Quality</th>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">1</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">2</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">3</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">4</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">5</td>
+        </tr>
+        <tr>
+          <th style="padding: 8px 18px; border: 1px solid var(--color-border); background: var(--color-surface); font-weight: 600;">Value \(V\)</th>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">&minus;5</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">0</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">5</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">10</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">20</td>
+        </tr>
+        <tr>
+          <th style="padding: 8px 18px; border: 1px solid var(--color-border); background: var(--color-surface); font-weight: 600;">Probability</th>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">0.10</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">0.20</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">0.35</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">0.30</td>
+          <td style="padding: 8px 18px; border: 1px solid var(--color-border);">0.05</td>
+        </tr>
+      </table>
+
+      <p><strong>(a)</strong> What is the expected value produced by a single run?</p>
+      <p><strong>(b)</strong> What is the variance of the value produced by a single run?</p>
+      <p><strong>(c)</strong> Give a probability distribution that approximates the total cumulative value across all 50 runs.</p>
+      <p><strong>(d)</strong> What is the approximate probability that the total cumulative value is at least 350?</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p><strong>(a)</strong> We compute \(E[V]\) directly:</p>
+          <p class="formula">\[E[V] = (-5)(0.10) + 0(0.20) + 5(0.35) + 10(0.30) + 20(0.05) = -0.50 + 0 + 1.75 + 3.00 + 1.00 = 5.25\]</p>
+
+          <p><strong>(b)</strong> <em>Method 1 — from the definition:</em> \(\text{Var}(V) = \sum_i p_i (v_i - \mu)^2\)</p>
+          <p class="formula">\[\text{Var}(V) = 0.10(-5 - 5.25)^2 + 0.20(0 - 5.25)^2 + 0.35(5 - 5.25)^2 + 0.30(10 - 5.25)^2 + 0.05(20 - 5.25)^2\]</p>
+          <p class="formula">\[= 10.5063 + 5.5125 + 0.0219 + 6.7688 + 10.8781 = 33.6875\]</p>
+
+          <p><em>Method 2 — via</em> \(\text{Var}(V) = E[V^2] - (E[V])^2\):</p>
+          <p class="formula">\[E[V^2] = (-5)^2(0.10) + 0^2(0.20) + 5^2(0.35) + 10^2(0.30) + 20^2(0.05) = 2.50 + 0 + 8.75 + 30.00 + 20.00 = 61.25\]</p>
+          <p class="formula">\[\text{Var}(V) = E[V^2] - (E[V])^2 = 61.25 - (5.25)^2 = 61.25 - 27.5625 = 33.6875\]</p>
+
+          <p><strong>(c)</strong> Let \(S = V_1 + V_2 + \cdots + V_{50}\). Since the runs are IID with \(n = 50\), by the CLT:</p>
+          <p class="formula">\[S \approx \mathcal{N}(\mu_S,\, \sigma^2_S) \quad \text{where} \quad \mu_S = 50 \times 5.25 = 262.50,\quad \sigma^2_S = 50 \times 33.6875 = 1684.375\]</p>
+          <p>So \(S \approx \mathcal{N}(262.50,\; 1684.375)\).</p>
+
+          <p><strong>(d)</strong> Since \(S \sim \mathcal{N}(262.50,\; 1684.375)\), we can directly compute:</p>
+          <p class="formula">\[P(S \geq 350) = 1 - P(S < 350) \approx 0.0165\]</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Exercise 5 -->
+    <!-- ============================================================ -->
+    <div class="card">
+      <h3>Exercise 5: Sum of Normal Random Variables</h3>
+
+      <p>Let \(X \sim \mathcal{N}(\mu = 1,\; \sigma^2 = 2)\) and \(Y \sim \mathcal{N}(\mu = 1,\; \sigma^2 = 2)\).</p>
+      <p>What is the distribution of \(2X + Y\)?</p>
+      <p><em>Be sure to state any assumptions you make about the relationship between \(X\) and \(Y\).</em></p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p><strong>Assumption:</strong> \(X\) and \(Y\) are independent.</p>
+          <p>A linear combination of independent normal random variables is also normal. We compute the mean and variance:</p>
+          <p class="formula">\[E[2X + Y] = 2E[X] + E[Y] = 2(1) + 1 = 3\]</p>
+          <p class="formula">\[\text{Var}(2X + Y) = 4\cdot\text{Var}(X) + \text{Var}(Y) = 4(2) + 2 = 10\]</p>
+          <p>Therefore: \(2X + Y \sim \mathcal{N}(3,\; 10)\).</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Exercise 6 -->
+    <!-- ============================================================ -->
+    <div class="card">
+      <h3>Exercise 6: Reaching a Value Target</h3>
+
+      <p>Consider the same AI model from Exercise 4, where each run independently produces a value \(V\) with \(E[V] = 5.25\) and \(\text{Var}(V) = 33.6875\). The model is run repeatedly until the total cumulative value exceeds 200. Approximate the probability that at least 50 runs are needed to reach a cumulative value exceeding 200.</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p>"At least 50 runs are needed" means that after 49 runs the cumulative value has <em>not yet</em> exceeded 200, i.e. \(S_{49} \leq 200\).</p>
+          <p>From Exercise 4, each run has:</p>
+          <p class="formula">\[E[V] = 5.25 \qquad \text{Var}(V) = 33.6875\]</p>
+          <p>Let \(S_{49} = V_1 + \cdots + V_{49}\). By the CLT:</p>
+          <p class="formula">\[E[S_{49}] = 49 \times 5.25 = 257.25 \qquad \text{Var}(S_{49}) = 49 \times 33.6875 = 1650.6875\]</p>
+          <p>Since \(S_{49} \sim \mathcal{N}(257.25,\; 1650.6875)\), we can directly compute:</p>
+          <p class="formula">\[P(S_{49} \leq 200) \approx 0.0794\]</p>
+          <p>There is approximately a <strong>7.9%</strong> chance that at least 50 runs are needed. This is quite low because the expected cumulative value after 49 runs (257.25) is well above the 200 target.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Exercise 7 -->
+    <!-- ============================================================ -->
+    <div class="card">
+      <h3>Exercise 7: Comparing Model Costs</h3>
+
+      <p>Two AI models are each used to handle 10 independent customer support requests. Each run of a model has an execution cost (in cents).</p>
+      <ul>
+        <li><strong>Model A:</strong> each run has cost IID with mean = 20 cents and variance = 5 cents\(^2\).</li>
+        <li><strong>Model B:</strong> each run has cost IID with mean = 22 cents and variance = 10 cents\(^2\).</li>
+      </ul>
+
+      <p><strong>(a)</strong> What is the approximate probability that Model A handles all 10 requests for less than $2 (200 cents)?</p>
+      <p><strong>(b)</strong> What is the approximate probability that Model B handles all 10 requests for less than $2 (200 cents)?</p>
+      <p><strong>(c)</strong> What is the approximate probability that Model A costs less than Model B across the 10 requests?</p>
+
+      <details>
+        <summary>Click to reveal solution</summary>
+        <div class="solution-content">
+          <p><strong>(a)</strong> Let \(S_A = A_1 + \cdots + A_{10}\). By the CLT:</p>
+          <p class="formula">\[E[S_A] = 10 \times 20 = 200 \qquad \text{Var}(S_A) = 10 \times 5 = 50\]</p>
+          <p>So \(S_A \sim \mathcal{N}(200,\; 50)\), and we directly compute \(P(S_A < 200) = 0.5\).</p>
+          <p>This makes intuitive sense: the budget is exactly at the mean, so by symmetry of the normal distribution, there is a 50% chance of staying under budget.</p>
+
+          <p><strong>(b)</strong> Let \(S_B = B_1 + \cdots + B_{10}\). By the CLT:</p>
+          <p class="formula">\[E[S_B] = 10 \times 22 = 220 \qquad \text{Var}(S_B) = 10 \times 10 = 100\]</p>
+          <p>So \(S_B \sim \mathcal{N}(220,\; 100)\), and we directly compute \(P(S_B < 200) \approx 0.0228\).</p>
+
+          <p><strong>(c)</strong> Consider \(D = S_A - S_B\). Assuming independence between models:</p>
+          <p class="formula">\[E[D] = 200 - 220 = -20 \qquad \text{Var}(D) = 50 + 100 = 150\]</p>
+          <p>So \(D \sim \mathcal{N}(-20,\; 150)\), and we directly compute \(P(D < 0) \approx 0.9488\).</p>
+          <p>There is approximately a <strong>94.9%</strong> chance that Model A costs less than Model B. Although Model A is cheaper on average (20 vs 22 cents per run), the high probability also reflects Model A's lower variance — it is both cheaper and more predictable.</p>
+        </div>
+      </details>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      AI Systems Design &middot; 2026
+    </div>
+  </footer>
+</body>
+</html>

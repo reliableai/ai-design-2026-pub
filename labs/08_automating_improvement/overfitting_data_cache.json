@@ -1,0 +1,916 @@
+{
+  "dev": [
+    {
+      "query": "Hi, I received my order yesterday but one of the items is missing from the package. Can you help me with this?",
+      "response": "I'm sorry to hear that one of your items is missing from your order. Please provide your order number and the name of the missing item, and we will investigate the issue right away. If the item was out of stock, we can either send a replacement or issue a refund based on your preference.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, explains next steps clearly, and offers appropriate resolutions.",
+      "id": "dev_0"
+    },
+    {
+      "query": "Hi, I received my order yesterday but one of the items is missing from the package. Can you help me with this?",
+      "response": "I'm sorry to hear that an item is missing from your order. Please provide your order number and the name of the missing item, so I can investigate and arrange for the missing product to be sent to you as soon as possible. We appreciate your patience and will resolve this quickly.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary details, and offers a clear next step to resolve the problem promptly.",
+      "id": "dev_1"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. Please send us a photo of the damaged item along with your order number. Once we verify the issue, we'll arrange for a replacement to be shipped to you at no extra cost. If you have any other questions, feel free to ask!",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, explains the next steps clearly, and offers further assistance, covering all key aspects of handling a damaged item replacement.",
+      "id": "dev_2"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that your order arrived incomplete. Please double-check the packaging and packing slip to ensure the item is missing. If it\u2019s confirmed missing, reply to this message with your order number and the missing item\u2019s name, and we will arrange a replacement or refund for you.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises checking and provides an appropriate next step, but it could include a timeline for resolution or mention any specific policies.",
+      "id": "dev_3"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please check the packaging thoroughly to ensure it wasn't overlooked. If it's indeed missing, contact our customer service within 7 days of delivery with your order number, and we will either send the missing item or offer a refund.",
+      "true_score": 4,
+      "reasoning": "The response correctly guides the customer to verify the package and provides a clear next step with a timeframe, but it could be improved by mentioning how to contact customer service and potential need for photos or proof.",
+      "id": "dev_4"
+    },
+    {
+      "query": "I received my order yesterday, but one item was missing from the package. How can I get the missing product sent to me?",
+      "response": "I'm sorry to hear that one of your items was missing from your order. Please provide your order number and the name of the missing item, and we will arrange for the product to be sent to you as soon as possible. Typically, missing items are shipped within 3-5 business days once confirmed.",
+      "true_score": 4,
+      "reasoning": "The response correctly acknowledges the issue and requests necessary details to proceed, but it could be improved by mentioning the possibility of a refund or replacement policy details.",
+      "id": "dev_5"
+    },
+    {
+      "query": "I placed an order last week but haven't received a shipping confirmation yet. Can you please check the status?",
+      "response": "Thank you for reaching out. I have checked your order and it is currently being processed in our warehouse. Typically, shipping confirmations are sent within 48 hours of dispatch, so you should receive one soon. If you do not get the confirmation in the next 2 days, please contact us again and we'll assist you further.",
+      "true_score": 5,
+      "reasoning": "The response directly addresses the customer's concern with current order status, explains expected timelines, and provides clear next steps.",
+      "id": "dev_6"
+    },
+    {
+      "query": "Hi, I received my order today but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item is missing from your order. Please provide your order number and the name of the missing item, and we will investigate this immediately. Once confirmed, we will either send the missing item to you or issue a refund based on your preference.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, asks for necessary details, and clearly explains the next steps, covering all important aspects of such a support inquiry.",
+      "id": "dev_7"
+    },
+    {
+      "query": "I received my order but one of the items is damaged. What should I do to get a replacement?",
+      "response": "Sorry to hear that your item arrived damaged. Please send us a photo of the damaged product, and we will review it. Once approved, we can send a replacement. Returns usually take up to 10 business days.",
+      "true_score": 3,
+      "reasoning": "The response addresses the need for a photo and mentions sending a replacement but lacks specific instructions on how to send the photo or how to initiate the return process.",
+      "id": "dev_8"
+    },
+    {
+      "query": "I received my order today but one of the items is missing. What should I do?",
+      "response": "I'm sorry to hear that your item is missing. Please try checking the package again carefully. If you still can't find it, you can contact us with your order number and we will look into it.",
+      "true_score": 3,
+      "reasoning": "The response is polite and somewhat helpful but lacks instructions on a specific resolution process such as filing a missing item claim or providing a link to a support form.",
+      "id": "dev_9"
+    },
+    {
+      "query": "I received the wrong size for my recent order. How can I exchange it for the correct one?",
+      "response": "I'm sorry to hear you received the wrong size. To start an exchange, please visit our returns page and fill out the exchange form within 14 days of receiving your order. Make sure the item is unused and in its original packaging. Once we receive the item, we'll send the correct size right away.",
+      "true_score": 4,
+      "reasoning": "The response correctly guides the customer on how to initiate an exchange and mentions condition and timeframe, but it does not specify who bears the return shipping cost or provide a direct link.",
+      "id": "dev_10"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is missing from the package. Can you help me with this?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we will investigate this promptly. If the item is out of stock, we can offer a replacement or a refund based on your preference. Thank you for your patience.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, explains next steps, and offers possible resolutions, fully addressing the customer's concern.",
+      "id": "dev_11"
+    },
+    {
+      "query": "I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please check the packaging carefully to ensure it wasn't overlooked, and then contact our customer service with your order number and the missing item's details. We will investigate the issue and arrange for a replacement or refund as soon as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly instructs the customer to verify the package and contact support with details, offering a replacement or refund, but it could be improved by specifying how to contact support (e.g., email or phone) and the expected timeframe.",
+      "id": "dev_12"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that one of your items is missing. Please provide your order number and the name of the missing item, and we will investigate this for you. In most cases, we either ship the missing item promptly or issue a refund if the item is out of stock. Thank you for your patience.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary details, explains the next steps clearly, and offers appropriate resolution options.",
+      "id": "dev_13"
+    },
+    {
+      "query": "I received the wrong size for my order. How can I get the right one sent to me?",
+      "response": "Sorry to hear that. You should just reorder the correct size from our website since we don't handle exchanges or returns.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly states that exchanges or returns are not handled, which is misleading and unhelpful for resolving the issue.",
+      "id": "dev_14"
+    },
+    {
+      "query": "I placed an order two weeks ago, but I still haven't received any shipping confirmation. Can you help me track my package?",
+      "response": "I'm sorry for the delay with your order. Could you please provide your order number? Once I have it, I can check the status of your shipment and give you an update. Typically, orders are processed within 3-5 business days, but I'll make sure to investigate this for you right away.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, explains standard processing times, and offers to provide a shipping update, fully addressing the customer's query.",
+      "id": "dev_15"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please check the packaging carefully to ensure it wasn't tucked inside or separated from the rest. If you still can't find the item, contact our support team with your order number and the missing item's details, and we will arrange a replacement or refund for you.",
+      "true_score": 4,
+      "reasoning": "The response correctly instructs the customer to check the package and provides clear next steps but does not mention the timeframe for reporting missing items or how the investigation typically proceeds.",
+      "id": "dev_16"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. What should I do to get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. Please send us a photo of the damaged product along with your order number, and we'll initiate the replacement process as soon as possible. Note that replacements are typically processed within 3-5 business days after we verify the issue.",
+      "true_score": 4,
+      "reasoning": "The response correctly addresses the issue and guides the customer on the next steps, but it could be improved by mentioning whether the customer needs to return the damaged item.",
+      "id": "dev_17"
+    },
+    {
+      "query": "I ordered a pair of shoes two weeks ago, but they haven't arrived yet. Can you tell me where my package is?",
+      "response": "I'm sorry to hear about the delay. Unfortunately, once the package is shipped, we cannot provide tracking information. Please wait a few more days and if it still doesn't arrive, contact us again.",
+      "true_score": 2,
+      "reasoning": "The response incorrectly states that tracking information is unavailable after shipping, which is typically not true and lacks specific assistance.",
+      "id": "dev_18"
+    },
+    {
+      "query": "I received the wrong size for the jacket I ordered. How can I get a replacement?",
+      "response": "I'm sorry to hear that you got the wrong size. You can return the item by sending it back to us, and once we receive it, we'll issue a refund. Please note that replacements are only available for certain products.",
+      "true_score": 3,
+      "reasoning": "The response correctly addresses the return process but fails to mention how to initiate a replacement specifically and does not explain the option to exchange for the correct size directly.",
+      "id": "dev_19"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was missing from the package. What should I do to get the missing item sent to me?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we will verify the details. Once confirmed, we will arrange to send the missing item to you at no additional cost as soon as possible. If you have any further questions, feel free to ask.",
+      "true_score": 5,
+      "reasoning": "The response directly addresses the issue, requests necessary information, and explains the next steps clearly and accurately.",
+      "id": "dev_20"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do to get the missing product?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we will investigate the issue promptly. Once confirmed, we can either send you the missing product at no additional cost or issue a refund, depending on your preference. Thank you for your patience and understanding.",
+      "true_score": 5,
+      "reasoning": "The response correctly acknowledges the issue, requests necessary information, explains the next steps, and offers resolution options, covering the customer's concern fully.",
+      "id": "dev_21"
+    },
+    {
+      "query": "I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please check the packaging again to ensure it wasn't overlooked. If it's still missing, send us your order number and the details of the missing item, and we will arrange a replacement or refund for you.",
+      "true_score": 4,
+      "reasoning": "The response correctly instructs the customer to verify the package and provides clear next steps for resolution, but it could further mention the typical timeframe for resolution or any documentation needed.",
+      "id": "dev_22"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is damaged. What should I do to get a replacement?",
+      "response": "I'm sorry to hear about the damaged item. Please send us a photo of the damaged product along with your order number. Once we receive the photo, we will initiate a replacement for you. Note that replacements are processed within 3-5 business days after verification.",
+      "true_score": 4,
+      "reasoning": "The response correctly instructs the customer to provide a photo and order number for a replacement and mentions processing time, but does not specify how to submit the photo or mention return shipping procedures.",
+      "id": "dev_23"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was missing from the package. What should I do to get it sent to me?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we will arrange to send the missing product to you as soon as possible. If you have any photos of the package or packing slip, those would also help us resolve the issue faster. Thank you for your patience.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information to verify and resolve it, and offers clear next steps for the customer.",
+      "id": "dev_24"
+    },
+    {
+      "query": "I received my order, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please send us a photo of the damaged product along with your order number, and we will initiate a replacement for you as soon as possible. Keep the damaged item until we advise otherwise.",
+      "true_score": 4,
+      "reasoning": "The response correctly instructs the customer to provide a photo and order number and explains the next steps, but it could improve by mentioning the expected timeline or return shipping details.",
+      "id": "dev_25"
+    },
+    {
+      "query": "I received the wrong size for my order. Can you help me exchange it for the correct one?",
+      "response": "I'm sorry to hear that. Please return the item to any local store and you will get a refund immediately.",
+      "true_score": 2,
+      "reasoning": "The response suggests returning the item to a store when the company operates solely online and does not have physical locations, which is incorrect and unhelpful.",
+      "id": "dev_26"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I get the right one sent to me?",
+      "response": "Sorry to hear that. You should try contacting the manufacturer directly as we don\u2019t handle returns or exchanges once an order is placed.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly states the company doesn\u2019t handle returns or exchanges, which is misleading and unhelpful for the customer's issue.",
+      "id": "dev_27"
+    },
+    {
+      "query": "I received my order but one of the items was damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. You can return the item by shipping it back to us and once we receive it, we will send you a replacement. Please make sure to include your order number in the package.",
+      "true_score": 3,
+      "reasoning": "The response correctly advises returning the damaged item for a replacement but omits important details like contacting customer support first or the possibility of providing photos of the damage.",
+      "id": "dev_28"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do to get the missing product?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please email us a photo of the package with the packing slip and the items you received, and we'll verify the missing product. Once confirmed, we will either send you the missing item or issue a refund based on your preference.",
+      "true_score": 4,
+      "reasoning": "The response correctly addresses the issue and provides a clear next step, but it could be improved by specifying the email address or mentioning the expected response time.",
+      "id": "dev_29"
+    }
+  ],
+  "test": [
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. Please email us a photo of the damaged product along with your order number at support@ecommerce.com, and we will arrange a replacement for you as quickly as possible. Once we receive your email, our team will process the replacement within 2 business days.",
+      "true_score": 5,
+      "reasoning": "The response correctly addresses the issue, provides clear instructions for submitting a claim, and includes a realistic timeframe for resolution.",
+      "id": "test_0"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we'll investigate this right away. In the meantime, we may ask for a photo of the package contents to help resolve the issue quickly. We will either resend the missing item or issue a refund based on your preference.",
+      "true_score": 5,
+      "reasoning": "The response appropriately addresses the customer's concern, explains the steps to resolve the issue, and offers clear options for resolution.",
+      "id": "test_1"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. Please send us a photo of the damaged product along with your order number, and we will arrange for a replacement to be sent out as soon as possible. If you prefer, you can also request a refund instead. Let me know how you'd like to proceed!",
+      "true_score": 5,
+      "reasoning": "The response correctly acknowledges the issue, provides clear instructions to send a photo and order number, and offers both replacement and refund options, covering all necessary details for resolution.",
+      "id": "test_2"
+    },
+    {
+      "query": "I received the wrong size for the shoes I ordered. How can I get the correct size sent to me?",
+      "response": "I'm sorry to hear about the mix-up with your order. You can return the shoes using our online return portal, and once we receive the item, we'll send out the correct size. Please make sure to include your order number when processing the return.",
+      "true_score": 3,
+      "reasoning": "The response correctly instructs the customer to use the return portal and mentions sending the correct size after receiving the return but omits details about return shipping costs or timelines.",
+      "id": "test_3"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was missing from the package. How can I get the missing item sent to me?",
+      "response": "I'm sorry to hear that one of your items was missing. Please provide your order number and the name of the missing item, and we'll arrange to send it to you as soon as possible. If you prefer, we can also issue a refund for the missing product once we confirm the details.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, offers a clear solution, and provides an alternative option, covering the customer's needs completely.",
+      "id": "test_4"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that one of your items was missing. Please check the packing slip to confirm the missing item. If it\u2019s not listed there, you can contact us with your order number, and we will arrange to send the missing item or issue a refund. Make sure to reach out within 7 days of delivery for the fastest resolution.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises checking the packing slip and contacting support with the order number, but it could include instructions on how to contact support and mention any necessary documentation like photos.",
+      "id": "test_5"
+    },
+    {
+      "query": "I received my order today, but one of the items is missing from the package. What should I do to get the missing item?",
+      "response": "I'm sorry to hear that an item is missing from your order. Please provide your order number and the name of the missing item, and we'll verify the details for you. Once confirmed, we can either send the missing item separately or issue a refund based on your preference. Thank you for your patience and understanding.",
+      "true_score": 5,
+      "reasoning": "The response correctly acknowledges the problem, requests necessary information, explains the next steps clearly, and offers appropriate solutions.",
+      "id": "test_6"
+    },
+    {
+      "query": "I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that one of your items is missing. Please check the packing slip included in your package to confirm the missing item. If it\u2019s not listed or still missing, contact us with your order number and the item details, and we\u2019ll help resolve this as quickly as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly guides the customer to verify the packing slip and contact support with details, but could be improved by explaining the next steps in the resolution process.",
+      "id": "test_7"
+    },
+    {
+      "query": "I received the wrong size for the shoes I ordered. What should I do to get the right pair?",
+      "response": "I'm sorry to hear that. You can try to return the shoes directly to the manufacturer as we don't handle exchanges or returns here.",
+      "true_score": 2,
+      "reasoning": "The response incorrectly states that the company does not handle returns or exchanges, which is misleading and unhelpful for resolving the customer's issue.",
+      "id": "test_8"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I exchange it for the correct size?",
+      "response": "I'm sorry for the inconvenience. You can start an exchange by logging into your account and selecting the order with the wrong item. Then, choose the 'Request Exchange' option and follow the instructions to send the shirt back. Once we receive the return, we'll ship the correct size to you. If you need help with the process, please let us know.",
+      "true_score": 4,
+      "reasoning": "The response correctly explains the exchange process but doesn't mention the time frame or if return shipping is prepaid, which are useful details.",
+      "id": "test_9"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item is missing from your order. Please provide your order number and the missing item's name, and we will investigate this issue promptly. Usually, if an item is missing, we send a replacement or issue a refund depending on your preference after verification.",
+      "true_score": 4,
+      "reasoning": "The response addresses the issue with appropriate next steps but doesn't mention any timeframe for resolution or how to submit the claim.",
+      "id": "test_10"
+    },
+    {
+      "query": "Hi, I placed an order two weeks ago, but I still haven't received a shipping confirmation. Can you help me find out what's going on?",
+      "response": "I'm sorry to hear that you haven't received your shipping confirmation yet. Sometimes there can be delays in processing orders, especially during busy periods. I will check your order status now and get back to you with an update shortly. Please allow me a moment to investigate.",
+      "true_score": 4,
+      "reasoning": "The response acknowledges the issue and mentions possible reasons and next steps, but it doesn't provide immediate concrete information or instructions for the customer to track the order.",
+      "id": "test_11"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I exchange it for the correct size?",
+      "response": "I'm sorry to hear that you received the wrong size. You can return the item by sending it back to us, but please note that exchanges are not possible. Instead, you can place a new order for the correct size.",
+      "true_score": 3,
+      "reasoning": "The response addresses the issue but incorrectly states that exchanges are not possible, which is usually an option in most e-commerce return policies.",
+      "id": "test_12"
+    },
+    {
+      "query": "I placed an order last week but haven't received any shipping updates. Can you tell me when it will arrive?",
+      "response": "Thank you for reaching out. I\u2019ve checked your order and it was shipped two days ago via standard delivery. You should receive your package within 3-5 business days, and you can track it using the tracking number sent to your email. If you don\u2019t get it by then, please contact us again and we\u2019ll assist further.",
+      "true_score": 5,
+      "reasoning": "The response accurately addresses the customer's concern by providing shipping status, delivery timeframe, and tracking information, ensuring completeness.",
+      "id": "test_13"
+    },
+    {
+      "query": "I received the wrong size for my recent order. How can I exchange it for the correct one?",
+      "response": "I'm sorry to hear you received the wrong size. To initiate an exchange, please visit our returns portal and fill out the exchange form within 14 days of delivery. Once we receive the incorrect item back, we'll send you the correct size at no extra cost. If you need assistance, feel free to reply to this message.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises the customer to use the returns portal and explains the exchange process clearly but omits specifying how to ship back the item or packaging instructions.",
+      "id": "test_14"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please send us a photo of the damaged product along with your order number, and we will arrange a replacement shipment for you at no extra cost. Additionally, once we receive your photos, we'll process the replacement within 2-3 business days and notify you with the tracking details.",
+      "true_score": 5,
+      "reasoning": "The response addresses the customer's issue clearly, provides the necessary next steps, and sets expectations for timing, making it fully correct and complete.",
+      "id": "test_15"
+    },
+    {
+      "query": "I received the wrong size in my order. How can I get this fixed?",
+      "response": "You can return the item by sending an email to our technical support team, and they will fix your order within 24 hours.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly directs the customer to technical support instead of the returns department and gives unrealistic timing for order correction.",
+      "id": "test_16"
+    },
+    {
+      "query": "I placed an order two weeks ago and it still hasn't arrived. Can you help me track it?",
+      "response": "I'm sorry to hear your order hasn't arrived yet. Could you please provide your order number so I can check the shipping status for you? Once I have that, I can update you on where your package is and the expected delivery time. If there's any delay, I'll do my best to assist you further.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary details, and offers clear next steps and support for the customer.",
+      "id": "test_17"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do to get it sent to me?",
+      "response": "I'm sorry to hear that one of your items is missing. Please provide your order number and the name of the missing item, and we will investigate this immediately. Once confirmed, we will either ship the missing item to you at no additional cost or issue a refund, depending on your preference. We appreciate your patience and are here to help resolve this quickly.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, explains the next steps clearly, and offers appropriate resolution options.",
+      "id": "test_18"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is damaged. What should I do to get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. Please send us a photo of the damaged product along with your order number, and we will initiate a replacement for you right away. Our returns team will process the replacement within 3-5 business days once we receive the photo and confirm the issue.",
+      "true_score": 5,
+      "reasoning": "The response correctly instructs the customer to provide necessary information, offers a clear next step, and sets expectations for the replacement timeline.",
+      "id": "test_19"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please send us a photo of the damaged item along with your order number, and we will arrange a replacement for you as soon as possible. You can reply to this message with the details or upload the photo through your account order page. If you prefer, we can also initiate a return and refund instead, just let us know your preference.",
+      "true_score": 5,
+      "reasoning": "The response correctly acknowledges the issue, requests necessary information, explains the replacement process clearly, and offers an alternative solution, covering all important details.",
+      "id": "test_20"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please provide your order number and a photo of the damaged item, and we'll initiate a replacement for you right away. Once we receive the photo, we'll confirm the next steps and make sure the replacement is shipped as soon as possible.",
+      "true_score": 5,
+      "reasoning": "The response correctly identifies the issue, requests necessary information, and explains the replacement process clearly and comprehensively.",
+      "id": "test_21"
+    },
+    {
+      "query": "I received the wrong size for my order. Can I get a replacement?",
+      "response": "I'm sorry to hear that. Please note that we cannot accept returns or exchanges once the order is shipped. You might want to sell the item locally instead.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly states that returns or exchanges are not accepted after shipping, which is misleading and unhelpful to the customer seeking a replacement.",
+      "id": "test_22"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. Can you help me get the correct size?",
+      "response": "I'm sorry to hear about the issue. Please return the shirt to any nearby store, and we will process your refund immediately.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly instructs the customer to return the item to a physical store, which the company does not have, and does not address exchanging for the correct size.",
+      "id": "test_23"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I get the correct size sent to me?",
+      "response": "I'm sorry to hear that you received the wrong size. You should return the shirt to our warehouse first. Once we get the returned item, we will send you the correct size immediately.",
+      "true_score": 3,
+      "reasoning": "The response correctly advises returning the item but omits details about initiating a return request or using a prepaid shipping label, which are important steps.",
+      "id": "test_24"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please send us a photo of the damaged product along with your order number, and we will arrange a replacement for you as soon as possible. Once we receive the photo, we'll process your request and update you with the shipping details.",
+      "true_score": 5,
+      "reasoning": "The response accurately addresses the issue, provides clear instructions for the next steps, and reassures the customer about the replacement process.",
+      "id": "test_25"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. Please send us a photo of the damaged product along with your order number, and we will arrange a replacement for you as soon as possible. Typically, replacements are processed within 3-5 business days after we receive your photos. If you have any other questions, feel free to ask!",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information (photo and order number), outlines the next steps, and provides a clear timeline, fully addressing the customer's concern.",
+      "id": "test_26"
+    },
+    {
+      "query": "I received the wrong size for my jacket order. How can I get the right one sent to me?",
+      "response": "I'm sorry to hear about the sizing issue with your jacket. Please send us a photo of the item you received, and we will look into it. You may need to return the jacket before we can send a replacement.",
+      "true_score": 3,
+      "reasoning": "The response addresses the issue and requests a photo, but it does not clearly explain the full return and replacement process or how to initiate it.",
+      "id": "test_27"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please email us a photo of the damaged product along with your order number at support@shopnow.com. Once we verify the damage, we'll send you a replacement free of charge or arrange a refund if you prefer. Let us know if you need any further assistance!",
+      "true_score": 5,
+      "reasoning": "The response addresses the customer's issue clearly, providing the correct steps and contact information for a replacement or refund.",
+      "id": "test_28"
+    },
+    {
+      "query": "I received the wrong size for the shoes I ordered. What should I do to get the correct size?",
+      "response": "I'm sorry to hear that you got the wrong size. You can return the item by sending it back to our warehouse, and once we receive it, we'll send you a replacement. Please make sure to include your order number in the package.",
+      "true_score": 3,
+      "reasoning": "The response correctly instructs the customer to return the item and include the order number but misses mentioning how to initiate the return process or checking with customer service first.",
+      "id": "test_29"
+    },
+    {
+      "query": "I received the wrong size shirt in my recent order. How can I get the correct one?",
+      "response": "I'm sorry to hear that. You can return the shirt by shipping it back to us at your own expense, and once we receive it, we will send you a replacement in the correct size.",
+      "true_score": 2,
+      "reasoning": "The response incorrectly states the customer must pay return shipping, which goes against the company's no-cost return policy for incorrect items.",
+      "id": "test_30"
+    },
+    {
+      "query": "I received my order, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please send us a photo of the damaged product along with your order number. Once we verify the issue, we will process a replacement shipment for you at no extra cost. If you have any other questions, feel free to ask.",
+      "true_score": 4,
+      "reasoning": "The response provides the correct next steps and asks for necessary information but doesn't mention the expected timeline or return instructions.",
+      "id": "test_31"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was missing from the package. How can I get the missing item sent to me?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we will verify the issue. Once confirmed, we'll arrange to send the missing item to you as soon as possible at no extra cost.",
+      "true_score": 4,
+      "reasoning": "The response addresses the issue appropriately and explains the next steps, but it could be improved by mentioning a timeframe or return process if needed.",
+      "id": "test_32"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. Please send us a photo of the damaged product along with your order number, and we will arrange a replacement or refund for you as soon as possible. You can reply directly to this message or email support@shopnow.com. Thank you for your patience!",
+      "true_score": 5,
+      "reasoning": "The response correctly acknowledges the issue, requests necessary information, provides clear next steps, and offers a solution.",
+      "id": "test_33"
+    },
+    {
+      "query": "I received my order today, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear about that. Please wait 7-10 business days, and the missing item will be delivered automatically without any further action from you.",
+      "true_score": 2,
+      "reasoning": "The response wrongly assumes the missing item will be sent automatically without instructing the customer to report the issue or contact support for resolution.",
+      "id": "test_34"
+    },
+    {
+      "query": "I received the wrong size for my order. How can I get the correct size sent to me?",
+      "response": "Sorry for the inconvenience. Please email us your order number and we will refund your purchase right away.",
+      "true_score": 2,
+      "reasoning": "The response ignores the customer's need for a replacement and suggests a refund without addressing the return or exchange process.",
+      "id": "test_35"
+    },
+    {
+      "query": "I received the wrong size for my order. How do I get a replacement?",
+      "response": "I'm sorry to hear that you got the wrong size. You can return the item using the return label included in your package and we will send out a replacement once we receive the return. Please note that replacements may take up to two weeks to arrive.",
+      "true_score": 3,
+      "reasoning": "The response correctly advises on returning the item for a replacement but lacks details about contacting customer support first or verifying stock availability, which are important steps.",
+      "id": "test_36"
+    },
+    {
+      "query": "Hi, I ordered a pair of sneakers two weeks ago but haven't received any shipping updates. Can you tell me the status of my order?",
+      "response": "Thank you for reaching out. I\u2019ve checked your order and see that it was shipped three days ago via standard delivery. You should receive a tracking number shortly via email, and delivery is expected within 3-5 business days. If you don\u2019t receive the tracking info soon, please let us know so we can assist further.",
+      "true_score": 5,
+      "reasoning": "The response accurately addresses the customer's concern by providing an updated shipping status, expected delivery timeframe, and instructions for further assistance.",
+      "id": "test_37"
+    },
+    {
+      "query": "I received the wrong size for the shoes I ordered. How can I get the right pair sent to me?",
+      "response": "I'm sorry to hear that you received the wrong size. Please send us a photo of the shoes and the order number, and we'll arrange for a replacement to be sent to you. You'll also receive instructions on how to return the incorrect pair.",
+      "true_score": 4,
+      "reasoning": "The response correctly addresses the issue and outlines the next steps but could be improved by specifying if the replacement shipping is free or providing an estimated timeline.",
+      "id": "test_38"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I get the correct one?",
+      "response": "Sorry to hear about the issue. You should just throw away the wrong item and place a new order for the correct size since we do not handle exchanges.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly advises the customer to discard the wrong item and reorder, which is misleading as the company does support exchanges.",
+      "id": "test_39"
+    },
+    {
+      "query": "I received the wrong size for my recent order. How can I get the correct one?",
+      "response": "I'm sorry to hear that! Please return the incorrect item to our warehouse, and once we receive it, we will send you the right size. Make sure to include the return form in your package.",
+      "true_score": 3,
+      "reasoning": "The response correctly addresses returning the wrong item but omits important details like how to initiate the return, whether shipping is free, and the expected time frame for the exchange.",
+      "id": "test_40"
+    },
+    {
+      "query": "I received my order but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear about the damaged item. Please send us a photo of the damaged product and we will arrange for a return. After we receive the item, we will issue a refund to your account.",
+      "true_score": 3,
+      "reasoning": "The response correctly requests a photo and mentions a return, but it does not explain the option for a replacement or how to receive a replacement item specifically.",
+      "id": "test_41"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was missing from the package. How can I get the missing item sent to me?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the missing item's name, and we will verify the details and arrange to send the missing product to you as soon as possible. If the item is out of stock, we will inform you about alternative options or a refund.",
+      "true_score": 4,
+      "reasoning": "The response correctly addresses the issue and explains the next steps clearly but does not mention any specific time frame for resolution or return policy.",
+      "id": "test_42"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please check the packing slip to confirm which items were shipped. If the item is still missing, you can contact our support team directly with your order number, and we will arrange to send the missing item or provide a refund. We'll do our best to resolve this quickly.",
+      "true_score": 4,
+      "reasoning": "The response correctly guides the customer to verify the packing slip and offers next steps, but it could include specific instructions on how to contact support or mention any time limits for reporting missing items.",
+      "id": "test_43"
+    },
+    {
+      "query": "I received my order, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item is missing from your order. Please check the packaging again to ensure it wasn't overlooked. If the item is definitely missing, kindly contact our support team with your order number and the missing item's details, and we'll arrange a replacement or refund for you.",
+      "true_score": 4,
+      "reasoning": "The response correctly guides the customer to verify the package and reach out with details for resolution but doesn't specify any immediate steps like submitting a claim through the website or expected timelines.",
+      "id": "test_44"
+    },
+    {
+      "query": "Hi, I received my order yesterday but one of the items was missing from the package. What should I do?",
+      "response": "I'm sorry to hear that your order arrived incomplete. Please provide your order number and the missing item details, and we will investigate the issue promptly. Once confirmed, we can either send a replacement or issue a refund based on your preference.",
+      "true_score": 4,
+      "reasoning": "The response correctly addresses the issue and offers next steps but could be improved by including a direct link or instructions on how to submit the information.",
+      "id": "test_45"
+    },
+    {
+      "query": "Hi, I received my order today but one of the items is missing from the package. Can you help me with this?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we will investigate this right away. If the item is confirmed missing, we can either send a replacement or issue a refund based on your preference.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, explains the next steps, and offers appropriate solutions, making it complete and accurate.",
+      "id": "test_46"
+    },
+    {
+      "query": "I received my order, but one of the items is missing. What should I do?",
+      "response": "I'm sorry to hear that an item is missing from your order. Please check the packaging carefully to ensure the item wasn't packed separately. If it's definitely missing, contact our customer support with your order number and the missing item's details, and we will assist you with a replacement or refund.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises the customer on next steps but could improve by including expected response times or a direct link to the support form.",
+      "id": "test_47"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. What should I do to get the right one?",
+      "response": "Sorry for the inconvenience. You can exchange the shirt by sending it to any nearby store. Alternatively, you can just keep the wrong size and order a new one online.",
+      "true_score": 2,
+      "reasoning": "The response incorrectly suggests returning the item to physical stores despite being an online-only retailer and neglects to mention the formal return or exchange process with prepaid shipping labels.",
+      "id": "test_48"
+    },
+    {
+      "query": "I received the wrong size for the jacket I ordered. Can you help me exchange it for the correct one?",
+      "response": "I'm sorry to hear you received the wrong size. Please return the jacket using the prepaid return label included in your package or request one through our website. Once we receive the returned item, we'll promptly send the correct size at no additional cost. If you need assistance with the return process, feel free to reach out!",
+      "true_score": 5,
+      "reasoning": "The response correctly addresses the issue, offers a clear solution including return shipping details, and invites further assistance, covering all necessary customer support steps.",
+      "id": "test_49"
+    },
+    {
+      "query": "Hi, I received my order yesterday but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that your order arrived incomplete. Please contact our support team directly with your order number and the missing item's details, so we can investigate and arrange a replacement or refund as needed. Meanwhile, double-check the packaging and any paperwork to ensure it wasn't overlooked.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises the customer to provide order details and explains the next steps, but it could be improved by including a direct link or contact information for submitting the claim.",
+      "id": "test_50"
+    },
+    {
+      "query": "I received my order but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. You can return the item by shipping it back to us, and we will send a replacement once we receive the return. Please make sure to pack the item securely and include your order number.",
+      "true_score": 3,
+      "reasoning": "The response correctly advises returning the item for a replacement but omits details like how to initiate the return process or any timeframe for reporting damaged items.",
+      "id": "test_51"
+    },
+    {
+      "query": "I received my order today, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing. Please check the package again to see if the item might be inside. If you still can't find it, you can contact our returns department to report the issue.",
+      "true_score": 3,
+      "reasoning": "The response acknowledges the issue and suggests checking the package, but it omits instructions on how to report the missing item properly or request a replacement, which are important next steps.",
+      "id": "test_52"
+    },
+    {
+      "query": "I received my order today, but one of the items is missing from the box. What should I do?",
+      "response": "I'm sorry to hear that your order arrived incomplete. Please provide your order number and the name of the missing item, and we will arrange to send it to you as soon as possible or offer a refund if preferred. Additionally, if you could send a photo of the package contents, it would help us resolve this quickly. Thank you for your patience.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, offers solutions, and encourages further communication for quick resolution.",
+      "id": "test_53"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that one of your items is missing. Please check the packaging carefully to ensure it wasn't overlooked. If it's definitely missing, contact our customer service within 7 days with your order number, and we will send a replacement or issue a refund.",
+      "true_score": 4,
+      "reasoning": "The response correctly instructs the customer to verify the packaging and contact support within a specified timeframe, but it could be improved by mentioning any specific return or proof requirements.",
+      "id": "test_54"
+    },
+    {
+      "query": "I received my order today, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that your order arrived incomplete. Please check the packaging and any included documents to ensure the item isn't tucked away. If it's still missing, contact us with your order number and the missing item's details, and we'll arrange a replacement or refund promptly.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises the customer to verify the packaging and offers a clear next step, but could mention a specific timeframe or how to contact support for faster resolution.",
+      "id": "test_55"
+    },
+    {
+      "query": "Hi, I received my order yesterday but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please send us a photo of the damaged product and your order number, and we will arrange a replacement for you promptly. Once we receive the photo, we will process the replacement and provide you with a shipping confirmation.",
+      "true_score": 5,
+      "reasoning": "The response correctly addresses the issue by requesting necessary information and explaining the next steps clearly.",
+      "id": "test_56"
+    },
+    {
+      "query": "I received my order today, but one of the items is damaged. What should I do?",
+      "response": "Sorry to hear that. You should try to fix the item yourself since we don't accept returns for damaged products. If the issue persists, you can contact the manufacturer directly.",
+      "true_score": 2,
+      "reasoning": "The response incorrectly states that the company does not accept returns for damaged items and does not offer a proper solution or instructions for initiating a return or replacement.",
+      "id": "test_57"
+    },
+    {
+      "query": "I received the wrong size for my order. How can I get a replacement or refund?",
+      "response": "We're sorry for the inconvenience. Please send us an email with your order number and we will look into it. Typically, we only offer refunds for damaged items, so replacements might not be available.",
+      "true_score": 3,
+      "reasoning": "The response acknowledges the issue and provides a contact method, but incorrectly states that replacements might not be available, missing key details on the return process and timeframes.",
+      "id": "test_58"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I get the right one?",
+      "response": "Sorry to hear about the issue. You can return the item to any store location and get a refund right away.",
+      "true_score": 2,
+      "reasoning": "The response incorrectly directs the customer to return the item to a physical store, which the company does not have, and does not explain the correct process for exchanges.",
+      "id": "test_59"
+    },
+    {
+      "query": "I received my order but one of the items is missing. What should I do?",
+      "response": "I'm sorry to hear that your order is incomplete. Please try to locate the missing item in the package again and if you still can't find it, you can contact the courier company to report the missing item.",
+      "true_score": 3,
+      "reasoning": "The response acknowledges the issue but incorrectly suggests contacting the courier instead of the retailer's customer support, which is the proper channel for missing items.",
+      "id": "test_60"
+    },
+    {
+      "query": "I received the wrong size for the shoes I ordered. How can I get the right size sent to me?",
+      "response": "You should just return the shoes to any store near you and pick up the correct size there. We do not handle exchanges online.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly states that returns must be done in-store and denies online exchanges, which is inaccurate for the company's policy.",
+      "id": "test_61"
+    },
+    {
+      "query": "I received my order, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that your item was missing. You can return the package, and then we will send you a replacement. Please make sure to include all original packaging with your return.",
+      "true_score": 3,
+      "reasoning": "The response advises returning the package for a replacement but does not mention contacting support first or providing order details, which are important steps.",
+      "id": "test_62"
+    },
+    {
+      "query": "Hi, I received my order yesterday but one of the items was missing from the package. Can you help me with this?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the missing item's name, and we will investigate this issue immediately. If the item is confirmed missing, we will either send a replacement or issue a refund based on your preference. Thank you for your patience.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary details, explains the next steps, and offers clear solutions, fully addressing the customer's concern.",
+      "id": "test_63"
+    },
+    {
+      "query": "I received the wrong size for the jacket I ordered. I asked for a medium but got a large instead. How can I get this sorted out?",
+      "response": "I'm sorry to hear you received the wrong size. Please send us a photo of the jacket and your order confirmation. Once we verify the issue, we\u2019ll arrange for a free return and send you the correct medium size as quickly as possible. Let me know if you need any help with the return process.",
+      "true_score": 5,
+      "reasoning": "The response directly addresses the issue, offers a clear next step, mentions no-cost return, and provides assistance, covering all necessary details for resolution.",
+      "id": "test_64"
+    },
+    {
+      "query": "I received my order today, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm very sorry to hear that one of your items arrived damaged. Please send us a photo of the damaged product along with your order number, and we will process a replacement for you as soon as possible. If you prefer, you can also choose a refund instead. Let us know how you'd like to proceed!",
+      "true_score": 5,
+      "reasoning": "The response correctly addresses the issue, provides a clear next step for the customer, and offers options for resolution.",
+      "id": "test_65"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I exchange it for the correct size?",
+      "response": "Sorry to hear about the issue with your order. You can return the shirt by shipping it back to us, but please note that returns must be made within 7 days of delivery. Once we receive the item, we\u2019ll process a refund or send you the correct size.",
+      "true_score": 3,
+      "reasoning": "The response addresses the return process but misses key details like providing a return label, the exact exchange procedure, and the timeframe for exchanges.",
+      "id": "test_66"
+    },
+    {
+      "query": "Hi, I received my order yesterday but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we'll investigate this right away. If confirmed, we'll either send you the missing item or issue a refund, depending on your preference. Thank you for your patience.",
+      "true_score": 5,
+      "reasoning": "The response appropriately acknowledges the issue, requests necessary information, explains the next steps clearly, and offers resolution options.",
+      "id": "test_67"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is damaged. What should I do to get a replacement?",
+      "response": "I'm sorry to hear about the damaged item. Please email us a photo of the damaged product along with your order number. Once we verify the issue, we will process a replacement for you as soon as possible. Let us know if you need any further assistance.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises the customer to send a photo and order details and explains the replacement process, but it could be improved by mentioning any time limits or return shipping instructions.",
+      "id": "test_68"
+    },
+    {
+      "query": "Hi, I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that one of your items is missing. Please check the packaging carefully to ensure it wasn't overlooked, then contact our customer service with your order number and the missing item details. We will investigate and arrange a replacement or refund for you as soon as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly guides the customer to verify the package and provides next steps, but it could be improved by mentioning the timeframe for reporting missing items or how long the resolution process typically takes.",
+      "id": "test_69"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was missing from the package. What should I do to get the missing item?",
+      "response": "I'm sorry to hear that one of your items was missing from your order. Please provide your order number and the missing item's name so we can verify your purchase and arrange to send the missing product or offer a refund. Once we have this information, we'll resolve the issue as quickly as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly asks for necessary details and offers a solution but does not specify the time frame for resolution or mention checking the packaging thoroughly first.",
+      "id": "test_70"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please check the shipping box carefully and any packaging material to ensure it wasn't overlooked. If you still can't find the item, contact us with your order number and the missing product details, so we can assist you further with a replacement or refund.",
+      "true_score": 4,
+      "reasoning": "The response addresses the issue properly and provides a clear next step, but it could be improved by specifying any time limits for reporting missing items or how to contact support.",
+      "id": "test_71"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing. What should I do?",
+      "response": "I'm sorry to hear that an item is missing from your order. Please provide your order number and the name of the missing item, and we'll investigate this for you. Once we confirm the issue, we can either send you the missing item or process a refund, depending on your preference.",
+      "true_score": 4,
+      "reasoning": "The response correctly addresses the customer's issue and provides clear next steps but could mention checking the package carefully or possible shipping delays for completeness.",
+      "id": "test_72"
+    },
+    {
+      "query": "I received the wrong size for my recent order. How can I get a replacement?",
+      "response": "I'm sorry to hear that. You can return the item by dropping it off at any local post office and we will send a refund to your original payment method within 10 days.",
+      "true_score": 2,
+      "reasoning": "The response advises returning the item but does not mention exchange or replacement options, and the refund timeline may be inaccurate or incomplete.",
+      "id": "test_73"
+    },
+    {
+      "query": "I received my order today but one of the items is missing. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please check your package again to confirm, then contact our customer service with your order number and the details of the missing item. We'll investigate the issue and arrange for a replacement or refund as soon as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly guides the customer to verify and then contact support with details, promising resolution, but it could improve by providing specific contact methods or timelines.",
+      "id": "test_74"
+    },
+    {
+      "query": "I received my order but one of the items, the wireless mouse, is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that your wireless mouse was missing from your delivery. Please check your package carefully to ensure it wasn't inside a separate box or compartment. If you still can't find it, contact us with your order number, and we will arrange a replacement or refund as soon as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises the customer to check the package again and offers a solution but does not specify the exact contact method or mention the timeframe for resolution.",
+      "id": "test_75"
+    },
+    {
+      "query": "I received the wrong size in my order. What should I do to get the correct one?",
+      "response": "I'm sorry to hear that. You should send the wrong item back and then place a new order for the correct size. We do not offer exchanges directly.",
+      "true_score": 2,
+      "reasoning": "The response incorrectly states the company does not offer direct exchanges, which is misleading and omits the support process for returns and exchanges.",
+      "id": "test_76"
+    },
+    {
+      "query": "I received my order today, but one of the items is missing. Can you help me with this?",
+      "response": "I'm sorry to hear that one of your items is missing from your order. Please provide your order number and the missing item's name, and we will investigate this immediately. If the item was indeed not included, we can either send a replacement or issue a refund based on your preference.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, and clearly outlines the next steps and resolution options.",
+      "id": "test_77"
+    },
+    {
+      "query": "I received the wrong size in my order. How can I get a replacement?",
+      "response": "I'm sorry to hear that. Please note that once an order is placed, we cannot make any changes or returns. You will have to keep the item as is.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly states that returns or exchanges are not possible, providing inaccurate information about the company's policy.",
+      "id": "test_78"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I get the correct one?",
+      "response": "I'm sorry to hear about the sizing issue. You can return the item by sending it back to us, and once we receive it, we'll send out the correct size. Please make sure to use the original packaging for the return.",
+      "true_score": 3,
+      "reasoning": "The response is generally correct about returning the item and getting the correct size, but it lacks details about the return process, such as how to initiate it or whether return shipping is covered.",
+      "id": "test_79"
+    },
+    {
+      "query": "I received my order, but one of the items was damaged during shipping. What can I do to get a replacement?",
+      "response": "I'm sorry to hear that your item arrived damaged. Please send us a photo of the damaged product along with your order number, and we will arrange a replacement for you as soon as possible. Replacement items typically ship within 3-5 business days. Let us know if you have any other questions.",
+      "true_score": 4,
+      "reasoning": "The response provides the correct immediate steps and offers a replacement timeline but does not mention any potential return process or refund options.",
+      "id": "test_80"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that one of your items was missing from your order. Please check the packing slip to confirm the missing item, then contact our customer service with your order number and details about the missing product. We will investigate and arrange for a replacement or refund as soon as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly advises the customer to verify the packing slip and contact support with order details, but it could be improved by mentioning a specific time frame for resolution or providing direct contact methods.",
+      "id": "test_81"
+    },
+    {
+      "query": "I placed an order last week but haven't received a shipping confirmation yet. Can you tell me when it will be shipped?",
+      "response": "Thank you for reaching out. Orders are typically processed within 2-3 business days, and shipping confirmation is sent once your package is dispatched. If you placed the order last week and haven't received any confirmation, I recommend checking your spam folder or contacting us again in a couple of days for an update.",
+      "true_score": 4,
+      "reasoning": "The response correctly explains the typical processing time and suggests checking spam, but it misses offering to look up the specific order status directly.",
+      "id": "test_82"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items was missing from the package. How can I get the missing item sent to me?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we will arrange to send the missing product to you as soon as possible. If you have the packaging or a photo of the shipment, that would also help us expedite the process. We appreciate your patience and will make sure to resolve this promptly.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, asks for necessary details, explains the next steps clearly, and offers assistance while expressing empathy.",
+      "id": "test_83"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. What should I do to get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please email us at support@ecommerce.com with a photo of the damaged item and your order number. Once we receive this information, we'll arrange for a replacement to be sent to you as quickly as possible. If you need further assistance, feel free to contact us anytime.",
+      "true_score": 5,
+      "reasoning": "The response provides clear, accurate instructions for submitting a damaged item claim, including requesting necessary information and offering further assistance.",
+      "id": "test_84"
+    },
+    {
+      "query": "Hi, I received my order today but one of the items is missing from the package. Can you help me with this?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item so we can investigate this for you. Once we confirm the issue, we will either send you the missing item right away or offer a refund based on your preference. Thank you for your patience.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, explains next steps clearly, and offers resolution options, providing a complete and helpful answer.",
+      "id": "test_85"
+    },
+    {
+      "query": "I received my order but one of the items is missing from the package. What should I do to get it shipped to me?",
+      "response": "I'm sorry to hear that one of your items is missing. Please contact our customer service with your order number and the missing item's details, and we will arrange for the item to be sent to you. Alternatively, you can initiate a missing item claim through your order history on our website.",
+      "true_score": 4,
+      "reasoning": "The response correctly addresses the issue and offers multiple solutions but could be improved by specifying timeframes or any documentation needed.",
+      "id": "test_86"
+    },
+    {
+      "query": "I received my order but one of the items is missing. What should I do to get the missing product?",
+      "response": "I'm sorry to hear that an item was missing from your order. You can try contacting the seller directly to sort it out. Alternatively, you might consider returning the full order and placing a new one with all items included.",
+      "true_score": 3,
+      "reasoning": "The response acknowledges the issue and suggests contacting the seller but misses mentioning the company's specific missing item claim process and timelines.",
+      "id": "test_87"
+    },
+    {
+      "query": "I placed an order last week but haven't received any shipping updates. Can you tell me when it will arrive?",
+      "response": "Your order should arrive within 3-5 business days from the date of purchase. If you haven\u2019t received a tracking number yet, it might still be processing. Please check your email for any updates.",
+      "true_score": 3,
+      "reasoning": "The response provides a general delivery timeframe and mentions checking email for updates but does not address the possibility of delays or offer to check the order status directly.",
+      "id": "test_88"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. What should I do to get a replacement?",
+      "response": "I'm sorry to hear about the damaged item. Please send us a photo of the damaged product along with your order number, and we will initiate a replacement for you. Once we receive the photo and info, it usually takes 3-5 business days to process the replacement shipment.",
+      "true_score": 4,
+      "reasoning": "The response correctly guides the customer to provide a photo and order number for a replacement and gives a typical processing time, but it doesn't mention whether the customer should use a specific contact channel or return the damaged item.",
+      "id": "test_89"
+    },
+    {
+      "query": "I received my order but one of the items is damaged. What should I do to get a replacement?",
+      "response": "I'm sorry to hear about the damaged item. Please return the item to the store where you bought it and bring your receipt for a replacement.",
+      "true_score": 3,
+      "reasoning": "The response addresses the issue but incorrectly instructs the customer to return the item to a physical store rather than providing the company's official return process or online instructions.",
+      "id": "test_90"
+    },
+    {
+      "query": "I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please check the packaging carefully in case it was separated, then contact us with your order number and the missing item's details. We'll investigate and arrange for a replacement or refund as soon as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly addresses the issue and guides the customer on next steps but could be improved by mentioning a specific time frame for resolution or how to contact support.",
+      "id": "test_91"
+    },
+    {
+      "query": "Hi, I received the wrong size for my order. I ordered a medium T-shirt, but got a large instead. What should I do to get the correct size?",
+      "response": "I'm sorry to hear that you received the wrong size. Please return the large T-shirt to us using the prepaid return label included in your package. Once we receive the returned item, we'll send out the correct medium size to your address. If you need any help with the return process, feel free to contact us.",
+      "true_score": 4,
+      "reasoning": "The response provides correct and helpful instructions but does not mention the timeframe for the exchange or how long it might take to receive the replacement.",
+      "id": "test_92"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I get the right one?",
+      "response": "I'm sorry to hear that you got the wrong size. You can return the shirt using our standard return process. Once we receive the return, we'll send you the correct size shirt.",
+      "true_score": 3,
+      "reasoning": "The response acknowledges the problem and offers a return solution but doesn't provide details on how to initiate the return or mention if a replacement shipment is immediate or after the return is processed.",
+      "id": "test_93"
+    },
+    {
+      "query": "I received the wrong size shirt in my order. How can I exchange it for the correct size?",
+      "response": "I'm sorry to hear that you received the wrong size. You can return the item by sending it back to us and then place a new order for the correct size on our website. Please make sure the shirt is unused and in its original packaging.",
+      "true_score": 3,
+      "reasoning": "The response addresses the issue and suggests a return, but does not mention any exchange policy, return labels, or timeline, which are important for a complete answer.",
+      "id": "test_94"
+    },
+    {
+      "query": "I received my order yesterday, but one of the items is damaged. How can I get a replacement?",
+      "response": "I'm sorry to hear that one of your items arrived damaged. Please email us a photo of the damaged product along with your order number at support@shop.com. Once we verify the issue, we'll process a replacement or refund depending on your preference. Let us know if you need any further assistance.",
+      "true_score": 5,
+      "reasoning": "The response correctly acknowledges the issue, provides clear instructions for submitting a request, and explains the next steps for resolution.",
+      "id": "test_95"
+    },
+    {
+      "query": "I received the wrong size for the shoes I ordered. Can I get a replacement?",
+      "response": "I'm sorry to hear that. Unfortunately, once an order is placed, it cannot be changed or returned. Please make sure to check the size carefully next time.",
+      "true_score": 1,
+      "reasoning": "The response incorrectly states that returns are not possible, which is inaccurate as most e-commerce companies allow exchanges or returns for wrong items.",
+      "id": "test_96"
+    },
+    {
+      "query": "Hi, I received my order yesterday but one of the items was missing from the package. Can you help me with this?",
+      "response": "I'm sorry to hear that an item was missing from your order. Please provide your order number and the name of the missing item, and we will investigate the issue immediately. If the item is confirmed missing, we can either send a replacement or issue a refund, whichever you prefer. Thank you for your patience.",
+      "true_score": 5,
+      "reasoning": "The response acknowledges the issue, requests necessary information, explains the next steps, and offers a clear resolution, fully addressing the customer's concern.",
+      "id": "test_97"
+    },
+    {
+      "query": "I ordered a pair of shoes last week but haven't received a shipping confirmation yet. Can you tell me when my order will ship?",
+      "response": "Thanks for reaching out! Usually, orders ship within 24 hours after purchase. If you haven't received a confirmation yet, please check your spam folder. If you still don't see it, let us know and we can investigate further.",
+      "true_score": 3,
+      "reasoning": "The response provides generic information about shipping but doesn't address potential delays or provide specific guidance on order status checking.",
+      "id": "test_98"
+    },
+    {
+      "query": "I received my order but one of the items is missing from the package. What should I do?",
+      "response": "I'm sorry to hear that one of your items is missing. Please check the packaging carefully to ensure the item isn't tucked away. If it's definitely missing, contact our support team with your order number and the missing item's details, and we'll arrange a replacement or refund for you as soon as possible.",
+      "true_score": 4,
+      "reasoning": "The response correctly instructs the customer to verify the package and contact support with necessary details, but it could be improved by mentioning any timelines or providing direct contact methods.",
+      "id": "test_99"
+    }
+  ]
+}
