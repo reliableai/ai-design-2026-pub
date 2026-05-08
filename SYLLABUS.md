@@ -323,24 +323,28 @@ By the end of this course, you will:
 
 ---
 
-### L11 — Complex Systems I: Councils and Agentic Patterns
+### L11 — Complex Systems I: Basic Systems and Non-AI Abstractions
 
-**Page:** `[labs/10_complex_systems/1_councils/councils.html](labs/10_complex_systems/1_councils/councils.html)`
-**Tagline:** Council of Agents and other agentic patterns — self-consistency, role-based panels, multi-model ensembles, diverse-judge.
+**Pages:**
+
+- `[labs/10_complex_systems/2_abstractions/key_abstractions.html](labs/10_complex_systems/2_abstractions/key_abstractions.html)` — key abstractions
+- `[labs/10_complex_systems/3_architectures/complex_systems.html](labs/10_complex_systems/3_architectures/complex_systems.html)` — architecture patterns
+
+**Tagline:** Building a small app end-to-end with the foundational, non-AI abstractions — entities, schemas, APIs, tests, logging — before any model enters the picture.
 
 **Learning objectives**
 
-- Recognize the main council/ensemble patterns and what each buys you
-- Understand when disagreement is a *feature* (calibrated uncertainty from independent errors) vs. a *failure mode* (correlated errors)
-- Reason about the core design questions of multi-agent systems: diversity, aggregation, cost, and evaluation
+- Scaffold a small application end-to-end using a minimal, non-AI stack (e.g. FastAPI + SQLite + Pydantic + pytest)
+- Apply foundational programming abstractions — entities, schemas, APIs, soft-delete, logging — that remain load-bearing once AI is layered on top
+- Apply architecture patterns that keep systems reliable under real traffic: timeouts, fallbacks, budgets, graceful degradation, blast-radius control
 
 **Slides**
 
-- `[agentic_patterns.slides.md](labs/10_complex_systems/1_councils/agentic_patterns.slides.md)`
+- *TBD*
 
 **Resources**
 
-- `[councils_concept.md](labs/10_complex_systems/1_councils/councils_concept.md)`
+- `[1-how to build simple applications.md](labs/10_complex_systems/2_abstractions/1-how%20to%20build%20simple%20applications.md)` — recipe for building a small app end-to-end (or for guiding an AI tool to build it)
 
 **Labs**
 
@@ -348,20 +352,19 @@ By the end of this course, you will:
 
 ---
 
-### L12 — Complex Systems II: Foundational Programming Abstractions
+### L12 — Complex Systems II: Adding AI Abstractions
 
 **Pages:**
 
-- `[labs/10_complex_systems/2_abstractions/key_abstractions.html](labs/10_complex_systems/2_abstractions/key_abstractions.html)` — key abstractions
 - `[labs/06_ai-api/aoa.html](labs/06_ai-api/aoa.html)` — Abstractions of Agents
 - `[labs/06_ai-api/ai_tools_integration.html](labs/06_ai-api/ai_tools_integration.html)` — AI tools integration
 - `[labs/06_ai-api/mcp_tutorial.html](labs/06_ai-api/mcp_tutorial.html)` — MCP tutorial
 
-**Tagline:** Foundational programming abstractions for AI systems — agentic loops, autonomy sliders, context/memory, tool integration surfaces, and MCP.
+**Tagline:** Layering AI-specific abstractions onto a working app — agentic loops, autonomy sliders, context/memory, tool integration surfaces, and MCP.
 
 **Learning objectives**
 
-- Identify the foundational abstractions for AI systems — agentic loops, autonomy sliders, context/memory, tool-integration surfaces — and know when to reach for each
+- Identify the AI-specific abstractions — agentic loops, autonomy sliders, context/memory, tool-integration surfaces — and know when to reach for each
 - Understand what MCP is, what problem it solves, and how agent-system integration is standardizing
 - Map a concrete AI feature to the right abstractions, so code stays manageable as the system grows
 
@@ -383,24 +386,24 @@ By the end of this course, you will:
 
 ---
 
-### L13 — Complex Systems III: Reliable System Architectures
+### L13 — Complex Systems III: Councils and Agentic Patterns
 
-**Page:** `[labs/10_complex_systems/3_architectures/complex_systems.html](labs/10_complex_systems/3_architectures/complex_systems.html)`
-**Tagline:** Architecture patterns that keep AI systems reliable under real traffic — timeouts, fallbacks, budgets, graceful degradation.
+**Page:** `[labs/10_complex_systems/1_councils/councils.html](labs/10_complex_systems/1_councils/councils.html)`
+**Tagline:** Council of Agents and other agentic patterns — self-consistency, role-based panels, multi-model ensembles, diverse-judge.
 
 **Learning objectives**
 
-- Apply architecture patterns that keep AI systems reliable under production traffic
-- Design for graceful degradation, blast-radius control, and incident-readiness
-- Plan for multi-version considerations — prompts, tools, schemas, datasets — so upgrades don't silently regress behaviour
+- Recognize the main council/ensemble patterns and what each buys you
+- Understand when disagreement is a *feature* (calibrated uncertainty from independent errors) vs. a *failure mode* (correlated errors)
+- Reason about the core design questions of multi-agent systems: diversity, aggregation, cost, and evaluation
 
 **Slides**
 
-- *TBD*
+- `[agentic_patterns.slides.md](labs/10_complex_systems/1_councils/agentic_patterns.slides.md)`
 
 **Resources**
 
-- *TBD*
+- `[councils_concept.md](labs/10_complex_systems/1_councils/councils_concept.md)`
 
 **Labs**
 
