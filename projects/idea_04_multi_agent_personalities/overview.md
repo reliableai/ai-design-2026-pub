@@ -29,7 +29,7 @@ The project succeeds even if the headline claim *fails* — a clean rejection wi
 
 Pre-commit to:
 - Seed personas: N = 8 public figures with substantial public text corpora (option A: transcripts of podcast guests; option B: politician speeches; option C: columnist bylines).
-- Third-party raters: N ≥ 20. Pre-screen for familiarity.
+- Judges: *ideally* you'd recruit N ≥ 20 blind third-party human raters, pre-screened for familiarity with the personas — that's what a publishable version of this study would do. **For this class project we substitute a small panel of LLM-as-judge runs (e.g., 3 different models or 3 prompt variants × many trials) plus a sanity-check pass from 3–5 human raters (you + teammates + a couple of classmates).** Discuss in the writeup what the human-rater study would add and what biases the LLM panel introduces.
 - Chance rate: 1/8 = 12.5%. Target effect: ≥ 30% accuracy (≈ Cohen's h = 0.42 — medium effect).
 
 Optional secondary hypotheses (ambitious teams may add any of these — graded as bonus rigor):
@@ -46,7 +46,7 @@ End-to-end in 5 files:
 - `extract_persona.py` — one method (default: few-shot prompt that asks the LLM to extract a 10-dimension style profile + 5 exemplar messages per person). Accepts a text corpus, outputs a persona JSON.
 - `agent_runtime.py` — wraps a single LLM call with a persona JSON and a conversation history. Exposes a `reply(history) → message` interface.
 - `simulate_chat.py` — takes N persona JSONs, a topic seed, and a step count; outputs a transcript.
-- `blind_eval.py` — takes transcripts + seed personas, presents raters with anonymized snippets, collects guesses.
+- `blind_eval.py` — takes transcripts + seed personas, presents *judges* (LLM panel as primary; small human sanity-check pass as secondary) with anonymized snippets, collects guesses.
 - `analyze.py` — confidence intervals on accuracy, breakdown by persona, per-rater variance, pre-specified analysis only.
 
 Avoid scope creep: fixed model (one, e.g., `claude-sonnet-4-6`), one persona-extraction method, one topic seed per run, fixed N of turns.
@@ -89,9 +89,10 @@ Single-factor within-subjects design on the rater side:
 
 ### 7.2 Sample size / power
 
-- Raters: N = 20 (upper-bound feasible in a 4–6 week project).
-- Power calc (back-of-envelope): to detect a 30% accuracy against 12.5% chance at α = 0.05, two-sided binomial test, we need ~15 raters × 24 trials each (≈ 480 trials total). 20 raters gives headroom.
-- Per-persona sub-analyses will be underpowered — report but don't over-interpret.
+- **Ideal (publishable) version:** N ≈ 20 blind human raters × 24 trials ≈ 480 trials. Power calc: to detect 30% accuracy against 12.5% chance at α = 0.05, two-sided binomial test, ~15 raters × 24 trials is the minimum; 20 gives headroom.
+- **This project's version:** an LLM-judge panel (≥ 3 judges — different models or prompt variants — × full passage set, giving hundreds of trials cheaply) + a human sanity check (3–5 raters × ~8 trials each). The LLM panel carries the statistical power; the humans are there to confirm the LLM judges aren't picking up on artifacts a human wouldn't.
+- Per-persona sub-analyses will still be underpowered on the human side — report but don't over-interpret.
+- Be explicit in the writeup: LLM judges share training data with the agents under test, so their "above-chance" identification is a *weaker* claim than human identification would be. Treat it as a feasibility result, not the final word.
 
 ### 7.3 Controls
 
@@ -132,8 +133,8 @@ Pair version: one person owns extraction + runtime, the other owns evaluation + 
 |------|-----------|
 | 1 | Pick corpus; collect text for 8 personas; decide raters pool; pre-register hypotheses. |
 | 2 | MVB runs end-to-end on 2 personas, 1 rater (dry run). |
-| 3 | Full 8-persona simulation; pilot rater study with 3 raters — fix UX issues. |
-| 4 | Main rater study N = 20; data collection done. |
+| 3 | Full 8-persona simulation; run LLM-judge panel end-to-end; pilot human sanity check on 1–2 raters. |
+| 4 | Full LLM-judge data collection + human sanity check (3–5 raters). |
 | 5 | Analysis + secondary hypotheses if time. Writeup draft. |
 | 6 | Revisions, final report, presentation. |
 
