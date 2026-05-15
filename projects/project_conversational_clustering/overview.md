@@ -67,7 +67,7 @@ Pick one or two as the headline; the rest are bonus.
 ## Scope tiers
 
 - **Solo / pair (build-light, study-deep):** CLI or notebook, single dataset, one representation (e.g. sentence embeddings), LLM orchestrates the `f_*` functions through structured JSON. Headline experiment: ablation across 3–5 interaction strategies (random vs. uncertainty-driven vs. boundary-driven question selection) against LLM-simulated oracles, plus a small human-rated subset.
-- **Trio / quartet (build-heavier):** web UI, multiple backends (k-means / HDBSCAN / LLM-first), UMAP/t-SNE visualization, dataset upload, persistent sessions, hierarchy navigation. Headline experiment: **N oracles × M tasks** with both LLM oracles (scale) and human oracles (N ≥ 10 within-subject), comparing the conversational interface to a sensible default-parameter baseline on oracle satisfaction, turns, and generalization accuracy.
+- **Trio / quartet (build-heavier):** web UI, multiple backends (k-means / HDBSCAN / LLM-first), UMAP/t-SNE visualization, dataset upload, persistent sessions, hierarchy navigation. Headline experiment: **N oracles × M tasks** with **LLM-simulated oracles as the primary signal** (cheap, many trials) plus a **small human sanity check (3–5 oracles, within-subject)** to confirm the LLM oracles aren't behaving in ways a human wouldn't. Compare the conversational interface to a sensible default-parameter baseline on oracle satisfaction, turns, and generalization accuracy. Discuss in the report what a larger human study would add and what biases the LLM-oracle panel introduces. *Ideally* a publishable version would recruit N ≥ 10 human oracles within-subject — note this in the limitations.
 
 ## Risks to plan for
 
