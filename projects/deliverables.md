@@ -14,7 +14,7 @@ Five things at the end. Everything else is optional polish.
 2. **Project-specific data artifacts** — whatever data, models, logs, or graphs your project produces (persona JSONs, cluster-refinement traces, synthetic datasets, KB snapshots, extracted graphs, rater responses, behavior logs, etc.). Versioned; runs replayable from what's in the repo.
 3. **Findings** — concrete, specific, defensible things you discovered about agent behaviors. *This is the point of the project.* Not "we built a system and it works" — but specific observations: *"persona X dominates group chats," "the KB converges after ~N edits," "agents given tool Y persist 3× longer at failing tasks," "conversational refinement does NOT improve silhouette on this dataset."* Surprises, failures, and unexpected behaviors count as findings too — arguably the most interesting kind.
 4. **Technical report** — research-paper-style writeup: intro, (related work if study-heavy, see below), method, experiments, results with confidence intervals, findings, discussion, limitations, ethics. A *well-executed null result* counts as success.
-5. **Final presentation** — 15–20 min slide deck telling the story end-to-end: question → method → **findings** → limitations → **contributions of each team member**.
+5. **Final presentation** — slide deck telling the story end-to-end (20 min for groups of up to 3, 30 min for groups of 4–5): question → method → **findings** → limitations → **contributions of each team member**. See the projects page for what to cover.
 
 The universal scaffolding (`universal_scaffolding.md`, 13 components) is assumed throughout. These five sit on top of that infrastructure and fail to exist without it.
 
@@ -100,3 +100,21 @@ We grade on the end deliverables **and** on how you got there. Process is not ne
 - "We all worked on everything" — no defensible individual contribution.
 - Findings that are really feature lists (*"we implemented X, Y, Z"*) rather than observations about agent behavior.
 - No logging, or `print()` scattered across notebooks passing as logs.
+
+---
+
+## 5. Final presentation — what to cover
+
+**20 min for groups of up to 3 people, 30 min for groups of 4–5.** You don't have to follow this order rigidly, but everything below should be in there somewhere. Above all: **tell a story**, don't read a checklist at us.
+
+Aim for a **number of slides below your number of minutes** — you can keep extra detail in **backup slides after the "The End" slide** and pull them up if a question calls for it, without cluttering the main talk.
+
+- **Demo, if you have one.** Lead with it. A live or recorded demo earns more attention than any slide. Show a *base case* first so we understand the normal behavior, then the *interesting cases*. Don't manufacture interesting examples — but if you genuinely saw surprising, funny, or revealing ones, that's exactly what to show.
+- **Problem focus.** Where did you actually put your energy? What do *you* see as the distinctive or interesting thing — the feature you built, or the question you studied? This is the heart of the talk.
+- **Related work.** What areas did you look into? What did you learn and *reuse*? And — just as important — what did you *not* find, where you had to come up with an answer yourself?
+- **What's agentic.** Which parts of your system are actually agentic, and which are plain code or a single model call? Which **different kinds of agents** do you have, and **what makes them different** — their job, their tools, their prompts, how much autonomy they have, how they hand off to each other? If it's a single agent, say so plainly.
+- **What you expose, and how.** What **API or interface** does your system expose — via **MCP, an HTTP API, a tool interface, or other methods** — and why that choice? What can a client (or another agent) actually do through it?
+- **Memory and context.** How do you manage **memory and context**? What gets remembered across turns and across sessions, where that state lives, and how you keep the context window relevant — retrieval, summarization, truncation, scratchpads. This is often where AI systems quietly succeed or fail.
+- **Evaluation.** How did you design it? Which questions did you want to answer? Are there **quantitative metrics** — which and why? If **qualitative**, how did you assess it (rubric, raters, agreement)? Show concrete examples of where the system works well and — just as honestly — where it doesn't. Tie it back to the claim you set out to test.
+- **What was hard.** The real obstacles — dead ends, things that didn't work, decisions you'd make differently.
+- **Contribution of each team member.** Who did what, concretely. Every member should be able to speak to their own part.
